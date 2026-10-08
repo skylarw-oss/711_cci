@@ -48,7 +48,8 @@ var_info <- data.frame(
   variable = c(
     # Financial
     "Investment interest", "Bank deposits", "Median household income",
-    "Owner occupied units", "Local government financing",
+    "Owner occupied units", "Population", "Percentage in poverty", "Percentage of households with no vehicle",
+    "Percentage of households receiving SNAP"
     # Built
     "Food & beverage manufacturing establishments", "Other manufacturing establishments",
     "% with fixed advanced telecom access", "Proximity to interstate ramp",
@@ -70,8 +71,8 @@ var_info <- data.frame(
     "Historic sites (NRHP)"
   ),
   source = c(
-    "IRS", "FDIC", "Census", "Census", "Census",
-    "Census", "Census", "FCC", "Dicken et al. (2011)", "Census", "Data.CMS.gov",
+    "IRS", "FDIC", "Census", "Census", "Census", "SAIPE", "FRAC", "FRAC", 
+    "Census", "Census", "FCC", "Dicken et al. (2011)", "Data.CMS.gov",
     "VT Secretary of State", "Census", "FEC", "FEC",
     "County Business Patterns", "NCCS", "Census (ACS)", "Census (ACS)",
     "USDA ERS", "USDA", "USDA", "USFS",
