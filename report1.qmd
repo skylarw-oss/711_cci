@@ -1,0 +1,406 @@
+---
+title: "Particulate Matter Distribution from the Canadian Wildfires in 2023"
+authors: "Katie Chiappetta, Skylar Wong"
+# bibliography: [references.bib, packages.bib]
+format:
+  pdf:
+    fontsize: 12pt
+    indent: true
+    fig-align: center
+    fig-pos: "H"
+    number-sections: true
+    shift-heading-level-by: -1
+    mathspec: true
+    geometry:
+      - inner=1.5cm
+      - outer=1.5cm
+      - top=2.5cm
+      - bottom=2.5cm
+    header-includes: |
+      \addtokomafont{disposition}{\rmfamily}
+      \usepackage{fancyhdr, lastpage, framed, caption, xcolor, setspace, multirow, tabularray, framed, booktabs, float}
+      <!-- \captionsetup[figure]{labelformat=empty} -->
+      \pagestyle{fancyplain}
+      \fancyhf{}
+      \lhead{\fancyplain{}{STAT 0419: Spatial Statistics}}
+      \rhead{\fancyplain{}{PM concentrations in the Northeastern US}}
+      \fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage}}
+      \thispagestyle{plain}
+      \usepackage{pdflscape}
+      \fancypagestyle{mylandscape}{
+        \fancyhf{} %Clears the header/footer
+        \renewcommand{\headrulewidth}{0pt}% No header rule
+        \renewcommand{\footrulewidth}{0pt}% No footer rule
+      }
+      \usepackage{fvextra}
+      \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+editor: source
+---
+
+```{r setup, include = F}
+# pull in packages and data
+library(tidyverse)
+library(ggrepel)
+library(sf)
+library(NatParksPalettes)
+library(patchwork)
+library(maptiles)
+library(gstat)
+library(terra)
+library(tidyterra)
+library(ggspatial)
+library(stars)
+library(geosphere)
+library(rnaturalearth)
+library(units)
+
+# some settings
+knitr::opts_chunk$set(
+  # fig.dim = c(8, 9),
+  echo = F, 
+  warning = F, 
+  message = F,
+  fig.align = "center"
+)
+
+# include some packages in your references
+# knitr::write_bib(c("sp", "gstat", "sf", "tidyverse"), file = "packages.bib")
+```
+
+\doublespacing
+
+## Introduction
+
+
+
+\newpage
+
+## Statistical Procedures Used {#sec-methods}
+
+From our data, we have 174 collections of $\text{PM}_{2.5}$ concentration ($\mu$g/$\text{m}^3$) across the Northeastern areas of the US as a result of the Canadian wildfires in the spring of 2023. Because it is both impractical and unrealistic to be able to collect the $\text{PM}_{2.5}$ concentrations at every affected location, we must use our current observations—a partial realisation of the surface—to produce a map and predict the $\text{PM}_{2.5}$ concentrations of non-monitored locations along the surface. For this, we implemented Ordinary Kriging, which assumes a constant mean across the area in question. 
+
+```{r}
+#| label: fig-pm25_conc
+#| fig-cap: "Spatial distribution of the log(PM$_{2.5}$) concentration in the Northeastern US."
+#| fig-width: 8
+#| fig-height: 5
+
+# read in data
+smoke <- read_csv("smoke_pm25_2023-06-07.csv")
+
+# transform to crs 26918
+smoke_sf <- smoke |>
+  st_as_sf(
+    coords = c("lon", "lat"),
+    crs = 4326) |>
+  st_transform(crs = 26918)
+
+# add state boundaries and fill map
+# get tiles
+tiles <- get_tiles(
+  smoke_sf,
+  provider = "Esri.WorldImagery",
+  zoom = 7,
+  crop = T)
+
+# get states
+states <- ne_states(country = "united states of america", returnclass = "sf")
+
+# crop states
+states_crop <- states |>
+  st_transform(crs = 26918) |>
+  st_crop(st_bbox(smoke_sf))
+
+smoke_sf |>
+  ggplot() +
+  geom_spatraster_rgb(data = tiles, alpha = .75) +
+  geom_sf(data = states_crop, fill = NA) +
+  geom_sf(aes(color = log_pm25)) +
+  coord_sf(
+    xlim = st_bbox(smoke_sf)[c("xmin", "xmax")],
+    ylim = st_bbox(smoke_sf)[c("ymin", "ymax")]) +
+  theme_bw() +
+  labs(title = "PM 2.5 Values in the Northeast in 2023") +
+  scale_color_gradient(
+    low = "blue",
+    high = "red"
+  )
+```
+
+Kriging uses spatial interpolation, which makes predictions at unsampled locations based on values from sampled locations. More specifically, these predictions are calculated as a weighted linear combination of the observed values. With kriging, our objective is to estimate these weights, which are determined by the spatial autocorrelation structure of our data and the proximity of observed locations. 
+
+$$
+\hat{Y}(\boldsymbol{s}_0) = \sum_{i=1}^n \lambda_i Y(\boldsymbol{s}_i)
+$$
+where $\hat{Y}(\boldsymbol{s}_0)$ is the predicted $\text{log(PM}_{2.5})$ concentration at location $\boldsymbol{s}_0$, $Y(\boldsymbol{s}_i)$ is concentration at location $\boldsymbol{s}_i$, and $\lambda_i$ is the Kriging weight associated with location $\boldsymbol{s}_i$, which must be estimated.
+
+In order to assess the spatial autocorrelation structure of the $\text{PM}_{2.5}$ distribution, we use semivariograms, which allow us to visualize how similar observed values are, as the distance between the corresponding locations change. The empirical semivariogram is estimated as:
+$$
+\hat{\gamma}(d) = \frac{1}{2|N(d)|} \sum_{(\boldsymbol{s}_i, \boldsymbol{s}_j) \in N(d)} \left[ Y(\boldsymbol{s}_i) - Y(\boldsymbol{s}_j)\right]^2
+$$
+
+Defining the spatial autocorrelation structure will inform the weights associated with each observed location. For instance, if our observed data show that locations closer together have more similar values and as the distance between the locations increases, so does the semivariance, then the kriging weights for our predictions would ideally give more weight to closer locations and less to further locations.
+
+```{r}
+#| label: fig-empvar
+#| fig-cap: "Empirical semivariogram."
+
+# empirical semivariogram
+v <- variogram(log_pm25 ~ 1, alpha = c(0, 45, 90, 135), data = smoke_sf)
+
+v |>
+  ggplot(aes(x = dist, y = gamma)) +
+  geom_point() +
+  theme_bw() +
+  labs(x = "Distance (km)", y = expression(
+    frac(1, 2) * Z(bold(s)[i]) - Z(bold(s)[j]))) +
+  ylim(c(0, NA))
+
+# looks anisotropic
+v |>
+  ggplot(aes(x = dist, y = gamma)) +
+  geom_point() +
+  scale_color_discrete(name = "Direction (°)", 
+                       labels = c("0°", "45°", "90°", "135°")) +
+  theme_bw() +
+  labs(
+    x = "Distance (km)", 
+    y = expression(frac(1, 2) * (Z(bold(s)[i]) - Z(bold(s)[j]))^2)
+  ) +
+  ylim(c(0, NA))
+
+
+```
+
+```{r}
+coords <- st_coordinates(smoke_sf)
+
+smoke_sf <- smoke_sf |>
+  mutate(
+    x = coords[, 1], # long
+    y = coords[, 2]  # lat
+  )
+
+
+v1 <- variogram(log_pm25 ~ x + y, alpha = c(0, 45, 90, 135), data = smoke_sf)
+v1 |>
+  ggplot(aes(x = dist, y = gamma)) +
+  geom_point() +
+  scale_color_discrete(name = "Direction (°)", 
+                       labels = c("0°", "45°", "90°", "135°")) +
+  theme_bw() +
+  labs(
+    x = "Distance (km)", 
+    y = expression(frac(1, 2) * (Z(bold(s)[i]) - Z(bold(s)[j]))^2)
+  ) +
+  ylim(c(0, NA))
+```
+
+
+Our goal with the semivariograms is to estimate the parameters of the theoretical semivariogram: the nugget ($\tau^2$), the sill ($\sigma^2 + \tau^2$)/partial sill ($\sigma^2$), and the range ($\frac{1}{\phi}$). We need the empirical semivariogram to provide input estimates for $\tau^2$, $\sigma^2$, and $\frac{1}{\phi}$ to fit our theoretical semivariogram, which will ultimately be used in our kriging model to derive the weights for predictions.
+
+```{r}
+#| label: fit-models
+
+# fitted variograms
+exp.vgm <- fit.variogram(v, vgm(
+                psill = 1.5,
+                model = "Exp",
+                range = 400000, 
+                nugget = 0.05))
+sph.vgm <- fit.variogram(v, vgm(
+                psill = 1.5,
+                model = "Sph",
+                range = 400000, 
+                nugget = 0.05))
+mat.vgm <- fit.variogram(v, vgm(
+                psill = 1.5,
+                model = "Mat",
+                range = 400000, 
+                nugget = 0.05,
+                kappa = 3/2))
+gau.vgm <- fit.variogram(v, vgm(
+                psill = 1.5,
+                model = "Gau",
+                range = 400000, 
+                nugget = 0.05))
+
+# leave-one-out cross-validation with the fitted models
+cv_mse <- c(
+  exp = mean(krige.cv(log_pm25 ~ 1, smoke_sf, model = exp.vgm, verbose = FALSE)$residual^2), # 0.05339608
+  sph = mean(krige.cv(log_pm25 ~ 1, smoke_sf, model = sph.vgm, verbose = FALSE)$residual^2), # 0.05338668
+  mat = mean(krige.cv(log_pm25 ~ 1, smoke_sf, model = mat.vgm, verbose = FALSE)$residual^2), # 0.05545574
+  gau = mean(krige.cv(log_pm25 ~ 1, smoke_sf, model = gau.vgm, verbose = FALSE)$residual^2)  # 0.0836091
+)
+```
+
+::: {.callout}
+- The **nugget** ($\tau^2$): the y-intercept, essentially an error term; the semivariance at lag 0.
+
+- The **sill** ($\sigma^2 + \tau^2$)/**partial sill** ($\sigma^2$): the semivariance at which the semivariogram levels off. This is the total variance of the spatial process. The partial sill represents the portion of the variance that is specifically spatially autocorrelated, removing the error or the nugget effect. 
+
+- The **range ($\frac{1}{\phi}$)**: the distance at which the semivariogram reaches the sill (where the semivariogram levels off). At distances beyond the range, observed values are no longer spatially correlated and can be considered independent. 
+:::
+
+```{r}
+#| label: fig-empvar-fitted
+#| fig-cap: "Empirical semivariogram with the fitted exponential, spherical, Matérn (smoothness 3/2), and Gaussian models."
+
+# plot
+bind_rows(
+variogramLine(exp.vgm, maxdist = max(v$dist)) %>% mutate(model = "exp"),
+variogramLine(sph.vgm, maxdist = max(v$dist)) %>% mutate(model = "sph"),
+variogramLine(mat.vgm, maxdist = max(v$dist)) %>% mutate(model = "mat"),
+variogramLine(gau.vgm, maxdist = max(v$dist)) %>% mutate(model = "gau")
+) %>%
+ggplot(aes(x = dist, y = gamma)) +
+geom_line(aes(col = model)) +
+geom_point(data = v) +
+theme_bw()
+```
+
+
+Once we have parameters for the nugget, the sill, and the range that we have gathered from the empirical semivariogram, we also must define a covariance function. For this report, we considered the Exponential, Spherical, Gaussian, and Matern (v = 3/2) covariance functions. We fit a kriging model for each of these covariance functions and perform Leave One Out Cross Validation (LOO-CV) to assess each model’s performance, selecting the model with the covariance function that produces the smallest Mean Squared Error (MSE). In LOO-CV, we “hide” one observed location’s $\text{PM}_{2.5}$ concentration value and use our kriging model to predict that hidden value, comparing our prediction to the actual value by finding the difference and squaring it. We repeat this for all observed locations in the data set and compute the mean of the squared residuals or errors. For our final model, we seek the covariance function that produces the lowest MSE. This kriging model with the specified covariance function, based on the parameters we inputted, will serve as our final model and what we use to ultimately make predictions across the surface.
+
+We can now create a grid upon which we will make spatial predictions.
+```{r}
+#| label: fig-pred-grid
+#| fig-cap: "Grid upon which we obtain spatial predictions. Locations represent the center of a lattice that captures the study region."
+#| fig-height: 5
+#| fig-width: 7
+
+# define grid
+# domain
+pred_domain <- smoke_sf |>
+  st_union() %>%
+  st_convex_hull() %>%
+  st_buffer(100) %>%
+  st_difference(smoke_sf) |>
+  st_cast("POLYGON") %>%
+  st_as_sf() %>%
+  st_filter(smoke_sf)
+
+# make grid
+pred_grid <- st_make_grid(
+  pred_domain,
+  cellsize = 20000,
+  what = "centers"
+) |>
+  st_as_sf() |>
+    st_filter(pred_domain)
+
+# plot
+ggplot() +
+  geom_sf(data = pred_domain, fill = NA, color = "black") +
+  geom_sf(data = pred_grid, size = .75) +
+  coord_sf(crs = st_crs(pred_domain)) +
+  theme_bw()
+```
+
+
+## Summary of Statistical Findings {#sec-findings}
+
+```{r}
+#| label: fig-krige
+#| fig-cap: "Map of spatial predictions and standard errors of those predictions."
+#| fig-height: 4
+#| fig-width: 5
+#| message: FALSE
+#| warning: FALSE
+
+# get distances from every collection site to every grid point
+# find max cut off distance
+maxd <- max(c(
+  st_distance(pred_grid, smoke_sf) |> drop_units()
+))
+
+# get distances between all collection sites
+smoke_sf <- smoke_sf |>
+  mutate(
+    distm = st_distance(geometry, smoke_sf) |> units::drop_units(),
+    dist = distm/maxd
+  )
+
+# get distance between each grid point and each collection site
+pred_grid <- pred_grid |>
+  mutate(
+    distm = st_distance(x, smoke_sf) |> units::drop_units(),
+    dist = distm / maxd
+  )
+
+# fit kriging model
+preds <- krige(
+formula = log_pm25 ~ 1, smoke_sf, pred_grid,
+model = sph.vgm
+)
+
+# plot the predictions
+plot_tbl <- preds |>
+  mutate(
+    x = st_coordinates(geometry)[,1],
+    y = st_coordinates(geometry)[,2],
+    mean = var1.pred,
+    se = sqrt(var1.var)
+  )
+
+# mean
+p1 <- plot_tbl %>%
+as_tibble() %>%
+ggplot() +
+geom_raster(aes(x = x, y = y, fill = mean)) +
+theme_bw() +
+scale_fill_gradientn(colors = natparks.pals("KingsCanyon", n = 256))
+
+# se
+p2 <- plot_tbl %>%
+as_tibble() %>%
+ggplot() +
+geom_raster(aes(x = x, y = y, fill = se)) +
+theme_bw() +
+scale_fill_gradientn(colors = hcl.colors(256, "Blues 3", rev = TRUE))
+
+p1
+p2
+```
+
+
+\newpage
+
+## Discussion {#sec-discussion}
+
+
+
+\singlespacing
+
+## References
+
+::: {#refs}
+:::
+
+\newpage
+
+## Appendix
+
+### Plots
+
+### Code
+```{r, ref.label = c("setup"), eval = F, echo = T}
+```
+
+```{r, ref.label = c("fig-pm25_conc"), eval=F, echo=T}
+```
+
+```{r, ref.label = c("fig-empvar"), eval=F, echo=T}
+```
+
+```{r, ref.label = c("fit-models"), eval=F, echo=T}
+```
+
+```{r, ref.label = c("fig-empvar-fitted"), eval=F, echo=T}
+```
+
+```{r, ref.label = c("fig-pred-grid"), eval=F, echo=T}
+```
+
+```{r, ref.label = c("fig-krige"), eval=F, echo=T}
+```
