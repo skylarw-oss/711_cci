@@ -333,7 +333,7 @@ ui <- navbarPage(
   ),
 
   # Cover page
-  tabPanel("Cover Page",
+  tabPanel("About",
            fluidRow(
              column(10, offset = 1,
                     h2("About the Project"),
