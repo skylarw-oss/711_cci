@@ -1,5 +1,4 @@
 # Community Capitals Index for Vermont - Shiny app (draft)
-# NOTE: all data in here is FAKE placeholder data for now!
 
 library(shiny)
 library(leaflet)
@@ -9,18 +8,39 @@ set.seed(67)
 
 # Setup: counties, capitals, variables
 
-counties <- c("Addison", "Bennington", "Caledonia", "Chittenden", "Essex",
-              "Franklin", "Grand Isle", "Lamoille", "Orange", "Orleans",
-              "Rutland", "Washington", "Windham", "Windsor")
+counties <- c("Addison", 
+              "Bennington", 
+              "Caledonia", 
+              "Chittenden", 
+              "Essex",
+              "Franklin", 
+              "Grand Isle", 
+              "Lamoille", 
+              "Orange", 
+              "Orleans",
+              "Rutland", 
+              "Washington", 
+              "Windham", 
+              "Windsor")
 
 capital_info <- data.frame(
-  capital = c("Financial", "Built", "Political", "Social",
-              "Natural", "Human", "Cultural"),
-  method = c("PCA", "PCA", "Z-score average", "Z-score average",
-             "Z-score average", "Z-score average", "Z-score average"),
+  capital = c("Financial", 
+              "Built", 
+              "Political", 
+              "Social",
+              "Natural", 
+              "Human", 
+              "Cultural"),
+  method = c("PCA", 
+             "PCA", 
+             "PCA", 
+             "Z-score average",
+             "Z-score average", 
+             "Z-score average", 
+             "Z-score average"),
   description = c(
     "Money and financial resources available in the community for investment, savings, and local government.",
-    "Physical infrastructure like housing, roads, broadband, hospitals, and businesses.",
+    "Physical infrastructure like housing, public services, broadband, hospitals, and businesses.",
     "Ability of a community to access power, influence decisions, and participate in civic life.",
     "Networks, trust, and connections between people and organizations in the community.",
     "Environmental resources and amenities such as land, water, farmland, and conservation areas.",
@@ -42,42 +62,107 @@ capital_info$notes <- c(
 )
 
 var_info <- data.frame(
-  capital = c(rep("Financial", 5), rep("Built", 6), rep("Political", 4),
-              rep("Social", 4), rep("Natural", 4), rep("Human", 4),
+  capital = c(rep("Financial", 8),
+              rep("Built", 8), 
+              rep("Political", 5),
+              rep("Social", 4), 
+              rep("Natural", 4), 
+              rep("Human", 4),
               rep("Cultural", 3)),
   variable = c(
     # Financial
-    "Investment interest", "Bank deposits", "Median household income",
-    "Owner occupied units", "Population", "Percentage in poverty", "Percentage of households with no vehicle",
-    "Percentage of households receiving SNAP"
+    "Population",
+    "# Owner Occupied Units",
+    "Median household income",
+    "# Bank Deposits", 
+    "Investment Interest", 
+    "% in Poverty", 
+    "% With No Vehicle Availability", 
+    "% Receiving SNAP",
+    
     # Built
-    "Food & beverage manufacturing establishments", "Other manufacturing establishments",
-    "% with fixed advanced telecom access", "Proximity to interstate ramp",
-    "Number of housing units", "Total hospitals",
+    "% Population with Access to Parks and Playgrounds",
+    "# Food & Beverage Manufacturing Establishments",
+    "Nonemployers Sales Value of Shipments or Revenue",
+    "# Non-F&B Manufacturing Establishments",
+    "% Access to Broadband Coverage",
+    "Max Advertised Download Speed",
+    "Max Advertised Upload Speed",
+    "# Hospitals", 
+    
     # Political
-    "Voter turnout (2024)", "Census response rate",
-    "Political contributions per capita", "Political organizations per capita",
+    "Voter Turnout (%)", 
+    "Census Response Rate",
+    "Median Value of Political Contributions", 
+    "Total Number of Contributions",
+    "Total Value of Political Contributions",
+    
     # Social
-    "Associations per capita", "Nonprofits per 1,000 people",
-    "% living in same county 5+ years", "Homeownership rate",
+    "Associations per capita", 
+    "Nonprofits per 1,000 people",
+    "% living in same county 5+ years", 
+    "Homeownership rate",
+    
     # Natural
-    "USDA natural amenities scale", "% acres prime farmland",
-    "% acres in conservation", "% acres in National Forest",
+    "USDA natural amenities scale", 
+    "% acres prime farmland",
+    "% acres in conservation", 
+    "% acres in National Forest",
+    
     # Human
-    "% with high school diploma", "% with bachelor's degree",
-    "% with health insurance", "Primary care physicians per 10,000",
+    "% with high school diploma", 
+    "% with bachelor's degree",
+    "% with health insurance", 
+    "Primary care physicians per 10,000",
+    
     # Cultural
-    "Arts organizations per 1,000", "Public libraries per 10,000",
+    "Arts organizations per 1,000", 
+    "Public libraries per 10,000",
     "Historic sites (NRHP)"
   ),
   source = c(
-    "IRS", "FDIC", "Census", "Census", "Census", "SAIPE", "FRAC", "FRAC", 
-    "Census", "Census", "FCC", "Dicken et al. (2011)", "Data.CMS.gov",
-    "VT Secretary of State", "Census", "FEC", "FEC",
-    "County Business Patterns", "NCCS", "Census (ACS)", "Census (ACS)",
-    "USDA ERS", "USDA", "USDA", "USFS",
-    "Census (ACS)", "Census (ACS)", "Census (ACS)", "County Health Rankings",
-    "County Business Patterns", "IMLS", "National Park Service"
+    "Census ACS",
+    "Census", 
+    "Census", 
+    "FDIC", 
+    "IRS", 
+    "SAIPE",
+    "FRAC", 
+    "FRAC", 
+    
+    "County Health Rankings", 
+    "Census", 
+    "Census", 
+    "Census",
+    "County Health Rankings", 
+    "Census", 
+    "Census",
+    "Data.CMS.gov",
+    
+    "outside.vermont.gov", 
+    "County Health Rankings", 
+    "Campaign Finance System of VT",
+    "Campaign Finance System of VT", 
+    "Campaign Finance System of VT", 
+    
+    "Fake", 
+    "Fake",
+    "Fake", 
+    "Fake",
+    
+    "Fake", 
+    "Fake",
+    "Fake", 
+    "Fake", 
+    
+    "Fake",
+    "Fake",
+    "Fake",
+    "Fake",
+    
+    "Fake",
+    "Fake",
+    "Fake"
   ),
   stringsAsFactors = FALSE
 )
@@ -87,6 +172,67 @@ var_info <- data.frame(
 fake_data <- data.frame(county = counties)
 for (v in var_info$variable) {
   fake_data[[v]] <- round(rnorm(length(counties), mean = 50, sd = 10), 1)
+}
+
+# add real data for financial, built, and political data
+# Map app variable names -> column names in your CSVs
+col_map <- list(
+  Built = c(
+    "% Population with Access to Parks and Playgrounds" = "pct_with_access_to_parks",
+    "# Food & Beverage Manufacturing Establishments"    = "number_of_nonemployer_establishments_nestab",
+    "Nonemployers Sales Value of Shipments or Revenue"  = "nonemployer_sales_value_of_shipments_or_revenue_1_000_nrcptot",
+    "# Non-F&B Manufacturing Establishments"            = "total_est",
+    "% Access to Broadband Coverage"                    = "pct_with_broadband_access",
+    "Max Advertised Download Speed"                     = "max_advertised_download_speed",
+    "Max Advertised Upload Speed"                       = "max_advertised_upload_speed",
+    "# Hospitals"                                       = "number_hospitals"
+  ),
+  Political = c(
+    "Voter Turnout (%)"                          = "pct_voter_turnout",
+    "Census Response Rate"                       = "pct_participation",
+    "Median Value of Political Contributions"    = "median_value_of_contribution",
+    "Total Number of Contributions"              = "num_contributions",
+    "Total Value of Political Contributions"     = "total_contribution"
+  )
+)
+
+real_caps <- c("Built", "Political")
+
+real_files <- c(
+  Built     = "~/Desktop/STAT 711/vt_built_6.csv",
+  Political = "~/Desktop/STAT 711/vt_political_2.csv"
+)
+
+for (cap in real_caps) {
+  d <- read.csv(real_files[[cap]], check.names = FALSE, stringsAsFactors = FALSE)
+  
+  # Accept "County" or "county"
+  names(d)[tolower(names(d)) == "county"] <- "county"
+  d$county <- trimws(d$county)
+  
+  # Align rows to the order of `counties`
+  d <- d[match(counties, d$county), , drop = FALSE]
+  if (anyNA(d$county)) {
+    stop("Missing counties in ", real_files[[cap]], ": ",
+         paste(counties[is.na(d$county)], collapse = ", "))
+  }
+  
+  vars <- var_info$variable[var_info$capital == cap]
+  src  <- col_map[[cap]]
+  
+  missing_map <- setdiff(vars, names(src))
+  if (length(missing_map) > 0) {
+    stop("No column mapping for: ", paste(missing_map, collapse = ", "))
+  }
+  missing_cols <- setdiff(unname(src[vars]), names(d))
+  if (length(missing_cols) > 0) {
+    stop("Missing columns in ", real_files[[cap]], ": ",
+         paste(missing_cols, collapse = ", "))
+  }
+  
+  for (v in vars) {
+    fake_data[[v]] <- as.numeric(d[[ src[[v]] ]])
+  }
 }
 
 # fake county info for the cover page
@@ -102,42 +248,16 @@ county_info <- data.frame(
 
 rescale <- function(x) 100 * (x - min(x)) / (max(x) - min(x))
 
-capital_scores <- data.frame(county = counties)
-contributions <- list()
-
-for (cap in capital_info$capital) {
-  vars <- var_info$variable[var_info$capital == cap]
-  dat <- fake_data[, vars]
-  method <- capital_info$method[capital_info$capital == cap]
-  
-  if (method == "PCA") {
-    pca <- prcomp(dat, scale. = TRUE)
-    load <- pca$rotation[, 1]
-    if (sum(load) < 0) load <- -load   # flip so higher = more capital
-    score <- as.matrix(scale(dat)) %*% load
-    contrib <- abs(load) / sum(abs(load))
-  } else {
-    score <- rowMeans(scale(dat))
-    contrib <- rep(1 / length(vars), length(vars))
-  }
-  
-  capital_scores[[cap]] <- rescale(as.numeric(score))
-  contributions[[cap]] <- data.frame(
-    Variable = vars,
-    Source = var_info$source[var_info$capital == cap],
-    Contribution = round(contrib, 3)
-  )
-}
-
 # Vermont county map
 
 vt_map <- map("county", "vermont", fill = TRUE, plot = FALSE)
 vt_map$county <- tools::toTitleCase(sub("vermont,", "", sub(":.*", "", vt_map$names)))
 
-# UI
+
+# ---------------------------- UI ----------------------------
 
 ui <- navbarPage(
-  "Vermont Community Capitals",
+  "Community Capitals",
   
   # Index explorer
   tabPanel("Index Explorer",
@@ -170,17 +290,31 @@ ui <- navbarPage(
            hr(),
            
            # ---- Capital deep dive ----
+           # ---- Capital deep dive ----
            h3("Capital Deep Dive"),
            fluidRow(
              column(2, actionButton("prev_cap", "< Previous", width = "100%")),
              column(8, h3(textOutput("cap_title"), style = "text-align:center; margin-top:0;")),
              column(2, actionButton("next_cap", "Next >", width = "100%"))
            ),
+           div(style = "display:none", textOutput("cap_now")),  # hidden helper for the checkbox panels
            p(textOutput("cap_description")),
            p(strong("Method: "), textOutput("cap_method", inline = TRUE)),
+           p(textOutput("cap_status", inline = TRUE)),
            fluidRow(
              column(6,
                     h4("Variables"),
+                    p("Uncheck a variable to drop it. The capital score, contributions, and index will update."),
+                    actionButton("include_all", "Select all variables"),
+                    br(), br(),
+                    lapply(capital_info$capital, function(cap) {
+                      vars <- var_info$variable[var_info$capital == cap]
+                      conditionalPanel(
+                        condition = sprintf("output.cap_now == '%s'", cap),
+                        checkboxGroupInput(paste0("inc_", cap), NULL,
+                                           choices = vars, selected = vars)
+                      )
+                    }),
                     tableOutput("var_table")
              ),
              column(6,
@@ -251,9 +385,70 @@ server <- function(input, output, session) {
     data.frame(Capital = capital_info$capital, Weight = round(weights(), 3))
   })
   
+  # which variables are currently checked for a capital
+  included_vars <- function(cap) {
+    v <- input[[paste0("inc_", cap)]]
+    if (is.null(v)) character(0) else v
+  }
+  
+  # recompute every capital score from the selected variables
+  capital_calc <- reactive({
+    scores <- data.frame(county = counties)
+    contribs <- list()
+    
+    for (cap in capital_info$capital) {
+      vars   <- included_vars(cap)
+      method <- capital_info$method[capital_info$capital == cap]
+      min_n  <- if (method == "PCA") 2 else 1
+      
+      if (length(vars) < min_n) {
+        scores[[cap]] <- rep(NA_real_, length(counties))
+        contribs[[cap]] <- data.frame(Variable = character(0),
+                                      Source = character(0),
+                                      Contribution = numeric(0))
+        next
+      }
+      
+      dat <- fake_data[, vars, drop = FALSE]
+      
+      if (method == "PCA") {
+        pca <- prcomp(dat, scale. = TRUE)
+        load <- pca$rotation[, 1]
+        if (sum(load) < 0) load <- -load   # flip so higher = more capital
+        score <- as.matrix(scale(dat)) %*% load
+        contrib <- abs(load) / sum(abs(load))
+      } else {
+        score <- rowMeans(scale(dat))
+        contrib <- rep(1 / length(vars), length(vars))
+      }
+      
+      scores[[cap]] <- rescale(as.numeric(score))
+      contribs[[cap]] <- data.frame(
+        Variable = vars,
+        Source = var_info$source[match(vars, var_info$variable)],
+        Contribution = round(contrib, 3)
+      )
+    }
+    list(scores = scores, contributions = contribs)
+  })
+  
+  # overall index, leaving out capitals with no score and renormalizing weights
   index_data <- reactive({
-    df <- capital_scores
-    df$index <- as.numeric(as.matrix(df[, capital_info$capital]) %*% weights())
+    cs   <- capital_calc()$scores
+    caps <- capital_info$capital
+    w    <- weights()
+    
+    ok <- caps[sapply(caps, function(cp) !all(is.na(cs[[cp]])))]
+    
+    df <- cs
+    if (length(ok) == 0) {
+      df$index <- NA_real_
+    } else {
+      w_ok <- w[caps %in% ok]
+      if (sum(w_ok) == 0) w_ok <- rep(1, length(ok))
+      w_ok <- w_ok / sum(w_ok)
+      df$index <- as.numeric(as.matrix(df[, ok, drop = FALSE]) %*% w_ok)
+    }
     df$rank <- rank(-df$index, ties.method = "min")
     df
   })
@@ -281,7 +476,7 @@ server <- function(input, output, session) {
       addLegend(pal = pal, values = df$index, title = "Index", position = "bottomright")
   })
   
-  # deep dive: cycle through capitals 
+  # deep dive: cycle through capitals
   current <- reactiveVal(1)
   n_caps <- nrow(capital_info)
   
@@ -298,22 +493,51 @@ server <- function(input, output, session) {
   output$cap_description <- renderText({ capital_info$description[current()] })
   output$cap_method <- renderText({ capital_info$method[current()] })
   
-  output$var_table <- renderTable({ contributions[[current_cap()]] }, digits = 3)
+  # hidden output that tells the checkbox panels which capital is showing
+  output$cap_now <- renderText({ current_cap() })
+  outputOptions(output, "cap_now", suspendWhenHidden = FALSE)
+  
+  output$cap_status <- renderText({
+    cap    <- current_cap()
+    n      <- length(included_vars(cap))
+    total  <- sum(var_info$capital == cap)
+    method <- capital_info$method[capital_info$capital == cap]
+    min_n  <- if (method == "PCA") 2 else 1
+    if (n < min_n) {
+      paste0("Only ", n, " of ", total, " variables selected. At least ", min_n,
+             " needed, so this capital is left out of the index.")
+    } else {
+      paste0(n, " of ", total, " variables included.")
+    }
+  })
+  
+  observeEvent(input$include_all, {
+    cap <- current_cap()
+    updateCheckboxGroupInput(session, paste0("inc_", cap),
+                             selected = var_info$variable[var_info$capital == cap])
+  })
+  
+  output$var_table <- renderTable({
+    capital_calc()$contributions[[current_cap()]]
+  }, digits = 3)
   
   output$contrib_plot <- renderPlot({
-    ct <- contributions[[current_cap()]]
+    ct <- capital_calc()$contributions[[current_cap()]]
+    validate(need(nrow(ct) > 0, "Not enough variables selected for this capital."))
     par(mar = c(4, 16, 1, 1))
     barplot(rev(ct$Contribution), names.arg = rev(ct$Variable), horiz = TRUE,
             las = 1, col = "#2e7d6b", xlab = "Contribution", cex.names = 0.8)
   })
   
   output$county_plot <- renderPlot({
-    scores <- capital_scores[[current_cap()]]
+    scores <- capital_calc()$scores[[current_cap()]]
+    validate(need(!all(is.na(scores)), "Not enough variables selected for this capital."))
     ord <- order(scores, decreasing = TRUE)
     par(mar = c(7, 4, 1, 1))
-    barplot(scores[ord], names.arg = capital_scores$county[ord], las = 2,
+    barplot(scores[ord], names.arg = counties[ord], las = 2,
             col = "#8bc4a8", ylab = "Score", ylim = c(0, 100))
   })
+ 
   
   # cover page tables 
   output$cap_desc_table <- renderTable({
@@ -334,4 +558,3 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
-
