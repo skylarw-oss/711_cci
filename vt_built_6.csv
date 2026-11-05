@@ -1,0 +1,15 @@
+County,number_of_nonemployer_establishments_nestab,nonemployer_sales_value_of_shipments_or_revenue_1_000_nrcptot,total_est,pct_with_access_to_parks,pct_with_broadband_access,num_households,max_advertised_download_speed,max_advertised_upload_speed,number_hospitals,airports_per_county
+Addison,41,1407,96,24,89,12789,564840,70669,1,1
+Bennington,51,1615,124,52,80,11660,714520,88704,1,1
+Caledonia,38,1150,106,0,83,10649,270955,36054,1,1
+Chittenden,259,12231,470,36,90,62185,1903065,231902,1,1
+Essex,6,389,5,13,81,2159,117945,17956,0,1
+Franklin,61,3097,120,14,86,16611,558215,74568,1,1
+Grand Isle,16,1162,8,15,90,2734,99605,11662,0,0
+Lamoille,32,1040,91,6,89,9895,216390,27620,1,1
+Orange,38,1083,91,13,86,10811,223140,29442,1,0
+Orleans,38,1603,69,5,87,9994,276095,34330,1,1
+Rutland,73,2902,185,13,83,21019,975160,140972,1,1
+Washington,86,4366,234,14,90,22541,655130,84927,1,1
+Windham,66,2195,181,31,75,14629,1037060,117219,2,0
+Windsor,71,2149,203,37,86,21213,704275,100083,2,1
