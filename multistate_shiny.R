@@ -98,7 +98,7 @@ var_info <- data.frame(
     
     # Cultural
     "Racial/ethnic fractionalization",
-    "Share foreign born",
+    "Share international",
     "Share of workers in arts, design, entertainment & media",
     "Share of workers in management, business, science & arts",
     "Museums & historical sites per 10,000 people",
