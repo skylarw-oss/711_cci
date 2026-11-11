@@ -34,10 +34,10 @@ capital_info <- data.frame(
   method = c("PCA", 
              "PCA", 
              "PCA", 
-             "Z-score average",
-             "Z-score average", 
-             "Z-score average", 
-             "Z-score average"),
+             "PCA",
+             "PCA", 
+             "PCA", 
+             "PCA"),
   description = c(
     "Money and financial resources available in the community for investment, savings, and local government.",
     "Physical infrastructure like housing, public services, broadband, hospitals, and businesses.",
@@ -55,20 +55,20 @@ capital_info$notes <- c(
   "First principal component of the variables (following Schmitt).",
   "Concept draft says EFA/CFA, but with only 14 counties we use PCA for now.",
   "Variables are z-scored and averaged with equal weights (following Taylor).",
-  "Variables are z-scored and averaged with equal weights.",
-  "Variables are z-scored and averaged with equal weights (variables from Schmitt).",
-  "Variables are z-scored and averaged with equal weights.",
-  "Variables are z-scored and averaged with equal weights."
+  "First principal component of the standardized variables.",
+  "First principal component of the standardized variables.",
+  "First principal component of the standardized variables.",
+  "First principal component of the standardized variables."
 )
 
 var_info <- data.frame(
   capital = c(rep("Financial", 8),
               rep("Built", 8), 
               rep("Political", 5),
-              rep("Social", 4), 
-              rep("Natural", 4), 
-              rep("Human", 4),
-              rep("Cultural", 3)),
+              rep("Social", 7), 
+              rep("Natural", 3), 
+              rep("Human", 9),
+              rep("Cultural", 8)),
   variable = c(
     # Financial
     "Population",
@@ -98,27 +98,39 @@ var_info <- data.frame(
     "Total Value of Political Contributions",
     
     # Social
-    "Associations per capita", 
-    "Nonprofits per 1,000 people",
-    "% living in same county 5+ years", 
-    "Homeownership rate",
+    "Homeownership Rate (%)",
+    "% Born in State",
+    "% Long-Term Residents",
+    "Ethnic Fractionalization Index",
+    "% Family Households",
+    "Associations per 1,000 People",
+    "Nonprofits per 1,000 People",
     
     # Natural
-    "USDA natural amenities scale", 
-    "% acres prime farmland",
-    "% acres in conservation", 
-    "% acres in National Forest",
+    "% Area Covered by Water",
+    "% Land in Farms",
+    "Crop Sales per Acre ($)",
     
     # Human
-    "% with high school diploma", 
-    "% with bachelor's degree",
-    "% with health insurance", 
-    "Primary care physicians per 10,000",
+    "% Bachelor's Degree or Higher",
+    "% High School Graduate or Higher",
+    "% High School Diploma Only",
+    "Labor Force Participation Rate (%)",
+    "% Employed",
+    "% Population Aged 18-64",
+    "% Ages 16-19 Dropped Out",
+    "% Uninsured (Ages 18-64)",
+    "% Uninsured (All Ages)",
     
     # Cultural
-    "Arts organizations per 1,000", 
-    "Public libraries per 10,000",
-    "Historic sites (NRHP)"
+    "Average Household Size",
+    "% Minority Population",
+    "% Foreign Born",
+    "% Limited English Proficiency",
+    "% Workers in Arts",
+    "% in Creative Occupations",
+    "Museums per 10,000 People",
+    "Performing Arts Organizations per 10,000 People"
   ),
   source = c(
     "Census ACS",
@@ -145,24 +157,8 @@ var_info <- data.frame(
     "Campaign Finance System of VT", 
     "Campaign Finance System of VT", 
     
-    "Fake", 
-    "Fake",
-    "Fake", 
-    "Fake",
-    
-    "Fake", 
-    "Fake",
-    "Fake", 
-    "Fake", 
-    
-    "Fake",
-    "Fake",
-    "Fake",
-    "Fake",
-    
-    "Fake",
-    "Fake",
-    "Fake"
+    # Social, Natural, Human, Cultural: county_capitals_2024.csv
+    rep("County Capitals 2024", 7 + 3 + 9 + 8)
   ),
   stringsAsFactors = FALSE
 )
@@ -174,7 +170,7 @@ for (v in var_info$variable) {
   fake_data[[v]] <- round(rnorm(length(counties), mean = 50, sd = 10), 1)
 }
 
-# add real data for financial, built, and political data
+# add real data for built, political, social, natural, human, and cultural
 # Map app variable names -> column names in your CSVs
 col_map <- list(
   Built = c(
@@ -193,14 +189,53 @@ col_map <- list(
     "Median Value of Political Contributions"    = "median_value_of_contribution",
     "Total Number of Contributions"              = "num_contributions",
     "Total Value of Political Contributions"     = "total_contribution"
+  ),
+  Social = c(
+    "Homeownership Rate (%)"         = "homeown",
+    "% Born in State"                = "native_state",
+    "% Long-Term Residents"          = "longterm_res",
+    "Ethnic Fractionalization Index" = "ethnic_frac",
+    "% Family Households"            = "family_hh",
+    "Associations per 1,000 People"  = "associations_per1k",
+    "Nonprofits per 1,000 People"    = "nonprofits_per1k"
+  ),
+  Natural = c(
+    "% Area Covered by Water" = "water_share",
+    "% Land in Farms"         = "farm_land_share",
+    "Crop Sales per Acre ($)" = "crop_sales_per_acre"
+  ),
+  Human = c(
+    "% Bachelor's Degree or Higher"      = "bach_plus",
+    "% High School Graduate or Higher"   = "hs_or_higher",
+    "% High School Diploma Only"         = "hs_only",
+    "Labor Force Participation Rate (%)" = "lfp",
+    "% Employed"                         = "employed",
+    "% Population Aged 18-64"            = "pop_18_64",
+    "% Ages 16-19 Dropped Out"           = "dropout_16_19",
+    "% Uninsured (Ages 18-64)"           = "uninsured_18_64",
+    "% Uninsured (All Ages)"             = "uninsured"
+  ),
+  Cultural = c(
+    "Average Household Size"                          = "hh_size",
+    "% Minority Population"                           = "minority_share",
+    "% Foreign Born"                                  = "foreign_born",
+    "% Limited English Proficiency"                   = "limited_english",
+    "% Workers in Arts"                               = "arts_workers",
+    "% in Creative Occupations"                       = "creative_occ",
+    "Museums per 10,000 People"                       = "museums_per10k",
+    "Performing Arts Organizations per 10,000 People" = "perf_arts_per10k"
   )
 )
 
-real_caps <- c("Built", "Political")
+real_caps <- c("Built", "Political", "Social", "Natural", "Human", "Cultural")
 
 real_files <- c(
-  Built     = "~/Desktop/STAT 711/vt_built_6.csv",
-  Political = "~/Desktop/STAT 711/vt_political_2.csv"
+  Built     = "vt_built_6.csv",
+  Political = "vt_political_2.csv",
+  Social    = "county_capitals_2024.csv",
+  Natural   = "county_capitals_2024.csv",
+  Human     = "county_capitals_2024.csv",
+  Cultural  = "county_capitals_2024.csv"
 )
 
 for (cap in real_caps) {
@@ -208,7 +243,15 @@ for (cap in real_caps) {
   
   # Accept "County" or "county"
   names(d)[tolower(names(d)) == "county"] <- "county"
-  d$county <- trimws(d$county)
+  
+  # The combined capitals file covers every state; keep Vermont only
+  names(d)[tolower(names(d)) == "state"] <- "state"
+  if ("state" %in% names(d)) {
+    d <- d[trimws(d$state) == "Vermont", , drop = FALSE]
+  }
+  
+  # Drop a trailing " County" (or " County, Vermont") so names match `counties`
+  d$county <- trimws(sub(" County.*$", "", trimws(d$county)))
   
   # Align rows to the order of `counties`
   d <- d[match(counties, d$county), , drop = FALSE]
@@ -231,7 +274,15 @@ for (cap in real_caps) {
   }
   
   for (v in vars) {
-    fake_data[[v]] <- as.numeric(d[[ src[[v]] ]])
+    x <- as.numeric(d[[ src[[v]] ]])
+    # PCA can't handle missing values; fill any gaps with the Vermont mean
+    if (anyNA(x)) {
+      warning("Missing values in '", v, "' for: ",
+              paste(counties[is.na(x)], collapse = ", "),
+              ". Filled with the Vermont county mean.")
+      x[is.na(x)] <- mean(x, na.rm = TRUE)
+    }
+    fake_data[[v]] <- x
   }
 }
 
@@ -265,7 +316,7 @@ ui <- navbarPage(
                h3("Community Capitals Index for Vermont Counties"),
                p("Adjust the weights for each capital on the left to see how the overall index changes across counties.
         Hover over a county to see its index value and ranking. See the Cover Page tab for more about the project."),
-               p(em("Note: this version uses fake data."))
+               p(em("Note: Financial capital still uses fake data; all other capitals use real data."))
            ),
            
            fluidRow(
@@ -289,7 +340,6 @@ ui <- navbarPage(
            
            hr(),
            
-           # ---- Capital deep dive ----
            # ---- Capital deep dive ----
            h3("Capital Deep Dive"),
            fluidRow(
@@ -537,7 +587,7 @@ server <- function(input, output, session) {
     barplot(scores[ord], names.arg = counties[ord], las = 2,
             col = "#8bc4a8", ylab = "Score", ylim = c(0, 100))
   })
- 
+  
   
   # cover page tables 
   output$cap_desc_table <- renderTable({
