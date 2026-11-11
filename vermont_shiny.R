@@ -161,7 +161,7 @@ var_info <- data.frame(
 
 # How each county_capitals_2024.csv variable was built from the raw files
 var_info$definition <- ""
-var_info$definition[match(c(
+var_info$definition <- c(
   "Homeownership rate",
   "Share born in state of residence",
   "Share of households in home since before 2000",
@@ -183,8 +183,9 @@ var_info$definition[match(c(
   "Share of workers in arts, design, entertainment & media",
   "Share of workers in management, business, science & arts",
   "Museums & historical sites per 10,000 people",
-  "Performing arts companies & independent artists per 10,000 people"
-), var_info$variable)] <- c(
+  "Performing arts companies & independent artists per 10,000 people")
+  
+var_info$variable) <- c(
   "Owner-occupied / all occupied housing units",
   "Residents born in their current state / total population",
   "Households that moved in before 2000 / all households",
