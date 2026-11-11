@@ -299,7 +299,7 @@ col_map <- list(
   ),
   Cultural = c(
     "Racial/ethnic fractionalization"                                   = "ethnic_frac",
-    "Share international"                                               = "international",
+    "Share international"                                               = "foreign_born",
     "Share of workers in arts, design, entertainment & media"           = "arts_workers",
     "Share of workers in management, business, science & arts"          = "creative_occ",
     "Museums & historical sites per 10,000 people"                      = "museums_per10k",
