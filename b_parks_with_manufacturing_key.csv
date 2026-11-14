@@ -1,0 +1,3144 @@
+State,County,pct_access_to_parks,County_mfg_key,match_type
+Alabama,Autauga,26.3,Autauga,exact
+Alabama,Baldwin,18.2,Baldwin,exact
+Alabama,Barbour,22.0,Barbour,exact
+Alabama,Bibb,25.8,Bibb,exact
+Alabama,Blount,1.9,Blount,exact
+Alabama,Bullock,0.7,Bullock,exact
+Alabama,Butler,4.6,Butler,exact
+Alabama,Calhoun,28.6,Calhoun,exact
+Alabama,Chambers,11.0,Chambers,exact
+Alabama,Cherokee,7.8,Cherokee,exact
+Alabama,Chilton,6.2,Chilton,exact
+Alabama,Choctaw,0.3,Choctaw,exact
+Alabama,Clarke,3.0,Clarke,exact
+Alabama,Clay,42.3,Clay,exact
+Alabama,Cleburne,40.0,Cleburne,exact
+Alabama,Coffee,6.3,Coffee,exact
+Alabama,Colbert,20.7,Colbert,exact
+Alabama,Conecuh,0.5,Conecuh,exact
+Alabama,Coosa,1.8,Coosa,exact
+Alabama,Covington,17.8,Covington,exact
+Alabama,Crenshaw,0.2,Crenshaw,exact
+Alabama,Cullman,8.9,Cullman,exact
+Alabama,Dale,5.6,Dale,exact
+Alabama,Dallas,29.1,Dallas,exact
+Alabama,Dekalb,9.8,DeKalb,exact-after-normalizing
+Alabama,Elmore,8.2,Elmore,exact
+Alabama,Escambia,9.1,Escambia,exact
+Alabama,Etowah,26.5,Etowah,exact
+Alabama,Fayette,0.7,Fayette,exact
+Alabama,Franklin,7.9,Franklin,exact
+Alabama,Geneva,3.7,Geneva,exact
+Alabama,Greene,0.2,Greene,exact
+Alabama,Hale,13.9,Hale,exact
+Alabama,Henry,4.4,Henry,exact
+Alabama,Houston,18.1,Houston,exact
+Alabama,Jackson,16.5,Jackson,exact
+Alabama,Jefferson,41.8,Jefferson,exact
+Alabama,Lamar,0.0,Lamar,exact
+Alabama,Lauderdale,22.9,Lauderdale,exact
+Alabama,Lawrence,15.8,Lawrence,exact
+Alabama,Lee,22.7,Lee,exact
+Alabama,Limestone,10.3,Limestone,exact
+Alabama,Lowndes,1.0,Lowndes,exact
+Alabama,Macon,23.9,Macon,exact
+Alabama,Madison,44.1,Madison,exact
+Alabama,Marengo,6.4,Marengo,exact
+Alabama,Marion,0.3,Marion,exact
+Alabama,Marshall,8.7,Marshall,exact
+Alabama,Mobile,37.7,Mobile,exact
+Alabama,Monroe,9.3,Monroe,exact
+Alabama,Montgomery,33.1,Montgomery,exact
+Alabama,Morgan,34.5,Morgan,exact
+Alabama,Perry,8.0,Perry,exact
+Alabama,Pickens,0.1,Pickens,exact
+Alabama,Pike,5.4,Pike,exact
+Alabama,Randolph,1.2,Randolph,exact
+Alabama,Russell,29.9,Russell,exact
+Alabama,Shelby,24.5,Shelby,exact
+Alabama,St. Clair,2.7,St. Clair,exact
+Alabama,Sumter,0.1,Sumter,exact
+Alabama,Talladega,29.3,Talladega,exact
+Alabama,Tallapoosa,4.3,Tallapoosa,exact
+Alabama,Tuscaloosa,27.7,Tuscaloosa,exact
+Alabama,Walker,4.9,Walker,exact
+Alabama,Washington,0.0,Washington,exact
+Alabama,Wilcox,14.9,Wilcox,exact
+Alabama,Winston,54.5,Winston,exact
+Alaska,Aleutians East,56.2,Aleutians East Borough,exact-after-normalizing
+Alaska,Aleutians West,6.8,Aleutians West Census Area,exact-after-normalizing
+Alaska,Anchorage,91.5,Anchorage Municipality,exact-after-normalizing
+Alaska,Bethel,92.7,,no match
+Alaska,Bristol Bay,34.4,Bristol Bay Borough,exact-after-normalizing
+Alaska,Chugach,88.3,Chugach Census Area,exact-after-normalizing
+Alaska,Copper River,72.4,,no match
+Alaska,Denali,59.6,,no match
+Alaska,Dillingham,52.9,Dillingham Census Area,exact-after-normalizing
+Alaska,Fairbanks North Star,33.6,Fairbanks North Star Borough,exact-after-normalizing
+Alaska,Haines,69.7,Haines Borough,exact-after-normalizing
+Alaska,Hoonah-Angoon Census Area,98.6,,no match
+Alaska,Juneau,100.0,Juneau City and Borough,exact-after-normalizing
+Alaska,Kenai Peninsula,40.2,Kenai Peninsula Borough,exact-after-normalizing
+Alaska,Ketchikan Gateway,84.5,Ketchikan Gateway Borough,exact-after-normalizing
+Alaska,Kodiak Island,96.2,Kodiak Island Borough,exact-after-normalizing
+Alaska,Kusilvak,98.4,,no match
+Alaska,Lake And Peninsula,57.2,,no match
+Alaska,Matanuska-Susitna,26.7,Matanuska-Susitna Borough,exact-after-normalizing
+Alaska,Nome,35.0,Nome Census Area,exact-after-normalizing
+Alaska,North Slope,18.8,,no match
+Alaska,Northwest Arctic,64.5,,no match
+Alaska,Petersburg Census Area,99.7,Petersburg Borough,exact-after-normalizing
+Alaska,Prince Of Wales-Hyder Census Area,54.4,Prince of Wales-Hyder Census Area,exact-after-normalizing
+Alaska,Sitka,99.7,Sitka City and Borough,exact-after-normalizing
+Alaska,Skagway Municipality,87.2,Skagway Municipality,exact
+Alaska,Southeast Fairbanks,26.0,Southeast Fairbanks Census Area,exact-after-normalizing
+Alaska,Wrangell City And Burrough,100.0,Wrangell City and Borough,exact-after-normalizing
+Alaska,Yakutat,91.1,,no match
+Alaska,Yukon-Koyukuk,66.6,,no match
+Arizona,Apache,13.6,Apache,exact
+Arizona,Cochise,48.1,Cochise,exact
+Arizona,Coconino,69.1,Coconino,exact
+Arizona,Gila,81.2,Gila,exact
+Arizona,Graham,62.0,Graham,exact
+Arizona,Greenlee,78.4,,no match
+Arizona,La Paz,70.8,La Paz,exact
+Arizona,Maricopa,68.0,Maricopa,exact
+Arizona,Mohave,49.5,Mohave,exact
+Arizona,Navajo,39.0,Navajo,exact
+Arizona,Pima,64.2,Pima,exact
+Arizona,Pinal,29.6,Pinal,exact
+Arizona,Santa Cruz,46.2,Santa Cruz,exact
+Arizona,Yavapai,65.3,Yavapai,exact
+Arizona,Yuma,44.4,Yuma,exact
+Arkansas,Arkansas,15.1,Arkansas,exact
+Arkansas,Ashley,11.6,Ashley,exact
+Arkansas,Baxter,30.5,Baxter,exact
+Arkansas,Benton,30.7,Benton,exact
+Arkansas,Boone,15.7,Boone,exact
+Arkansas,Bradley,3.9,Bradley,exact
+Arkansas,Calhoun,0.3,,no match
+Arkansas,Carroll,10.9,Carroll,exact
+Arkansas,Chicot,4.5,,no match
+Arkansas,Clark,28.8,Clark,exact
+Arkansas,Clay,11.2,Clay,exact
+Arkansas,Cleburne,31.4,Cleburne,exact
+Arkansas,Cleveland,0.3,Cleveland,exact
+Arkansas,Columbia,15.9,Columbia,exact
+Arkansas,Conway,20.0,Conway,exact
+Arkansas,Craighead,20.2,Craighead,exact
+Arkansas,Crawford,32.3,Crawford,exact
+Arkansas,Crittenden,44.2,Crittenden,exact
+Arkansas,Cross,11.4,Cross,exact
+Arkansas,Dallas,5.8,Dallas,exact
+Arkansas,Desha,7.8,Desha,exact
+Arkansas,Drew,6.7,Drew,exact
+Arkansas,Faulkner,22.8,Faulkner,exact
+Arkansas,Franklin,31.4,Franklin,exact
+Arkansas,Fulton,3.1,Fulton,exact
+Arkansas,Garland,39.9,Garland,exact
+Arkansas,Grant,7.7,Grant,exact
+Arkansas,Greene,20.7,Greene,exact
+Arkansas,Hempstead,14.0,Hempstead,exact
+Arkansas,Hot Spring,8.2,Hot Spring,exact
+Arkansas,Howard,16.5,Howard,exact
+Arkansas,Independence,4.0,Independence,exact
+Arkansas,Izard,3.3,Izard,exact
+Arkansas,Jackson,11.2,Jackson,exact
+Arkansas,Jefferson,16.8,Jefferson,exact
+Arkansas,Johnson,47.5,Johnson,exact
+Arkansas,Lafayette,6.8,Lafayette,exact
+Arkansas,Lawrence,11.2,Lawrence,exact
+Arkansas,Lee,14.3,Lee,exact
+Arkansas,Lincoln,9.4,Lincoln,exact
+Arkansas,Little River,6.5,Little River,exact
+Arkansas,Logan,42.8,Logan,exact
+Arkansas,Lonoke,14.0,Lonoke,exact
+Arkansas,Madison,17.6,Madison,exact
+Arkansas,Marion,32.8,Marion,exact
+Arkansas,Miller,37.5,Miller,exact
+Arkansas,Mississippi,15.0,Mississippi,exact
+Arkansas,Monroe,47.1,Monroe,exact
+Arkansas,Montgomery,97.6,Montgomery,exact
+Arkansas,Nevada,6.3,Nevada,exact
+Arkansas,Newton,60.3,Newton,exact
+Arkansas,Ouachita,11.3,Ouachita,exact
+Arkansas,Perry,44.5,Perry,exact
+Arkansas,Phillips,24.8,Phillips,exact
+Arkansas,Pike,13.3,Pike,exact
+Arkansas,Poinsett,13.0,Poinsett,exact
+Arkansas,Polk,43.0,Polk,exact
+Arkansas,Pope,34.1,Pope,exact
+Arkansas,Prairie,15.7,,no match
+Arkansas,Pulaski,52.9,Pulaski,exact
+Arkansas,Randolph,8.7,Randolph,exact
+Arkansas,Saline,11.8,Saline,exact
+Arkansas,Scott,57.8,Scott,exact
+Arkansas,Searcy,25.0,Searcy,exact
+Arkansas,Sebastian,33.9,Sebastian,exact
+Arkansas,Sevier,26.5,Sevier,exact
+Arkansas,Sharp,17.8,Sharp,exact
+Arkansas,St. Francis,11.7,St. Francis,exact
+Arkansas,Stone,22.9,Stone,exact
+Arkansas,Union,12.1,Union,exact
+Arkansas,Van Buren,23.0,Van Buren,exact
+Arkansas,Washington,45.1,Washington,exact
+Arkansas,White,16.6,White,exact
+Arkansas,Woodruff,27.8,Woodruff,exact
+Arkansas,Yell,59.2,Yell,exact
+California,Alameda,94.2,Alameda,exact
+California,Alpine,99.5,,no match
+California,Amador,29.4,Amador,exact
+California,Butte,62.6,Butte,exact
+California,Calaveras,43.6,Calaveras,exact
+California,Colusa,18.5,Colusa,exact
+California,Contra Costa,80.6,Contra Costa,exact
+California,Del Norte,73.4,Del Norte,exact
+California,El Dorado,71.8,El Dorado,exact
+California,Fresno,69.6,Fresno,exact
+California,Glenn,37.8,Glenn,exact
+California,Humboldt,59.1,Humboldt,exact
+California,Imperial,64.0,Imperial,exact
+California,Inyo,98.3,Inyo,exact
+California,Kern,59.5,Kern,exact
+California,Kings,43.1,Kings,exact
+California,Lake,45.6,Lake,exact
+California,Lassen,66.5,,no match
+California,Los Angeles,82.8,Los Angeles,exact
+California,Madera,39.4,Madera,exact
+California,Marin,95.6,Marin,exact
+California,Mariposa,52.9,Mariposa,exact
+California,Mendocino,45.4,Mendocino,exact
+California,Merced,55.5,Merced,exact
+California,Modoc,63.8,Modoc,exact
+California,Mono,99.6,Mono,exact
+California,Monterey,75.0,Monterey,exact
+California,Napa,75.5,Napa,exact
+California,Nevada,53.2,Nevada,exact
+California,Orange,91.3,Orange,exact
+California,Placer,74.1,Placer,exact
+California,Plumas,91.5,Plumas,exact
+California,Riverside,65.7,Riverside,exact
+California,Sacramento,89.7,Sacramento,exact
+California,San Benito,54.9,San Benito,exact
+California,San Bernardino,63.1,San Bernardino,exact
+California,San Diego,84.3,San Diego,exact
+California,San Francisco,100.0,San Francisco,exact
+California,San Joaquin,77.9,San Joaquin,exact
+California,San Luis Obispo,60.9,San Luis Obispo,exact
+California,San Mateo,92.4,San Mateo,exact
+California,Santa Barbara,82.5,Santa Barbara,exact
+California,Santa Clara,93.0,Santa Clara,exact
+California,Santa Cruz,85.8,Santa Cruz,exact
+California,Shasta,58.5,Shasta,exact
+California,Sierra,94.8,,no match
+California,Siskiyou,69.6,Siskiyou,exact
+California,Solano,75.1,Solano,exact
+California,Sonoma,67.2,Sonoma,exact
+California,Stanislaus,73.7,Stanislaus,exact
+California,Sutter,46.3,Sutter,exact
+California,Tehama,30.9,Tehama,exact
+California,Trinity,95.7,Trinity,exact
+California,Tulare,51.3,Tulare,exact
+California,Tuolumne,62.0,Tuolumne,exact
+California,Ventura,82.1,Ventura,exact
+California,Yolo,78.3,Yolo,exact
+California,Yuba,56.0,Yuba,exact
+Colorado,Adams,90.8,Adams,exact
+Colorado,Alamosa,37.7,Alamosa,exact
+Colorado,Arapahoe,94.0,Arapahoe,exact
+Colorado,Archuleta,76.3,Archuleta,exact
+Colorado,Baca,26.6,,no match
+Colorado,Bent,28.9,,no match
+Colorado,Boulder,89.3,Boulder,exact
+Colorado,Broomfield,96.9,Broomfield,exact
+Colorado,Chaffee,98.0,Chaffee,exact
+Colorado,Cheyenne,0.1,,no match
+Colorado,Clear Creek,87.0,Clear Creek,exact
+Colorado,Conejos,68.9,Conejos,exact
+Colorado,Costilla,51.8,Costilla,exact
+Colorado,Crowley,6.4,,no match
+Colorado,Custer,81.6,Custer,exact
+Colorado,Delta,65.6,Delta,exact
+Colorado,Denver,98.8,Denver,exact
+Colorado,Dolores,76.8,Dolores,exact
+Colorado,Douglas,72.0,Douglas,exact
+Colorado,Eagle,96.4,Eagle,exact
+Colorado,El Paso,72.9,El Paso,exact
+Colorado,Elbert,0.7,Elbert,exact
+Colorado,Fremont,46.0,Fremont,exact
+Colorado,Garfield,84.1,Garfield,exact
+Colorado,Gilpin,90.1,Gilpin,exact
+Colorado,Grand,86.0,Grand,exact
+Colorado,Gunnison,88.0,Gunnison,exact
+Colorado,Hinsdale,99.9,,no match
+Colorado,Huerfano,36.6,,no match
+Colorado,Jackson,83.0,,no match
+Colorado,Jefferson,95.0,Jefferson,exact
+Colorado,Kiowa,3.8,,no match
+Colorado,Kit Carson,0.3,Kit Carson,exact
+Colorado,La Plata,70.9,La Plata,exact
+Colorado,Lake,94.7,Lake,exact
+Colorado,Larimer,87.0,Larimer,exact
+Colorado,Las Animas,38.3,Las Animas,exact
+Colorado,Lincoln,0.7,Lincoln,exact
+Colorado,Logan,27.0,Logan,exact
+Colorado,Mesa,76.4,Mesa,exact
+Colorado,Mineral,100.0,,no match
+Colorado,Moffat,45.7,Moffat,exact
+Colorado,Montezuma,57.5,Montezuma,exact
+Colorado,Montrose,81.0,Montrose,exact
+Colorado,Morgan,28.9,Morgan,exact
+Colorado,Otero,31.1,Otero,exact
+Colorado,Ouray,67.5,Ouray,exact
+Colorado,Park,73.9,Park,exact
+Colorado,Phillips,0.7,Phillips,exact
+Colorado,Pitkin,94.6,Pitkin,exact
+Colorado,Prowers,53.1,Prowers,exact
+Colorado,Pueblo,72.1,Pueblo,exact
+Colorado,Rio Blanco,92.3,Rio Blanco,exact
+Colorado,Rio Grande,39.7,Rio Grande,exact
+Colorado,Routt,58.6,Routt,exact
+Colorado,Saguache,75.5,Saguache,exact
+Colorado,San Juan,100.0,San Juan,exact
+Colorado,San Miguel,89.8,San Miguel,exact
+Colorado,Sedgwick,5.3,Sedgwick,exact
+Colorado,Summit,100.0,Summit,exact
+Colorado,Teller,75.8,Teller,exact
+Colorado,Washington,1.0,Washington,exact
+Colorado,Weld,57.1,Weld,exact
+Colorado,Yuma,2.1,Yuma,exact
+Connecticut,Fairfield,87.3,,no match
+Connecticut,Hartford,90.6,,no match
+Connecticut,Litchfield,59.4,,no match
+Connecticut,Middlesex,80.5,,no match
+Connecticut,New Haven,82.8,,no match
+Connecticut,New London,66.4,,no match
+Connecticut,Tolland,69.4,,no match
+Connecticut,Windham,58.2,,no match
+Delaware,Kent,37.8,Kent,exact
+Delaware,New Castle,83.6,New Castle,exact
+Delaware,Sussex,25.3,Sussex,exact
+District of Columbia,District Of Columbia,99.8,District of Columbia,exact-after-normalizing
+Florida,Alachua,53.3,Alachua,exact
+Florida,Baker,26.0,Baker,exact
+Florida,Bay,35.5,Bay,exact
+Florida,Bradford,21.5,Bradford,exact
+Florida,Brevard,50.8,Brevard,exact
+Florida,Broward,84.2,Broward,exact
+Florida,Calhoun,5.1,Calhoun,exact
+Florida,Charlotte,59.5,Charlotte,exact
+Florida,Citrus,40.0,Citrus,exact
+Florida,Clay,29.9,Clay,exact
+Florida,Collier,41.0,Collier,exact
+Florida,Columbia,22.2,Columbia,exact
+Florida,Desoto,16.3,DeSoto,exact-after-normalizing
+Florida,Dixie,16.0,Dixie,exact
+Florida,Duval,59.9,Duval,exact
+Florida,Escambia,53.6,Escambia,exact
+Florida,Flagler,55.8,Flagler,exact
+Florida,Franklin,74.4,,no match
+Florida,Gadsden,13.6,Gadsden,exact
+Florida,Gilchrist,14.5,Gilchrist,exact
+Florida,Glades,20.1,Glades,exact
+Florida,Gulf,28.2,Gulf,exact
+Florida,Hamilton,16.7,Hamilton,exact
+Florida,Hardee,17.2,Hardee,exact
+Florida,Hendry,30.4,Hendry,exact
+Florida,Hernando,30.1,Hernando,exact
+Florida,Highlands,26.9,Highlands,exact
+Florida,Hillsborough,61.6,Hillsborough,exact
+Florida,Holmes,8.7,Holmes,exact
+Florida,Indian River,53.5,Indian River,exact
+Florida,Jackson,19.0,Jackson,exact
+Florida,Jefferson,14.5,Jefferson,exact
+Florida,Lafayette,17.7,Lafayette,exact
+Florida,Lake,31.5,Lake,exact
+Florida,Lee,48.3,Lee,exact
+Florida,Leon,57.6,Leon,exact
+Florida,Levy,26.5,Levy,exact
+Florida,Liberty,59.6,Liberty,exact
+Florida,Madison,6.0,Madison,exact
+Florida,Manatee,40.4,Manatee,exact
+Florida,Marion,23.8,Marion,exact
+Florida,Martin,65.0,Martin,exact
+Florida,Miami-Dade,82.6,Miami-Dade,exact
+Florida,Monroe,89.8,Monroe,exact
+Florida,Nassau,37.9,Nassau,exact
+Florida,Okaloosa,38.7,Okaloosa,exact
+Florida,Okeechobee,20.1,Okeechobee,exact
+Florida,Orange,45.2,Orange,exact
+Florida,Osceola,36.3,Osceola,exact
+Florida,Palm Beach,62.0,Palm Beach,exact
+Florida,Pasco,34.7,Pasco,exact
+Florida,Pinellas,78.9,Pinellas,exact
+Florida,Polk,33.4,Polk,exact
+Florida,Putnam,35.8,Putnam,exact
+Florida,Santa Rosa,29.0,Santa Rosa,exact
+Florida,Sarasota,61.4,Sarasota,exact
+Florida,Seminole,58.1,Seminole,exact
+Florida,St. Johns,38.2,St. Johns,exact
+Florida,St. Lucie,53.5,St. Lucie,exact
+Florida,Sumter,12.8,Sumter,exact
+Florida,Suwannee,8.2,Suwannee,exact
+Florida,Taylor,14.9,Taylor,exact
+Florida,Union,9.2,Union,exact
+Florida,Volusia,59.0,Volusia,exact
+Florida,Wakulla,69.4,Wakulla,exact
+Florida,Walton,29.4,Walton,exact
+Florida,Washington,19.7,Washington,exact
+Georgia,Appling,6.4,Appling,exact
+Georgia,Atkinson,1.3,Atkinson,exact
+Georgia,Bacon,1.5,Bacon,exact
+Georgia,Baker,5.4,,no match
+Georgia,Baldwin,21.0,Baldwin,exact
+Georgia,Banks,19.3,Banks,exact
+Georgia,Barrow,19.1,Barrow,exact
+Georgia,Bartow,22.7,Bartow,exact
+Georgia,Ben Hill,14.8,Ben Hill,exact
+Georgia,Berrien,3.4,Berrien,exact
+Georgia,Bibb,31.2,Bibb,exact
+Georgia,Bleckley,9.9,Bleckley,exact
+Georgia,Brantley,7.3,Brantley,exact
+Georgia,Brooks,1.9,Brooks,exact
+Georgia,Bryan,35.2,Bryan,exact
+Georgia,Bulloch,15.3,Bulloch,exact
+Georgia,Burke,7.5,Burke,exact
+Georgia,Butts,7.5,Butts,exact
+Georgia,Calhoun,5.3,,no match
+Georgia,Camden,22.0,Camden,exact
+Georgia,Candler,1.3,Candler,exact
+Georgia,Carroll,14.8,Carroll,exact
+Georgia,Catoosa,29.3,Catoosa,exact
+Georgia,Charlton,41.5,Charlton,exact
+Georgia,Chatham,49.7,Chatham,exact
+Georgia,Chattahoochee,17.0,,no match
+Georgia,Chattooga,33.0,Chattooga,exact
+Georgia,Cherokee,41.2,Cherokee,exact
+Georgia,Clarke,59.2,Clarke,exact
+Georgia,Clay,22.4,,no match
+Georgia,Clayton,41.5,Clayton,exact
+Georgia,Clinch,2.8,Clinch,exact
+Georgia,Cobb,49.4,Cobb,exact
+Georgia,Coffee,9.2,Coffee,exact
+Georgia,Colquitt,20.1,Colquitt,exact
+Georgia,Columbia,23.2,Columbia,exact
+Georgia,Cook,4.0,Cook,exact
+Georgia,Coweta,11.7,Coweta,exact
+Georgia,Crawford,0.5,Crawford,exact
+Georgia,Crisp,8.9,Crisp,exact
+Georgia,Dade,10.8,Dade,exact
+Georgia,Dawson,46.6,Dawson,exact
+Georgia,Decatur,17.3,Decatur,exact
+Georgia,Dekalb,67.6,DeKalb,exact-after-normalizing
+Georgia,Dodge,3.3,Dodge,exact
+Georgia,Dooly,2.9,Dooly,exact
+Georgia,Dougherty,55.7,Dougherty,exact
+Georgia,Douglas,31.1,Douglas,exact
+Georgia,Early,6.5,Early,exact
+Georgia,Echols,0.2,,no match
+Georgia,Effingham,12.7,Effingham,exact
+Georgia,Elbert,29.5,Elbert,exact
+Georgia,Emanuel,7.2,Emanuel,exact
+Georgia,Evans,5.2,Evans,exact
+Georgia,Fannin,67.2,Fannin,exact
+Georgia,Fayette,43.3,Fayette,exact
+Georgia,Floyd,28.3,Floyd,exact
+Georgia,Forsyth,29.6,Forsyth,exact
+Georgia,Franklin,13.1,Franklin,exact
+Georgia,Fulton,71.1,Fulton,exact
+Georgia,Gilmer,62.9,Gilmer,exact
+Georgia,Glascock,0.8,,no match
+Georgia,Glynn,32.6,Glynn,exact
+Georgia,Gordon,13.6,Gordon,exact
+Georgia,Grady,3.7,Grady,exact
+Georgia,Greene,23.0,Greene,exact
+Georgia,Gwinnett,31.9,Gwinnett,exact
+Georgia,Habersham,35.3,Habersham,exact
+Georgia,Hall,46.1,Hall,exact
+Georgia,Hancock,3.7,Hancock,exact
+Georgia,Haralson,4.9,Haralson,exact
+Georgia,Harris,8.4,Harris,exact
+Georgia,Hart,37.3,Hart,exact
+Georgia,Heard,13.5,Heard,exact
+Georgia,Henry,18.8,Henry,exact
+Georgia,Houston,22.6,Houston,exact
+Georgia,Irwin,1.2,Irwin,exact
+Georgia,Jackson,8.3,Jackson,exact
+Georgia,Jasper,29.9,Jasper,exact
+Georgia,Jeff Davis,17.2,Jeff Davis,exact
+Georgia,Jefferson,1.4,Jefferson,exact
+Georgia,Jenkins,2.9,Jenkins,exact
+Georgia,Johnson,0.8,Johnson,exact
+Georgia,Jones,14.8,Jones,exact
+Georgia,Lamar,4.7,Lamar,exact
+Georgia,Lanier,12.1,Lanier,exact
+Georgia,Laurens,18.7,Laurens,exact
+Georgia,Lee,9.3,Lee,exact
+Georgia,Liberty,12.0,Liberty,exact
+Georgia,Lincoln,59.8,Lincoln,exact
+Georgia,Long,23.3,,no match
+Georgia,Lowndes,38.0,Lowndes,exact
+Georgia,Lumpkin,33.4,Lumpkin,exact
+Georgia,Macon,4.5,Macon,exact
+Georgia,Madison,4.8,Madison,exact
+Georgia,Marion,0.3,Marion,exact
+Georgia,Mcduffie,10.6,McDuffie,exact-after-normalizing
+Georgia,Mcintosh,44.1,McIntosh,exact-after-normalizing
+Georgia,Meriwether,10.3,Meriwether,exact
+Georgia,Miller,11.3,Miller,exact
+Georgia,Mitchell,3.4,Mitchell,exact
+Georgia,Monroe,11.5,Monroe,exact
+Georgia,Montgomery,1.9,Montgomery,exact
+Georgia,Morgan,9.6,Morgan,exact
+Georgia,Murray,33.3,Murray,exact
+Georgia,Muscogee,50.9,Muscogee,exact
+Georgia,Newton,11.6,Newton,exact
+Georgia,Oconee,7.1,Oconee,exact
+Georgia,Oglethorpe,7.2,Oglethorpe,exact
+Georgia,Paulding,19.9,Paulding,exact
+Georgia,Peach,3.8,Peach,exact
+Georgia,Pickens,6.2,Pickens,exact
+Georgia,Pierce,5.5,Pierce,exact
+Georgia,Pike,1.5,Pike,exact
+Georgia,Polk,10.2,Polk,exact
+Georgia,Pulaski,35.8,Pulaski,exact
+Georgia,Putnam,35.4,Putnam,exact
+Georgia,Quitman,16.0,,no match
+Georgia,Rabun,100.0,Rabun,exact
+Georgia,Randolph,1.1,Randolph,exact
+Georgia,Richmond,44.0,Richmond,exact
+Georgia,Rockdale,31.3,Rockdale,exact
+Georgia,Schley,2.0,Schley,exact
+Georgia,Screven,4.4,Screven,exact
+Georgia,Seminole,14.6,Seminole,exact
+Georgia,Spalding,23.2,Spalding,exact
+Georgia,Stephens,58.7,Stephens,exact
+Georgia,Stewart,11.8,Stewart,exact
+Georgia,Sumter,13.2,Sumter,exact
+Georgia,Talbot,6.7,,no match
+Georgia,Taliaferro,3.4,,no match
+Georgia,Tattnall,9.3,Tattnall,exact
+Georgia,Taylor,0.7,Taylor,exact
+Georgia,Telfair,7.1,Telfair,exact
+Georgia,Terrell,2.4,Terrell,exact
+Georgia,Thomas,20.9,Thomas,exact
+Georgia,Tift,19.9,Tift,exact
+Georgia,Toombs,4.8,Toombs,exact
+Georgia,Towns,95.6,Towns,exact
+Georgia,Treutlen,0.8,Treutlen,exact
+Georgia,Troup,34.3,Troup,exact
+Georgia,Turner,2.3,Turner,exact
+Georgia,Twiggs,13.4,,no match
+Georgia,Union,82.4,Union,exact
+Georgia,Upson,12.1,Upson,exact
+Georgia,Walker,24.4,Walker,exact
+Georgia,Walton,8.3,Walton,exact
+Georgia,Ware,32.2,Ware,exact
+Georgia,Warren,9.0,Warren,exact
+Georgia,Washington,1.7,Washington,exact
+Georgia,Wayne,14.1,Wayne,exact
+Georgia,Webster,0.5,Webster,exact
+Georgia,Wheeler,2.6,,no match
+Georgia,White,28.3,White,exact
+Georgia,Whitfield,41.0,Whitfield,exact
+Georgia,Wilcox,1.3,Wilcox,exact
+Georgia,Wilkes,11.0,Wilkes,exact
+Georgia,Wilkinson,3.2,Wilkinson,exact
+Georgia,Worth,2.1,Worth,exact
+Hawaii,Hawaii,30.5,Hawaii,exact
+Hawaii,Honolulu,85.0,Honolulu,exact
+Hawaii,Kalawao,100.0,,no match
+Hawaii,Kauai,30.9,Kauai,exact
+Hawaii,Maui,47.7,Maui,exact
+Idaho,Ada,69.3,Ada,exact
+Idaho,Adams,80.8,Adams,exact
+Idaho,Bannock,79.1,Bannock,exact
+Idaho,Bear Lake,66.7,Bear Lake,exact
+Idaho,Benewah,27.9,Benewah,exact
+Idaho,Bingham,33.8,Bingham,exact
+Idaho,Blaine,91.7,Blaine,exact
+Idaho,Boise,92.0,Boise,exact
+Idaho,Bonner,59.6,Bonner,exact
+Idaho,Bonneville,47.6,Bonneville,exact
+Idaho,Boundary,78.4,Boundary,exact
+Idaho,Butte,72.7,,no match
+Idaho,Camas,79.6,Camas,exact
+Idaho,Canyon,42.5,Canyon,exact
+Idaho,Caribou,54.2,Caribou,exact
+Idaho,Cassia,39.3,Cassia,exact
+Idaho,Clark,83.8,,no match
+Idaho,Clearwater,44.4,Clearwater,exact
+Idaho,Custer,98.9,,no match
+Idaho,Elmore,90.0,Elmore,exact
+Idaho,Franklin,52.8,Franklin,exact
+Idaho,Fremont,43.1,Fremont,exact
+Idaho,Gem,51.5,Gem,exact
+Idaho,Gooding,50.3,Gooding,exact
+Idaho,Idaho,51.3,Idaho,exact
+Idaho,Jefferson,30.7,Jefferson,exact
+Idaho,Jerome,46.7,Jerome,exact
+Idaho,Kootenai,55.7,Kootenai,exact
+Idaho,Latah,27.8,Latah,exact
+Idaho,Lemhi,97.6,Lemhi,exact
+Idaho,Lewis,15.3,Lewis,exact
+Idaho,Lincoln,91.3,Lincoln,exact
+Idaho,Madison,41.6,Madison,exact
+Idaho,Minidoka,24.3,Minidoka,exact
+Idaho,Nez Perce,35.9,Nez Perce,exact
+Idaho,Oneida,74.3,Oneida,exact
+Idaho,Owyhee,45.9,Owyhee,exact
+Idaho,Payette,40.1,Payette,exact
+Idaho,Power,54.2,Power,exact
+Idaho,Shoshone,96.5,Shoshone,exact
+Idaho,Teton,46.6,Teton,exact
+Idaho,Twin Falls,50.0,Twin Falls,exact
+Idaho,Valley,78.9,Valley,exact
+Idaho,Washington,65.0,Washington,exact
+Illinois,Adams,54.9,Adams,exact
+Illinois,Alexander,53.0,Alexander,exact
+Illinois,Bond,20.8,Bond,exact
+Illinois,Boone,49.6,Boone,exact
+Illinois,Brown,18.7,,no match
+Illinois,Bureau,23.8,Bureau,exact
+Illinois,Calhoun,16.3,,no match
+Illinois,Carroll,22.4,Carroll,exact
+Illinois,Cass,42.9,Cass,exact
+Illinois,Champaign,69.4,Champaign,exact
+Illinois,Christian,25.3,Christian,exact
+Illinois,Clark,9.7,Clark,exact
+Illinois,Clay,7.1,Clay,exact
+Illinois,Clinton,8.2,Clinton,exact
+Illinois,Coles,41.5,Coles,exact
+Illinois,Cook,98.5,Cook,exact
+Illinois,Crawford,15.2,Crawford,exact
+Illinois,Cumberland,1.1,Cumberland,exact
+Illinois,De Witt,37.5,De Witt,exact
+Illinois,Dekalb,51.8,DeKalb,exact-after-normalizing
+Illinois,Douglas,18.1,Douglas,exact
+Illinois,Dupage,96.5,DuPage,exact-after-normalizing
+Illinois,Edgar,9.4,Edgar,exact
+Illinois,Edwards,5.6,Edwards,exact
+Illinois,Effingham,9.1,Effingham,exact
+Illinois,Fayette,15.7,Fayette,exact
+Illinois,Ford,26.1,Ford,exact
+Illinois,Franklin,17.5,Franklin,exact
+Illinois,Fulton,43.2,Fulton,exact
+Illinois,Gallatin,31.7,Gallatin,exact
+Illinois,Greene,26.1,Greene,exact
+Illinois,Grundy,36.5,Grundy,exact
+Illinois,Hamilton,14.2,Hamilton,exact
+Illinois,Hancock,20.1,Hancock,exact
+Illinois,Hardin,95.0,,no match
+Illinois,Henderson,14.4,,no match
+Illinois,Henry,29.3,Henry,exact
+Illinois,Iroquois,12.9,Iroquois,exact
+Illinois,Jackson,45.1,Jackson,exact
+Illinois,Jasper,26.8,Jasper,exact
+Illinois,Jefferson,20.9,Jefferson,exact
+Illinois,Jersey,11.2,Jersey,exact
+Illinois,Jo Daviess,22.9,Jo Daviess,exact
+Illinois,Johnson,60.3,Johnson,exact
+Illinois,Kane,91.1,Kane,exact
+Illinois,Kankakee,54.4,Kankakee,exact
+Illinois,Kendall,66.7,Kendall,exact
+Illinois,Knox,33.7,Knox,exact
+Illinois,La Salle,36.9,LaSalle,exact-after-normalizing
+Illinois,Lake,94.5,Lake,exact
+Illinois,Lawrence,14.3,Lawrence,exact
+Illinois,Lee,37.1,Lee,exact
+Illinois,Livingston,23.5,Livingston,exact
+Illinois,Logan,30.1,Logan,exact
+Illinois,Macon,61.7,Macon,exact
+Illinois,Macoupin,25.8,Macoupin,exact
+Illinois,Madison,60.0,Madison,exact
+Illinois,Marion,28.1,Marion,exact
+Illinois,Marshall,25.4,Marshall,exact
+Illinois,Mason,34.6,Mason,exact
+Illinois,Massac,53.1,Massac,exact
+Illinois,Mcdonough,28.2,McDonough,exact-after-normalizing
+Illinois,Mchenry,75.5,McHenry,exact-after-normalizing
+Illinois,Mclean,62.1,McLean,exact-after-normalizing
+Illinois,Menard,11.0,Menard,exact
+Illinois,Mercer,6.6,Mercer,exact
+Illinois,Monroe,26.4,Monroe,exact
+Illinois,Montgomery,17.9,Montgomery,exact
+Illinois,Morgan,33.0,Morgan,exact
+Illinois,Moultrie,23.4,Moultrie,exact
+Illinois,Ogle,25.1,Ogle,exact
+Illinois,Peoria,71.0,Peoria,exact
+Illinois,Perry,12.7,Perry,exact
+Illinois,Piatt,24.0,Piatt,exact
+Illinois,Pike,10.3,Pike,exact
+Illinois,Pope,92.5,Pope,exact
+Illinois,Pulaski,34.7,,no match
+Illinois,Putnam,21.5,Putnam,exact
+Illinois,Randolph,23.6,Randolph,exact
+Illinois,Richland,29.0,Richland,exact
+Illinois,Rock Island,73.5,Rock Island,exact
+Illinois,Saline,28.7,Saline,exact
+Illinois,Sangamon,49.3,Sangamon,exact
+Illinois,Schuyler,8.9,Schuyler,exact
+Illinois,Scott,1.0,,no match
+Illinois,Shelby,16.1,Shelby,exact
+Illinois,St. Clair,51.1,St. Clair,exact
+Illinois,Stark,5.6,Stark,exact
+Illinois,Stephenson,44.5,Stephenson,exact
+Illinois,Tazewell,53.4,Tazewell,exact
+Illinois,Union,45.0,Union,exact
+Illinois,Vermilion,27.6,Vermilion,exact
+Illinois,Wabash,12.3,Wabash,exact
+Illinois,Warren,36.7,Warren,exact
+Illinois,Washington,4.6,Washington,exact
+Illinois,Wayne,12.7,Wayne,exact
+Illinois,White,13.8,White,exact
+Illinois,Whiteside,53.6,Whiteside,exact
+Illinois,Will,87.1,Will,exact
+Illinois,Williamson,36.5,Williamson,exact
+Illinois,Winnebago,75.3,Winnebago,exact
+Illinois,Woodford,14.7,Woodford,exact
+Indiana,Adams,13.8,Adams,exact
+Indiana,Allen,52.8,Allen,exact
+Indiana,Bartholomew,28.4,Bartholomew,exact
+Indiana,Benton,0.7,Benton,exact
+Indiana,Blackford,28.8,Blackford,exact
+Indiana,Boone,27.8,Boone,exact
+Indiana,Brown,41.2,Brown,exact
+Indiana,Carroll,11.9,Carroll,exact
+Indiana,Cass,31.2,Cass,exact
+Indiana,Clark,50.5,Clark,exact
+Indiana,Clay,14.3,Clay,exact
+Indiana,Clinton,32.9,Clinton,exact
+Indiana,Crawford,70.5,Crawford,exact
+Indiana,Daviess,24.1,Daviess,exact
+Indiana,Dearborn,17.8,Dearborn,exact
+Indiana,Decatur,7.7,Decatur,exact
+Indiana,Dekalb,23.8,DeKalb,exact-after-normalizing
+Indiana,Delaware,41.7,Delaware,exact
+Indiana,Dubois,34.1,Dubois,exact
+Indiana,Elkhart,37.0,Elkhart,exact
+Indiana,Fayette,30.5,Fayette,exact
+Indiana,Floyd,36.3,Floyd,exact
+Indiana,Fountain,17.0,Fountain,exact
+Indiana,Franklin,15.4,Franklin,exact
+Indiana,Fulton,24.6,Fulton,exact
+Indiana,Gibson,15.0,Gibson,exact
+Indiana,Grant,22.5,Grant,exact
+Indiana,Greene,10.8,Greene,exact
+Indiana,Hamilton,47.9,Hamilton,exact
+Indiana,Hancock,21.3,Hancock,exact
+Indiana,Harrison,11.6,Harrison,exact
+Indiana,Hendricks,24.0,Hendricks,exact
+Indiana,Henry,23.5,Henry,exact
+Indiana,Howard,50.5,Howard,exact
+Indiana,Huntington,38.3,Huntington,exact
+Indiana,Jackson,34.1,Jackson,exact
+Indiana,Jasper,3.3,Jasper,exact
+Indiana,Jay,13.5,Jay,exact
+Indiana,Jefferson,25.8,Jefferson,exact
+Indiana,Jennings,13.1,Jennings,exact
+Indiana,Johnson,35.7,Johnson,exact
+Indiana,Knox,42.7,Knox,exact
+Indiana,Kosciusko,18.5,Kosciusko,exact
+Indiana,Lagrange,5.8,LaGrange,exact-after-normalizing
+Indiana,Lake,77.9,Lake,exact
+Indiana,Laporte,33.9,LaPorte,exact-after-normalizing
+Indiana,Lawrence,33.7,Lawrence,exact
+Indiana,Madison,38.8,Madison,exact
+Indiana,Marion,58.8,Marion,exact
+Indiana,Marshall,18.0,Marshall,exact
+Indiana,Martin,31.2,Martin,exact
+Indiana,Miami,19.4,Miami,exact
+Indiana,Monroe,58.0,Monroe,exact
+Indiana,Montgomery,23.5,Montgomery,exact
+Indiana,Morgan,23.9,Morgan,exact
+Indiana,Newton,6.8,Newton,exact
+Indiana,Noble,23.7,Noble,exact
+Indiana,Ohio,2.3,Ohio,exact
+Indiana,Orange,58.1,Orange,exact
+Indiana,Owen,9.8,Owen,exact
+Indiana,Parke,7.9,Parke,exact
+Indiana,Perry,60.9,Perry,exact
+Indiana,Pike,11.1,Pike,exact
+Indiana,Porter,53.2,Porter,exact
+Indiana,Posey,16.6,Posey,exact
+Indiana,Pulaski,7.6,Pulaski,exact
+Indiana,Putnam,11.7,Putnam,exact
+Indiana,Randolph,9.6,Randolph,exact
+Indiana,Ripley,8.3,Ripley,exact
+Indiana,Rush,15.8,Rush,exact
+Indiana,Scott,21.7,Scott,exact
+Indiana,Shelby,28.3,Shelby,exact
+Indiana,Spencer,6.3,Spencer,exact
+Indiana,St. Joseph,63.0,St. Joseph,exact
+Indiana,Starke,11.9,Starke,exact
+Indiana,Steuben,18.5,Steuben,exact
+Indiana,Sullivan,24.0,Sullivan,exact
+Indiana,Switzerland,2.8,Switzerland,exact
+Indiana,Tippecanoe,54.1,Tippecanoe,exact
+Indiana,Tipton,20.0,Tipton,exact
+Indiana,Union,19.6,Union,exact
+Indiana,Vanderburgh,43.0,Vanderburgh,exact
+Indiana,Vermillion,15.7,Vermillion,exact
+Indiana,Vigo,45.0,Vigo,exact
+Indiana,Wabash,31.0,Wabash,exact
+Indiana,Warren,11.9,Warren,exact
+Indiana,Warrick,14.2,Warrick,exact
+Indiana,Washington,16.4,Washington,exact
+Indiana,Wayne,33.0,Wayne,exact
+Indiana,Wells,23.8,Wells,exact
+Indiana,White,17.6,White,exact
+Indiana,Whitley,11.3,Whitley,exact
+Iowa,Adair,7.1,Adair,exact
+Iowa,Adams,2.6,Adams,exact
+Iowa,Allamakee,18.1,Allamakee,exact
+Iowa,Appanoose,30.5,Appanoose,exact
+Iowa,Audubon,2.4,Audubon,exact
+Iowa,Benton,18.6,Benton,exact
+Iowa,Black Hawk,64.0,Black Hawk,exact
+Iowa,Boone,42.1,Boone,exact
+Iowa,Bremer,30.4,Bremer,exact
+Iowa,Buchanan,26.5,Buchanan,exact
+Iowa,Buena Vista,18.6,Buena Vista,exact
+Iowa,Butler,9.3,Butler,exact
+Iowa,Calhoun,7.4,Calhoun,exact
+Iowa,Carroll,40.3,Carroll,exact
+Iowa,Cass,17.7,Cass,exact
+Iowa,Cedar,5.8,Cedar,exact
+Iowa,Cerro Gordo,49.9,Cerro Gordo,exact
+Iowa,Cherokee,14.5,Cherokee,exact
+Iowa,Chickasaw,16.6,Chickasaw,exact
+Iowa,Clarke,46.5,Clarke,exact
+Iowa,Clay,54.9,Clay,exact
+Iowa,Clayton,15.2,Clayton,exact
+Iowa,Clinton,40.2,Clinton,exact
+Iowa,Crawford,22.9,Crawford,exact
+Iowa,Dallas,53.6,Dallas,exact
+Iowa,Davis,7.0,Davis,exact
+Iowa,Decatur,14.8,Decatur,exact
+Iowa,Delaware,21.6,Delaware,exact
+Iowa,Des Moines,56.9,Des Moines,exact
+Iowa,Dickinson,61.7,Dickinson,exact
+Iowa,Dubuque,63.9,Dubuque,exact
+Iowa,Emmet,48.6,Emmet,exact
+Iowa,Fayette,25.9,Fayette,exact
+Iowa,Floyd,22.9,Floyd,exact
+Iowa,Franklin,16.0,Franklin,exact
+Iowa,Fremont,16.2,Fremont,exact
+Iowa,Greene,12.6,Greene,exact
+Iowa,Grundy,8.6,Grundy,exact
+Iowa,Guthrie,15.8,Guthrie,exact
+Iowa,Hamilton,21.3,Hamilton,exact
+Iowa,Hancock,17.1,Hancock,exact
+Iowa,Hardin,19.4,Hardin,exact
+Iowa,Harrison,17.4,Harrison,exact
+Iowa,Henry,28.9,Henry,exact
+Iowa,Howard,24.7,Howard,exact
+Iowa,Humboldt,44.9,Humboldt,exact
+Iowa,Ida,9.2,Ida,exact
+Iowa,Iowa,12.5,Iowa,exact
+Iowa,Jackson,27.5,Jackson,exact
+Iowa,Jasper,43.8,Jasper,exact
+Iowa,Jefferson,42.5,Jefferson,exact
+Iowa,Johnson,79.4,Johnson,exact
+Iowa,Jones,23.3,Jones,exact
+Iowa,Keokuk,6.9,Keokuk,exact
+Iowa,Kossuth,26.1,Kossuth,exact
+Iowa,Lee,47.4,Lee,exact
+Iowa,Linn,71.3,Linn,exact
+Iowa,Louisa,26.0,Louisa,exact
+Iowa,Lucas,30.1,Lucas,exact
+Iowa,Lyon,7.5,Lyon,exact
+Iowa,Madison,32.3,Madison,exact
+Iowa,Mahaska,26.1,Mahaska,exact
+Iowa,Marion,45.1,Marion,exact
+Iowa,Marshall,47.5,Marshall,exact
+Iowa,Mills,23.1,Mills,exact
+Iowa,Mitchell,21.7,Mitchell,exact
+Iowa,Monona,28.1,Monona,exact
+Iowa,Monroe,6.8,Monroe,exact
+Iowa,Montgomery,25.7,Montgomery,exact
+Iowa,Muscatine,48.3,Muscatine,exact
+Iowa,O'brien,18.6,O'Brien,exact-after-normalizing
+Iowa,Osceola,15.4,Osceola,exact
+Iowa,Page,25.3,Page,exact
+Iowa,Palo Alto,35.2,Palo Alto,exact
+Iowa,Plymouth,16.5,Plymouth,exact
+Iowa,Pocahontas,10.1,Pocahontas,exact
+Iowa,Polk,79.0,Polk,exact
+Iowa,Pottawattamie,58.4,Pottawattamie,exact
+Iowa,Poweshiek,23.6,Poweshiek,exact
+Iowa,Ringgold,12.0,Ringgold,exact
+Iowa,Sac,11.8,Sac,exact
+Iowa,Scott,64.8,Scott,exact
+Iowa,Shelby,6.4,Shelby,exact
+Iowa,Sioux,27.6,Sioux,exact
+Iowa,Story,64.4,Story,exact
+Iowa,Tama,13.6,Tama,exact
+Iowa,Taylor,4.0,Taylor,exact
+Iowa,Union,35.4,Union,exact
+Iowa,Van Buren,11.6,Van Buren,exact
+Iowa,Wapello,42.4,Wapello,exact
+Iowa,Warren,37.5,Warren,exact
+Iowa,Washington,14.7,Washington,exact
+Iowa,Wayne,9.9,Wayne,exact
+Iowa,Webster,42.9,Webster,exact
+Iowa,Winnebago,40.3,Winnebago,exact
+Iowa,Winneshiek,31.5,Winneshiek,exact
+Iowa,Woodbury,67.2,Woodbury,exact
+Iowa,Worth,14.8,Worth,exact
+Iowa,Wright,21.1,Wright,exact
+Kansas,Allen,9.6,Allen,exact
+Kansas,Anderson,2.2,Anderson,exact
+Kansas,Atchison,28.6,Atchison,exact
+Kansas,Barber,0.3,Barber,exact
+Kansas,Barton,33.1,Barton,exact
+Kansas,Bourbon,21.7,Bourbon,exact
+Kansas,Brown,6.0,Brown,exact
+Kansas,Butler,26.8,Butler,exact
+Kansas,Chase,4.2,Chase,exact
+Kansas,Chautauqua,0.0,Chautauqua,exact
+Kansas,Cherokee,10.2,Cherokee,exact
+Kansas,Cheyenne,0.4,Cheyenne,exact
+Kansas,Clark,0.4,,no match
+Kansas,Clay,14.9,Clay,exact
+Kansas,Cloud,11.1,Cloud,exact
+Kansas,Coffey,11.3,Coffey,exact
+Kansas,Comanche,0.1,Comanche,exact
+Kansas,Cowley,29.4,Cowley,exact
+Kansas,Crawford,29.1,Crawford,exact
+Kansas,Decatur,0.4,,no match
+Kansas,Dickinson,8.8,Dickinson,exact
+Kansas,Doniphan,5.5,Doniphan,exact
+Kansas,Douglas,65.3,Douglas,exact
+Kansas,Edwards,0.1,Edwards,exact
+Kansas,Elk,0.1,,no match
+Kansas,Ellis,48.5,Ellis,exact
+Kansas,Ellsworth,5.8,Ellsworth,exact
+Kansas,Finney,39.4,Finney,exact
+Kansas,Ford,33.5,Ford,exact
+Kansas,Franklin,10.6,Franklin,exact
+Kansas,Geary,51.2,Geary,exact
+Kansas,Gove,0.1,Gove,exact
+Kansas,Graham,0.0,,no match
+Kansas,Grant,16.0,Grant,exact
+Kansas,Gray,0.0,Gray,exact
+Kansas,Greeley,0.0,,no match
+Kansas,Greenwood,6.8,Greenwood,exact
+Kansas,Hamilton,0.4,,no match
+Kansas,Harper,0.1,Harper,exact
+Kansas,Harvey,17.1,Harvey,exact
+Kansas,Haskell,0.0,Haskell,exact
+Kansas,Hodgeman,0.3,,no match
+Kansas,Jackson,6.0,Jackson,exact
+Kansas,Jefferson,25.0,Jefferson,exact
+Kansas,Jewell,2.7,,no match
+Kansas,Johnson,79.5,Johnson,exact
+Kansas,Kearny,0.0,,no match
+Kansas,Kingman,8.5,Kingman,exact
+Kansas,Kiowa,0.3,,no match
+Kansas,Labette,16.8,Labette,exact
+Kansas,Lane,0.0,,no match
+Kansas,Leavenworth,31.7,Leavenworth,exact
+Kansas,Lincoln,0.8,,no match
+Kansas,Linn,8.9,Linn,exact
+Kansas,Logan,0.3,,no match
+Kansas,Lyon,52.8,Lyon,exact
+Kansas,Marion,4.0,Marion,exact
+Kansas,Marshall,5.5,Marshall,exact
+Kansas,Mcpherson,14.7,McPherson,exact-after-normalizing
+Kansas,Meade,0.4,Meade,exact
+Kansas,Miami,16.9,Miami,exact
+Kansas,Mitchell,1.5,Mitchell,exact
+Kansas,Montgomery,23.4,Montgomery,exact
+Kansas,Morris,4.5,Morris,exact
+Kansas,Morton,41.1,,no match
+Kansas,Nemaha,1.3,Nemaha,exact
+Kansas,Neosho,8.5,Neosho,exact
+Kansas,Ness,0.0,Ness,exact
+Kansas,Norton,3.3,Norton,exact
+Kansas,Osage,16.1,Osage,exact
+Kansas,Osborne,0.0,Osborne,exact
+Kansas,Ottawa,0.4,Ottawa,exact
+Kansas,Pawnee,7.0,Pawnee,exact
+Kansas,Phillips,5.8,Phillips,exact
+Kansas,Pottawatomie,5.7,Pottawatomie,exact
+Kansas,Pratt,15.5,Pratt,exact
+Kansas,Rawlins,0.0,Rawlins,exact
+Kansas,Reno,43.3,Reno,exact
+Kansas,Republic,0.8,Republic,exact
+Kansas,Rice,3.6,Rice,exact
+Kansas,Riley,48.4,Riley,exact
+Kansas,Rooks,1.1,Rooks,exact
+Kansas,Rush,0.2,Rush,exact
+Kansas,Russell,7.5,Russell,exact
+Kansas,Saline,53.3,Saline,exact
+Kansas,Scott,1.4,Scott,exact
+Kansas,Sedgwick,60.1,Sedgwick,exact
+Kansas,Seward,35.6,Seward,exact
+Kansas,Shawnee,57.2,Shawnee,exact
+Kansas,Sheridan,0.6,,no match
+Kansas,Sherman,9.2,Sherman,exact
+Kansas,Smith,0.0,Smith,exact
+Kansas,Stafford,4.4,,no match
+Kansas,Stanton,0.0,,no match
+Kansas,Stevens,9.3,Stevens,exact
+Kansas,Sumner,2.9,Sumner,exact
+Kansas,Thomas,4.3,Thomas,exact
+Kansas,Trego,4.7,Trego,exact
+Kansas,Wabaunsee,0.1,Wabaunsee,exact
+Kansas,Wallace,0.1,,no match
+Kansas,Washington,0.7,Washington,exact
+Kansas,Wichita,0.0,Wichita,exact
+Kansas,Wilson,2.5,Wilson,exact
+Kansas,Woodson,2.6,,no match
+Kansas,Wyandotte,60.5,Wyandotte,exact
+Kentucky,Adair,12.7,Adair,exact
+Kentucky,Allen,13.0,Allen,exact
+Kentucky,Anderson,10.7,Anderson,exact
+Kentucky,Ballard,16.9,Ballard,exact
+Kentucky,Barren,23.3,Barren,exact
+Kentucky,Bath,31.4,Bath,exact
+Kentucky,Bell,60.6,Bell,exact
+Kentucky,Boone,32.1,Boone,exact
+Kentucky,Bourbon,16.8,Bourbon,exact
+Kentucky,Boyd,25.6,Boyd,exact
+Kentucky,Boyle,16.9,Boyle,exact
+Kentucky,Bracken,1.0,Bracken,exact
+Kentucky,Breathitt,7.2,Breathitt,exact
+Kentucky,Breckinridge,10.4,Breckinridge,exact
+Kentucky,Bullitt,8.8,Bullitt,exact
+Kentucky,Butler,0.0,Butler,exact
+Kentucky,Caldwell,8.2,Caldwell,exact
+Kentucky,Calloway,10.2,Calloway,exact
+Kentucky,Campbell,56.6,Campbell,exact
+Kentucky,Carlisle,9.0,Carlisle,exact
+Kentucky,Carroll,14.1,Carroll,exact
+Kentucky,Carter,7.4,Carter,exact
+Kentucky,Casey,0.5,Casey,exact
+Kentucky,Christian,28.4,Christian,exact
+Kentucky,Clark,20.3,Clark,exact
+Kentucky,Clay,97.2,Clay,exact
+Kentucky,Clinton,22.6,Clinton,exact
+Kentucky,Crittenden,3.5,Crittenden,exact
+Kentucky,Cumberland,7.1,Cumberland,exact
+Kentucky,Daviess,35.3,Daviess,exact
+Kentucky,Edmonson,20.0,,no match
+Kentucky,Elliott,11.5,,no match
+Kentucky,Estill,44.3,Estill,exact
+Kentucky,Fayette,79.8,Fayette,exact
+Kentucky,Fleming,9.0,Fleming,exact
+Kentucky,Floyd,10.2,Floyd,exact
+Kentucky,Franklin,24.3,Franklin,exact
+Kentucky,Fulton,5.6,Fulton,exact
+Kentucky,Gallatin,0.4,Gallatin,exact
+Kentucky,Garrard,0.3,Garrard,exact
+Kentucky,Grant,9.1,Grant,exact
+Kentucky,Graves,6.9,Graves,exact
+Kentucky,Grayson,16.9,Grayson,exact
+Kentucky,Green,0.0,Green,exact
+Kentucky,Greenup,14.8,Greenup,exact
+Kentucky,Hancock,1.0,Hancock,exact
+Kentucky,Hardin,22.2,Hardin,exact
+Kentucky,Harlan,25.8,Harlan,exact
+Kentucky,Harrison,2.1,Harrison,exact
+Kentucky,Hart,9.5,Hart,exact
+Kentucky,Henderson,34.0,Henderson,exact
+Kentucky,Henry,1.6,Henry,exact
+Kentucky,Hickman,5.7,Hickman,exact
+Kentucky,Hopkins,15.0,Hopkins,exact
+Kentucky,Jackson,63.3,Jackson,exact
+Kentucky,Jefferson,52.2,Jefferson,exact
+Kentucky,Jessamine,28.0,Jessamine,exact
+Kentucky,Johnson,8.9,Johnson,exact
+Kentucky,Kenton,62.6,Kenton,exact
+Kentucky,Knott,11.3,,no match
+Kentucky,Knox,9.9,Knox,exact
+Kentucky,Larue,4.1,Larue,exact
+Kentucky,Laurel,30.7,Laurel,exact
+Kentucky,Lawrence,20.7,Lawrence,exact
+Kentucky,Lee,67.6,Lee,exact
+Kentucky,Leslie,100.0,,no match
+Kentucky,Letcher,22.9,Letcher,exact
+Kentucky,Lewis,1.6,Lewis,exact
+Kentucky,Lincoln,4.7,Lincoln,exact
+Kentucky,Livingston,5.0,Livingston,exact
+Kentucky,Logan,0.9,Logan,exact
+Kentucky,Lyon,41.8,,no match
+Kentucky,Madison,16.1,Madison,exact
+Kentucky,Magoffin,2.3,,no match
+Kentucky,Marion,2.3,Marion,exact
+Kentucky,Marshall,20.7,Marshall,exact
+Kentucky,Martin,0.3,Martin,exact
+Kentucky,Mason,11.2,Mason,exact
+Kentucky,Mccracken,30.2,McCracken,exact-after-normalizing
+Kentucky,Mccreary,100.0,McCreary,exact-after-normalizing
+Kentucky,Mclean,0.0,McLean,exact-after-normalizing
+Kentucky,Meade,6.8,Meade,exact
+Kentucky,Menifee,83.3,Menifee,exact
+Kentucky,Mercer,4.5,Mercer,exact
+Kentucky,Metcalfe,2.4,Metcalfe,exact
+Kentucky,Monroe,1.3,Monroe,exact
+Kentucky,Montgomery,4.6,Montgomery,exact
+Kentucky,Morgan,13.5,Morgan,exact
+Kentucky,Muhlenberg,17.2,Muhlenberg,exact
+Kentucky,Nelson,12.1,Nelson,exact
+Kentucky,Nicholas,9.9,Nicholas,exact
+Kentucky,Ohio,12.0,Ohio,exact
+Kentucky,Oldham,10.1,Oldham,exact
+Kentucky,Owen,6.0,Owen,exact
+Kentucky,Owsley,45.3,,no match
+Kentucky,Pendleton,1.4,Pendleton,exact
+Kentucky,Perry,15.1,Perry,exact
+Kentucky,Pike,11.3,Pike,exact
+Kentucky,Powell,46.8,Powell,exact
+Kentucky,Pulaski,37.1,Pulaski,exact
+Kentucky,Robertson,2.7,,no match
+Kentucky,Rockcastle,30.3,Rockcastle,exact
+Kentucky,Rowan,77.6,Rowan,exact
+Kentucky,Russell,34.8,Russell,exact
+Kentucky,Scott,27.6,Scott,exact
+Kentucky,Shelby,13.4,Shelby,exact
+Kentucky,Simpson,2.3,Simpson,exact
+Kentucky,Spencer,8.4,Spencer,exact
+Kentucky,Taylor,22.0,Taylor,exact
+Kentucky,Todd,0.3,Todd,exact
+Kentucky,Trigg,23.9,Trigg,exact
+Kentucky,Trimble,2.7,,no match
+Kentucky,Union,13.5,Union,exact
+Kentucky,Warren,34.9,Warren,exact
+Kentucky,Washington,0.8,Washington,exact
+Kentucky,Wayne,28.1,Wayne,exact
+Kentucky,Webster,0.3,Webster,exact
+Kentucky,Whitley,45.3,Whitley,exact
+Kentucky,Wolfe,33.1,Wolfe,exact
+Kentucky,Woodford,9.7,Woodford,exact
+Louisiana,Acadia,14.7,Acadia Parish,exact-after-normalizing
+Louisiana,Allen,10.8,Allen Parish,exact-after-normalizing
+Louisiana,Ascension,13.7,Ascension Parish,exact-after-normalizing
+Louisiana,Assumption,0.4,Assumption Parish,exact-after-normalizing
+Louisiana,Avoyelles,13.8,Avoyelles Parish,exact-after-normalizing
+Louisiana,Beauregard,3.1,Beauregard Parish,exact-after-normalizing
+Louisiana,Bienville,6.0,Bienville Parish,exact-after-normalizing
+Louisiana,Bossier,25.9,Bossier Parish,exact-after-normalizing
+Louisiana,Caddo,32.7,Caddo Parish,exact-after-normalizing
+Louisiana,Calcasieu,18.9,Calcasieu Parish,exact-after-normalizing
+Louisiana,Caldwell,11.4,Caldwell Parish,exact-after-normalizing
+Louisiana,Cameron,34.5,Cameron Parish,exact-after-normalizing
+Louisiana,Catahoula,11.9,,no match
+Louisiana,Claiborne,15.0,Claiborne Parish,exact-after-normalizing
+Louisiana,Concordia,22.2,Concordia Parish,exact-after-normalizing
+Louisiana,De Soto,3.8,De Soto Parish,exact-after-normalizing
+Louisiana,East Baton Rouge,61.5,East Baton Rouge Parish,exact-after-normalizing
+Louisiana,East Carroll,9.5,East Carroll Parish,exact-after-normalizing
+Louisiana,East Feliciana,1.9,East Feliciana Parish,exact-after-normalizing
+Louisiana,Evangeline,13.9,Evangeline Parish,exact-after-normalizing
+Louisiana,Franklin,12.4,Franklin Parish,exact-after-normalizing
+Louisiana,Grant,61.6,Grant Parish,exact-after-normalizing
+Louisiana,Iberia,21.7,Iberia Parish,exact-after-normalizing
+Louisiana,Iberville,8.8,Iberville Parish,exact-after-normalizing
+Louisiana,Jackson,1.5,Jackson Parish,exact-after-normalizing
+Louisiana,Jefferson,62.0,Jefferson Parish,exact-after-normalizing
+Louisiana,Jefferson Davis,15.7,Jefferson Davis Parish,exact-after-normalizing
+Louisiana,La Salle,4.5,LaSalle Parish,exact-after-normalizing
+Louisiana,Lafayette,29.4,Lafayette Parish,exact-after-normalizing
+Louisiana,Lafourche,15.9,Lafourche Parish,exact-after-normalizing
+Louisiana,Lincoln,16.6,Lincoln Parish,exact-after-normalizing
+Louisiana,Livingston,6.8,Livingston Parish,exact-after-normalizing
+Louisiana,Madison,11.2,Madison Parish,exact-after-normalizing
+Louisiana,Morehouse,31.5,Morehouse Parish,exact-after-normalizing
+Louisiana,Natchitoches,26.6,Natchitoches Parish,exact-after-normalizing
+Louisiana,Orleans,90.9,Orleans Parish,exact-after-normalizing
+Louisiana,Ouachita,31.2,Ouachita Parish,exact-after-normalizing
+Louisiana,Plaquemines,5.9,Plaquemines Parish,exact-after-normalizing
+Louisiana,Pointe Coupee,10.9,Pointe Coupee Parish,exact-after-normalizing
+Louisiana,Rapides,31.5,Rapides Parish,exact-after-normalizing
+Louisiana,Red River,3.8,Red River Parish,exact-after-normalizing
+Louisiana,Richland,7.8,Richland Parish,exact-after-normalizing
+Louisiana,Sabine,7.5,Sabine Parish,exact-after-normalizing
+Louisiana,St. Bernard,39.5,St. Bernard Parish,exact-after-normalizing
+Louisiana,St. Charles,25.1,St. Charles Parish,exact-after-normalizing
+Louisiana,St. Helena,0.0,,no match
+Louisiana,St. James,38.5,St. James Parish,exact-after-normalizing
+Louisiana,St. John The Baptist,25.0,St. John the Baptist Parish,exact-after-normalizing
+Louisiana,St. Landry,24.1,St. Landry Parish,exact-after-normalizing
+Louisiana,St. Martin,8.0,St. Martin Parish,exact-after-normalizing
+Louisiana,St. Mary,28.0,St. Mary Parish,exact-after-normalizing
+Louisiana,St. Tammany,27.3,St. Tammany Parish,exact-after-normalizing
+Louisiana,Tangipahoa,13.6,Tangipahoa Parish,exact-after-normalizing
+Louisiana,Tensas,6.5,Tensas Parish,exact-after-normalizing
+Louisiana,Terrebonne,25.6,Terrebonne Parish,exact-after-normalizing
+Louisiana,Union,15.0,Union Parish,exact-after-normalizing
+Louisiana,Vermilion,18.0,Vermilion Parish,exact-after-normalizing
+Louisiana,Vernon,22.4,Vernon Parish,exact-after-normalizing
+Louisiana,Washington,10.5,Washington Parish,exact-after-normalizing
+Louisiana,Webster,32.3,Webster Parish,exact-after-normalizing
+Louisiana,West Baton Rouge,13.8,West Baton Rouge Parish,exact-after-normalizing
+Louisiana,West Carroll,0.5,West Carroll Parish,exact-after-normalizing
+Louisiana,West Feliciana,11.5,West Feliciana Parish,exact-after-normalizing
+Louisiana,Winn,45.8,Winn Parish,exact-after-normalizing
+Maine,Androscoggin,32.6,Androscoggin,exact
+Maine,Aroostook,4.3,Aroostook,exact
+Maine,Cumberland,45.7,Cumberland,exact
+Maine,Franklin,7.8,Franklin,exact
+Maine,Hancock,22.0,Hancock,exact
+Maine,Kennebec,15.3,Kennebec,exact
+Maine,Knox,23.6,Knox,exact
+Maine,Lincoln,7.4,Lincoln,exact
+Maine,Oxford,5.1,Oxford,exact
+Maine,Penobscot,24.5,Penobscot,exact
+Maine,Piscataquis,3.9,Piscataquis,exact
+Maine,Sagadahoc,24.9,Sagadahoc,exact
+Maine,Somerset,4.0,Somerset,exact
+Maine,Waldo,6.1,Waldo,exact
+Maine,Washington,10.5,Washington,exact
+Maine,York,33.9,York,exact
+Maryland,Allegany,42.0,Allegany,exact
+Maryland,Anne Arundel,59.5,Anne Arundel,exact
+Maryland,Baltimore,81.4,Baltimore,exact
+Maryland,Baltimore City,96.9,Baltimore city,exact-after-normalizing
+Maryland,Calvert,20.0,Calvert,exact
+Maryland,Caroline,16.9,Caroline,exact
+Maryland,Carroll,45.4,Carroll,exact
+Maryland,Cecil,28.3,Cecil,exact
+Maryland,Charles,28.1,Charles,exact
+Maryland,Dorchester,26.1,Dorchester,exact
+Maryland,Frederick,56.3,Frederick,exact
+Maryland,Garrett,16.7,Garrett,exact
+Maryland,Harford,56.6,Harford,exact
+Maryland,Howard,90.8,Howard,exact
+Maryland,Kent,8.8,Kent,exact
+Maryland,Montgomery,95.3,Montgomery,exact
+Maryland,Prince George's,93.3,Prince George's,exact
+Maryland,Queen Anne's,69.5,Queen Anne's,exact
+Maryland,Somerset,13.4,Somerset,exact
+Maryland,St. Mary's,31.5,St. Mary's,exact
+Maryland,Talbot,21.0,Talbot,exact
+Maryland,Washington,50.9,Washington,exact
+Maryland,Wicomico,29.1,Wicomico,exact
+Maryland,Worcester,52.2,Worcester,exact
+Massachusetts,Barnstable,89.8,Barnstable,exact
+Massachusetts,Berkshire,59.5,Berkshire,exact
+Massachusetts,Bristol,75.3,Bristol,exact
+Massachusetts,Dukes,55.4,Dukes,exact
+Massachusetts,Essex,89.6,Essex,exact
+Massachusetts,Franklin,39.1,Franklin,exact
+Massachusetts,Hampden,77.8,Hampden,exact
+Massachusetts,Hampshire,66.5,Hampshire,exact
+Massachusetts,Middlesex,94.2,Middlesex,exact
+Massachusetts,Nantucket,71.2,Nantucket,exact
+Massachusetts,Norfolk,92.6,Norfolk,exact
+Massachusetts,Plymouth,78.1,Plymouth,exact
+Massachusetts,Suffolk,99.9,Suffolk,exact
+Massachusetts,Worcester,71.0,Worcester,exact
+Michigan,Alcona,53.5,Alcona,exact
+Michigan,Alger,78.0,Alger,exact
+Michigan,Allegan,26.3,Allegan,exact
+Michigan,Alpena,59.3,Alpena,exact
+Michigan,Antrim,27.9,Antrim,exact
+Michigan,Arenac,38.4,Arenac,exact
+Michigan,Baraga,49.9,Baraga,exact
+Michigan,Barry,28.0,Barry,exact
+Michigan,Bay,59.6,Bay,exact
+Michigan,Benzie,64.5,Benzie,exact
+Michigan,Berrien,51.5,Berrien,exact
+Michigan,Branch,18.1,Branch,exact
+Michigan,Calhoun,34.3,Calhoun,exact
+Michigan,Cass,12.6,Cass,exact
+Michigan,Charlevoix,45.5,Charlevoix,exact
+Michigan,Cheboygan,50.4,Cheboygan,exact
+Michigan,Chippewa,70.1,Chippewa,exact
+Michigan,Clare,42.3,Clare,exact
+Michigan,Clinton,38.8,Clinton,exact
+Michigan,Crawford,98.5,Crawford,exact
+Michigan,Delta,61.2,Delta,exact
+Michigan,Dickinson,57.2,Dickinson,exact
+Michigan,Eaton,31.9,Eaton,exact
+Michigan,Emmet,57.8,Emmet,exact
+Michigan,Genesee,63.4,Genesee,exact
+Michigan,Gladwin,34.8,Gladwin,exact
+Michigan,Gogebic,79.3,Gogebic,exact
+Michigan,Grand Traverse,50.0,Grand Traverse,exact
+Michigan,Gratiot,47.6,Gratiot,exact
+Michigan,Hillsdale,18.5,Hillsdale,exact
+Michigan,Houghton,53.1,Houghton,exact
+Michigan,Huron,16.8,Huron,exact
+Michigan,Ingham,72.3,Ingham,exact
+Michigan,Ionia,31.6,Ionia,exact
+Michigan,Iosco,76.0,Iosco,exact
+Michigan,Iron,72.4,Iron,exact
+Michigan,Isabella,31.7,Isabella,exact
+Michigan,Jackson,35.8,Jackson,exact
+Michigan,Kalamazoo,55.1,Kalamazoo,exact
+Michigan,Kalkaska,73.1,Kalkaska,exact
+Michigan,Kent,64.4,Kent,exact
+Michigan,Keweenaw,27.1,Keweenaw,exact
+Michigan,Lake,89.9,Lake,exact
+Michigan,Lapeer,37.8,Lapeer,exact
+Michigan,Leelanau,36.6,Leelanau,exact
+Michigan,Lenawee,26.2,Lenawee,exact
+Michigan,Livingston,39.1,Livingston,exact
+Michigan,Luce,80.1,Luce,exact
+Michigan,Mackinac,82.0,Mackinac,exact
+Michigan,Macomb,57.7,Macomb,exact
+Michigan,Manistee,61.1,Manistee,exact
+Michigan,Marquette,49.4,Marquette,exact
+Michigan,Mason,52.8,Mason,exact
+Michigan,Mecosta,40.3,Mecosta,exact
+Michigan,Menominee,52.0,Menominee,exact
+Michigan,Midland,69.4,Midland,exact
+Michigan,Missaukee,43.3,Missaukee,exact
+Michigan,Monroe,37.2,Monroe,exact
+Michigan,Montcalm,31.5,Montcalm,exact
+Michigan,Montmorency,68.1,Montmorency,exact
+Michigan,Muskegon,57.6,Muskegon,exact
+Michigan,Newaygo,58.6,Newaygo,exact
+Michigan,Oakland,65.0,Oakland,exact
+Michigan,Oceana,58.9,Oceana,exact
+Michigan,Ogemaw,50.8,Ogemaw,exact
+Michigan,Ontonagon,65.3,Ontonagon,exact
+Michigan,Osceola,31.1,Osceola,exact
+Michigan,Oscoda,82.4,Oscoda,exact
+Michigan,Otsego,49.4,Otsego,exact
+Michigan,Ottawa,50.4,Ottawa,exact
+Michigan,Presque Isle,41.3,Presque Isle,exact
+Michigan,Roscommon,73.4,Roscommon,exact
+Michigan,Saginaw,61.6,Saginaw,exact
+Michigan,Sanilac,10.1,Sanilac,exact
+Michigan,Schoolcraft,86.7,Schoolcraft,exact
+Michigan,Shiawassee,45.3,Shiawassee,exact
+Michigan,St. Clair,41.3,St. Clair,exact
+Michigan,St. Joseph,25.8,St. Joseph,exact
+Michigan,Tuscola,28.3,Tuscola,exact
+Michigan,Van Buren,21.2,Van Buren,exact
+Michigan,Washtenaw,75.5,Washtenaw,exact
+Michigan,Wayne,85.4,Wayne,exact
+Michigan,Wexford,75.0,Wexford,exact
+Minnesota,Aitkin,27.4,Aitkin,exact
+Minnesota,Anoka,86.5,Anoka,exact
+Minnesota,Becker,16.0,Becker,exact
+Minnesota,Beltrami,42.6,Beltrami,exact
+Minnesota,Benton,33.9,Benton,exact
+Minnesota,Big Stone,18.5,,no match
+Minnesota,Blue Earth,50.9,Blue Earth,exact
+Minnesota,Brown,43.7,Brown,exact
+Minnesota,Carlton,26.4,Carlton,exact
+Minnesota,Carver,64.8,Carver,exact
+Minnesota,Cass,40.7,Cass,exact
+Minnesota,Chippewa,12.1,Chippewa,exact
+Minnesota,Chisago,24.4,Chisago,exact
+Minnesota,Clay,58.9,Clay,exact
+Minnesota,Clearwater,11.8,Clearwater,exact
+Minnesota,Cook,95.0,Cook,exact
+Minnesota,Cottonwood,1.3,Cottonwood,exact
+Minnesota,Crow Wing,26.0,Crow Wing,exact
+Minnesota,Dakota,86.9,Dakota,exact
+Minnesota,Dodge,10.8,Dodge,exact
+Minnesota,Douglas,19.3,Douglas,exact
+Minnesota,Faribault,12.5,Faribault,exact
+Minnesota,Fillmore,67.4,Fillmore,exact
+Minnesota,Freeborn,47.5,Freeborn,exact
+Minnesota,Goodhue,39.2,Goodhue,exact
+Minnesota,Grant,0.6,Grant,exact
+Minnesota,Hennepin,95.6,Hennepin,exact
+Minnesota,Houston,63.6,Houston,exact
+Minnesota,Hubbard,22.1,Hubbard,exact
+Minnesota,Isanti,21.6,Isanti,exact
+Minnesota,Itasca,37.3,Itasca,exact
+Minnesota,Jackson,14.5,Jackson,exact
+Minnesota,Kanabec,15.2,Kanabec,exact
+Minnesota,Kandiyohi,36.1,Kandiyohi,exact
+Minnesota,Kittson,1.4,Kittson,exact
+Minnesota,Koochiching,37.6,Koochiching,exact
+Minnesota,Lac Qui Parle,4.6,Lac qui Parle,exact-after-normalizing
+Minnesota,Lake,57.1,Lake,exact
+Minnesota,Lake Of The Woods,27.5,Lake of the Woods,exact-after-normalizing
+Minnesota,Le Sueur,12.9,Le Sueur,exact
+Minnesota,Lincoln,0.0,Lincoln,exact
+Minnesota,Lyon,27.0,Lyon,exact
+Minnesota,Mahnomen,3.2,,no match
+Minnesota,Marshall,4.1,Marshall,exact
+Minnesota,Martin,25.6,Martin,exact
+Minnesota,Mcleod,26.7,McLeod,exact-after-normalizing
+Minnesota,Meeker,18.4,Meeker,exact
+Minnesota,Mille Lacs,13.1,Mille Lacs,exact
+Minnesota,Morrison,16.9,Morrison,exact
+Minnesota,Mower,49.4,Mower,exact
+Minnesota,Murray,0.7,Murray,exact
+Minnesota,Nicollet,63.6,Nicollet,exact
+Minnesota,Nobles,26.7,Nobles,exact
+Minnesota,Norman,0.0,,no match
+Minnesota,Olmsted,62.2,Olmsted,exact
+Minnesota,Otter Tail,10.8,Otter Tail,exact
+Minnesota,Pennington,27.8,Pennington,exact
+Minnesota,Pine,15.6,Pine,exact
+Minnesota,Pipestone,27.7,Pipestone,exact
+Minnesota,Polk,23.0,Polk,exact
+Minnesota,Pope,0.7,Pope,exact
+Minnesota,Ramsey,98.1,Ramsey,exact
+Minnesota,Red Lake,0.3,,no match
+Minnesota,Redwood,9.7,Redwood,exact
+Minnesota,Renville,0.9,Renville,exact
+Minnesota,Rice,65.5,Rice,exact
+Minnesota,Rock,23.2,Rock,exact
+Minnesota,Roseau,10.1,Roseau,exact
+Minnesota,Scott,71.8,Scott,exact
+Minnesota,Sherburne,36.1,Sherburne,exact
+Minnesota,Sibley,1.8,Sibley,exact
+Minnesota,St. Louis,55.4,St. Louis,exact
+Minnesota,Stearns,43.0,Stearns,exact
+Minnesota,Steele,41.8,Steele,exact
+Minnesota,Stevens,5.5,Stevens,exact
+Minnesota,Swift,18.8,Swift,exact
+Minnesota,Todd,3.0,Todd,exact
+Minnesota,Traverse,4.0,Traverse,exact
+Minnesota,Wabasha,68.5,Wabasha,exact
+Minnesota,Wadena,14.1,Wadena,exact
+Minnesota,Waseca,35.8,Waseca,exact
+Minnesota,Washington,76.7,Washington,exact
+Minnesota,Watonwan,20.9,Watonwan,exact
+Minnesota,Wilkin,31.1,Wilkin,exact
+Minnesota,Winona,69.4,Winona,exact
+Minnesota,Wright,38.2,Wright,exact
+Minnesota,Yellow Medicine,1.5,Yellow Medicine,exact
+Mississippi,Adams,24.9,Adams,exact
+Mississippi,Alcorn,3.8,Alcorn,exact
+Mississippi,Amite,21.4,Amite,exact
+Mississippi,Attala,11.8,Attala,exact
+Mississippi,Benton,65.6,Benton,exact
+Mississippi,Bolivar,16.1,Bolivar,exact
+Mississippi,Calhoun,0.0,Calhoun,exact
+Mississippi,Carroll,0.5,Carroll,exact
+Mississippi,Chickasaw,22.0,Chickasaw,exact
+Mississippi,Choctaw,11.8,Choctaw,exact
+Mississippi,Claiborne,0.4,Claiborne,exact
+Mississippi,Clarke,0.4,Clarke,exact
+Mississippi,Clay,28.7,Clay,exact
+Mississippi,Coahoma,15.1,Coahoma,exact
+Mississippi,Copiah,12.4,Copiah,exact
+Mississippi,Covington,0.0,Covington,exact
+Mississippi,Desoto,19.8,DeSoto,exact-after-normalizing
+Mississippi,Forrest,37.8,Forrest,exact
+Mississippi,Franklin,70.7,,no match
+Mississippi,George,18.9,George,exact
+Mississippi,Greene,13.1,Greene,exact
+Mississippi,Grenada,23.7,Grenada,exact
+Mississippi,Hancock,23.3,Hancock,exact
+Mississippi,Harrison,37.4,Harrison,exact
+Mississippi,Hinds,37.9,Hinds,exact
+Mississippi,Holmes,6.3,Holmes,exact
+Mississippi,Humphreys,21.6,Humphreys,exact
+Mississippi,Issaquena,10.9,,no match
+Mississippi,Itawamba,6.0,Itawamba,exact
+Mississippi,Jackson,57.6,Jackson,exact
+Mississippi,Jasper,4.3,Jasper,exact
+Mississippi,Jefferson,4.7,,no match
+Mississippi,Jefferson Davis,0.0,Jefferson Davis,exact
+Mississippi,Jones,11.1,Jones,exact
+Mississippi,Kemper,0.4,Kemper,exact
+Mississippi,Lafayette,29.4,Lafayette,exact
+Mississippi,Lamar,0.8,Lamar,exact
+Mississippi,Lauderdale,17.0,Lauderdale,exact
+Mississippi,Lawrence,0.0,Lawrence,exact
+Mississippi,Leake,1.7,Leake,exact
+Mississippi,Lee,15.0,Lee,exact
+Mississippi,Leflore,32.2,Leflore,exact
+Mississippi,Lincoln,15.2,Lincoln,exact
+Mississippi,Lowndes,8.6,Lowndes,exact
+Mississippi,Madison,16.9,Madison,exact
+Mississippi,Marion,8.1,Marion,exact
+Mississippi,Marshall,18.9,Marshall,exact
+Mississippi,Monroe,9.0,Monroe,exact
+Mississippi,Montgomery,2.6,Montgomery,exact
+Mississippi,Neshoba,7.5,Neshoba,exact
+Mississippi,Newton,5.2,Newton,exact
+Mississippi,Noxubee,20.8,Noxubee,exact
+Mississippi,Oktibbeha,23.7,Oktibbeha,exact
+Mississippi,Panola,9.9,Panola,exact
+Mississippi,Pearl River,15.7,Pearl River,exact
+Mississippi,Perry,32.8,Perry,exact
+Mississippi,Pike,19.5,Pike,exact
+Mississippi,Pontotoc,10.7,Pontotoc,exact
+Mississippi,Prentiss,8.2,Prentiss,exact
+Mississippi,Quitman,12.1,,no match
+Mississippi,Rankin,11.1,Rankin,exact
+Mississippi,Scott,65.5,Scott,exact
+Mississippi,Sharkey,19.4,,no match
+Mississippi,Simpson,5.6,Simpson,exact
+Mississippi,Smith,22.6,Smith,exact
+Mississippi,Stone,41.8,Stone,exact
+Mississippi,Sunflower,4.6,Sunflower,exact
+Mississippi,Tallahatchie,7.7,,no match
+Mississippi,Tate,12.4,Tate,exact
+Mississippi,Tippah,19.5,Tippah,exact
+Mississippi,Tishomingo,15.0,Tishomingo,exact
+Mississippi,Tunica,5.0,Tunica,exact
+Mississippi,Union,19.1,Union,exact
+Mississippi,Walthall,0.0,Walthall,exact
+Mississippi,Warren,18.4,Warren,exact
+Mississippi,Washington,38.9,Washington,exact
+Mississippi,Wayne,17.4,Wayne,exact
+Mississippi,Webster,0.0,Webster,exact
+Mississippi,Wilkinson,12.7,Wilkinson,exact
+Mississippi,Winston,18.1,Winston,exact
+Mississippi,Yalobusha,20.9,Yalobusha,exact
+Mississippi,Yazoo,20.4,Yazoo,exact
+Missouri,Adair,30.2,Adair,exact
+Missouri,Andrew,5.5,Andrew,exact
+Missouri,Atchison,4.5,Atchison,exact
+Missouri,Audrain,14.6,Audrain,exact
+Missouri,Barry,28.1,Barry,exact
+Missouri,Barton,13.3,Barton,exact
+Missouri,Bates,12.5,Bates,exact
+Missouri,Benton,30.3,Benton,exact
+Missouri,Bollinger,10.6,Bollinger,exact
+Missouri,Boone,61.3,Boone,exact
+Missouri,Buchanan,55.6,Buchanan,exact
+Missouri,Butler,35.0,Butler,exact
+Missouri,Caldwell,2.8,Caldwell,exact
+Missouri,Callaway,29.8,Callaway,exact
+Missouri,Camden,18.3,Camden,exact
+Missouri,Cape Girardeau,43.2,Cape Girardeau,exact
+Missouri,Carroll,6.1,Carroll,exact
+Missouri,Carter,59.2,Carter,exact
+Missouri,Cass,33.2,Cass,exact
+Missouri,Cedar,16.2,Cedar,exact
+Missouri,Chariton,4.5,Chariton,exact
+Missouri,Christian,15.4,Christian,exact
+Missouri,Clark,4.2,Clark,exact
+Missouri,Clay,64.0,Clay,exact
+Missouri,Clinton,11.6,Clinton,exact
+Missouri,Cole,32.8,Cole,exact
+Missouri,Cooper,27.9,Cooper,exact
+Missouri,Crawford,19.8,Crawford,exact
+Missouri,Dade,20.7,Dade,exact
+Missouri,Dallas,4.8,Dallas,exact
+Missouri,Daviess,1.7,Daviess,exact
+Missouri,Dekalb,3.6,DeKalb,exact-after-normalizing
+Missouri,Dent,39.3,Dent,exact
+Missouri,Douglas,14.2,Douglas,exact
+Missouri,Dunklin,17.3,Dunklin,exact
+Missouri,Franklin,24.2,Franklin,exact
+Missouri,Gasconade,8.1,Gasconade,exact
+Missouri,Gentry,1.9,Gentry,exact
+Missouri,Greene,46.2,Greene,exact
+Missouri,Grundy,22.4,Grundy,exact
+Missouri,Harrison,15.8,Harrison,exact
+Missouri,Henry,45.9,Henry,exact
+Missouri,Hickory,25.1,Hickory,exact
+Missouri,Holt,16.6,Holt,exact
+Missouri,Howard,10.3,Howard,exact
+Missouri,Howell,25.3,Howell,exact
+Missouri,Iron,65.1,Iron,exact
+Missouri,Jackson,76.9,Jackson,exact
+Missouri,Jasper,29.9,Jasper,exact
+Missouri,Jefferson,27.8,Jefferson,exact
+Missouri,Johnson,29.9,Johnson,exact
+Missouri,Knox,0.3,Knox,exact
+Missouri,Laclede,16.1,Laclede,exact
+Missouri,Lafayette,8.1,Lafayette,exact
+Missouri,Lawrence,19.4,Lawrence,exact
+Missouri,Lewis,11.3,Lewis,exact
+Missouri,Lincoln,16.7,Lincoln,exact
+Missouri,Linn,14.3,Linn,exact
+Missouri,Livingston,41.4,Livingston,exact
+Missouri,Macon,12.3,Macon,exact
+Missouri,Madison,42.3,Madison,exact
+Missouri,Maries,2.2,Maries,exact
+Missouri,Marion,40.5,Marion,exact
+Missouri,Mcdonald,3.4,McDonald,exact-after-normalizing
+Missouri,Mercer,3.8,Mercer,exact
+Missouri,Miller,16.9,Miller,exact
+Missouri,Mississippi,24.0,Mississippi,exact
+Missouri,Moniteau,16.5,Moniteau,exact
+Missouri,Monroe,17.8,Monroe,exact
+Missouri,Montgomery,5.6,Montgomery,exact
+Missouri,Morgan,4.5,Morgan,exact
+Missouri,New Madrid,10.5,New Madrid,exact
+Missouri,Newton,12.0,Newton,exact
+Missouri,Nodaway,26.7,Nodaway,exact
+Missouri,Oregon,29.2,Oregon,exact
+Missouri,Osage,3.1,Osage,exact
+Missouri,Ozark,36.1,Ozark,exact
+Missouri,Pemiscot,14.1,Pemiscot,exact
+Missouri,Perry,25.7,Perry,exact
+Missouri,Pettis,37.5,Pettis,exact
+Missouri,Phelps,51.9,Phelps,exact
+Missouri,Pike,20.6,Pike,exact
+Missouri,Platte,52.4,Platte,exact
+Missouri,Polk,6.3,Polk,exact
+Missouri,Pulaski,26.4,Pulaski,exact
+Missouri,Putnam,0.3,Putnam,exact
+Missouri,Ralls,5.6,Ralls,exact
+Missouri,Randolph,22.8,Randolph,exact
+Missouri,Ray,7.8,Ray,exact
+Missouri,Reynolds,47.0,Reynolds,exact
+Missouri,Ripley,28.6,Ripley,exact
+Missouri,Saline,13.8,Saline,exact
+Missouri,Schuyler,0.7,Schuyler,exact
+Missouri,Scotland,0.2,Scotland,exact
+Missouri,Scott,17.6,Scott,exact
+Missouri,Shannon,68.9,Shannon,exact
+Missouri,Shelby,3.9,Shelby,exact
+Missouri,St. Charles,47.6,St. Charles,exact
+Missouri,St. Clair,24.1,St. Clair,exact
+Missouri,St. Francois,30.3,St. Francois,exact
+Missouri,St. Louis,71.0,St. Louis,exact
+Missouri,St. Louis City,98.4,St. Louis city,exact-after-normalizing
+Missouri,Ste. Genevieve,13.4,Ste. Genevieve,exact
+Missouri,Stoddard,15.5,Stoddard,exact
+Missouri,Stone,56.7,Stone,exact
+Missouri,Sullivan,2.4,,no match
+Missouri,Taney,41.8,Taney,exact
+Missouri,Texas,17.4,Texas,exact
+Missouri,Vernon,25.2,Vernon,exact
+Missouri,Warren,14.5,Warren,exact
+Missouri,Washington,25.3,Washington,exact
+Missouri,Wayne,40.2,Wayne,exact
+Missouri,Webster,2.9,Webster,exact
+Missouri,Worth,5.0,,no match
+Missouri,Wright,5.1,Wright,exact
+Montana,Beaverhead,59.8,Beaverhead,exact
+Montana,Big Horn,6.5,,no match
+Montana,Blaine,27.3,Blaine,exact
+Montana,Broadwater,65.2,Broadwater,exact
+Montana,Carbon,34.0,Carbon,exact
+Montana,Carter,61.6,,no match
+Montana,Cascade,62.6,Cascade,exact
+Montana,Chouteau,17.2,Chouteau,exact
+Montana,Custer,64.6,Custer,exact
+Montana,Daniels,0.6,,no match
+Montana,Dawson,60.7,Dawson,exact
+Montana,Deer Lodge,33.7,Deer Lodge,exact
+Montana,Fallon,43.3,Fallon,exact
+Montana,Fergus,50.2,Fergus,exact
+Montana,Flathead,53.5,Flathead,exact
+Montana,Gallatin,58.2,Gallatin,exact
+Montana,Garfield,53.2,,no match
+Montana,Glacier,11.2,,no match
+Montana,Golden Valley,7.9,,no match
+Montana,Granite,78.5,Granite,exact
+Montana,Hill,23.6,Hill,exact
+Montana,Jefferson,76.5,Jefferson,exact
+Montana,Judith Basin,32.7,,no match
+Montana,Lake,26.4,Lake,exact
+Montana,Lewis And Clark,66.4,Lewis and Clark,exact-after-normalizing
+Montana,Liberty,5.8,,no match
+Montana,Lincoln,86.5,Lincoln,exact
+Montana,Madison,63.3,Madison,exact
+Montana,Mccone,37.4,,no match
+Montana,Meagher,50.7,Meagher,exact
+Montana,Mineral,99.7,Mineral,exact
+Montana,Missoula,77.4,Missoula,exact
+Montana,Musselshell,28.5,Musselshell,exact
+Montana,Park,54.3,Park,exact
+Montana,Petroleum,67.1,,no match
+Montana,Phillips,74.4,Phillips,exact
+Montana,Pondera,8.4,Pondera,exact
+Montana,Powder River,59.1,,no match
+Montana,Powell,42.5,Powell,exact
+Montana,Prairie,77.1,,no match
+Montana,Ravalli,50.6,Ravalli,exact
+Montana,Richland,19.8,Richland,exact
+Montana,Roosevelt,2.6,,no match
+Montana,Rosebud,13.4,Rosebud,exact
+Montana,Sanders,77.2,Sanders,exact
+Montana,Sheridan,3.9,,no match
+Montana,Silver Bow,85.0,Silver Bow,exact
+Montana,Stillwater,18.5,Stillwater,exact
+Montana,Sweet Grass,37.9,Sweet Grass,exact
+Montana,Teton,19.7,Teton,exact
+Montana,Toole,10.8,Toole,exact
+Montana,Treasure,2.0,,no match
+Montana,Valley,34.1,Valley,exact
+Montana,Wheatland,16.0,Wheatland,exact
+Montana,Wibaux,18.6,,no match
+Montana,Yellowstone,59.3,Yellowstone,exact
+Nebraska,Adams,32.6,Adams,exact
+Nebraska,Antelope,0.2,Antelope,exact
+Nebraska,Arthur,0.0,,no match
+Nebraska,Banner,0.8,,no match
+Nebraska,Blaine,4.0,,no match
+Nebraska,Boone,0.0,Boone,exact
+Nebraska,Box Butte,3.7,Box Butte,exact
+Nebraska,Boyd,3.1,Boyd,exact
+Nebraska,Brown,2.4,,no match
+Nebraska,Buffalo,38.1,Buffalo,exact
+Nebraska,Burt,3.7,Burt,exact
+Nebraska,Butler,3.3,Butler,exact
+Nebraska,Cass,10.3,Cass,exact
+Nebraska,Cedar,4.4,Cedar,exact
+Nebraska,Chase,2.3,Chase,exact
+Nebraska,Cherry,4.3,Cherry,exact
+Nebraska,Cheyenne,15.3,Cheyenne,exact
+Nebraska,Clay,0.4,Clay,exact
+Nebraska,Colfax,10.2,,no match
+Nebraska,Cuming,1.6,Cuming,exact
+Nebraska,Custer,9.8,Custer,exact
+Nebraska,Dakota,55.0,Dakota,exact
+Nebraska,Dawes,55.1,,no match
+Nebraska,Dawson,24.6,Dawson,exact
+Nebraska,Deuel,0.0,,no match
+Nebraska,Dixon,6.9,,no match
+Nebraska,Dodge,49.2,Dodge,exact
+Nebraska,Douglas,89.0,Douglas,exact
+Nebraska,Dundy,0.5,Dundy,exact
+Nebraska,Fillmore,0.5,Fillmore,exact
+Nebraska,Franklin,0.1,Franklin,exact
+Nebraska,Frontier,2.8,,no match
+Nebraska,Furnas,1.3,Furnas,exact
+Nebraska,Gage,23.8,Gage,exact
+Nebraska,Garden,6.8,,no match
+Nebraska,Garfield,1.2,Garfield,exact
+Nebraska,Gosper,1.5,,no match
+Nebraska,Grant,0.4,,no match
+Nebraska,Greeley,0.0,Greeley,exact
+Nebraska,Hall,47.7,Hall,exact
+Nebraska,Hamilton,6.5,Hamilton,exact
+Nebraska,Harlan,14.2,,no match
+Nebraska,Hayes,0.2,,no match
+Nebraska,Hitchcock,0.2,Hitchcock,exact
+Nebraska,Holt,4.2,Holt,exact
+Nebraska,Hooker,1.1,,no match
+Nebraska,Howard,0.5,Howard,exact
+Nebraska,Jefferson,12.6,Jefferson,exact
+Nebraska,Johnson,0.0,Johnson,exact
+Nebraska,Kearney,9.0,Kearney,exact
+Nebraska,Keith,30.1,Keith,exact
+Nebraska,Keya Paha,0.6,,no match
+Nebraska,Kimball,1.0,Kimball,exact
+Nebraska,Knox,10.0,Knox,exact
+Nebraska,Lancaster,82.0,Lancaster,exact
+Nebraska,Lincoln,32.7,Lincoln,exact
+Nebraska,Logan,0.0,,no match
+Nebraska,Loup,4.5,,no match
+Nebraska,Madison,28.8,Madison,exact
+Nebraska,Mcpherson,0.5,,no match
+Nebraska,Merrick,12.5,Merrick,exact
+Nebraska,Morrill,0.7,Morrill,exact
+Nebraska,Nance,0.3,,no match
+Nebraska,Nemaha,7.6,Nemaha,exact
+Nebraska,Nuckolls,4.0,Nuckolls,exact
+Nebraska,Otoe,25.0,Otoe,exact
+Nebraska,Pawnee,0.0,Pawnee,exact
+Nebraska,Perkins,0.0,Perkins,exact
+Nebraska,Phelps,4.7,Phelps,exact
+Nebraska,Pierce,1.5,Pierce,exact
+Nebraska,Platte,37.3,Platte,exact
+Nebraska,Polk,0.3,Polk,exact
+Nebraska,Red Willow,11.5,Red Willow,exact
+Nebraska,Richardson,5.0,Richardson,exact
+Nebraska,Rock,1.4,,no match
+Nebraska,Saline,5.6,Saline,exact
+Nebraska,Sarpy,65.1,Sarpy,exact
+Nebraska,Saunders,8.9,Saunders,exact
+Nebraska,Scotts Bluff,42.7,Scotts Bluff,exact
+Nebraska,Seward,14.4,Seward,exact
+Nebraska,Sheridan,0.1,Sheridan,exact
+Nebraska,Sherman,4.4,,no match
+Nebraska,Sioux,15.0,,no match
+Nebraska,Stanton,3.9,Stanton,exact
+Nebraska,Thayer,0.0,Thayer,exact
+Nebraska,Thomas,22.3,,no match
+Nebraska,Thurston,1.5,Thurston,exact
+Nebraska,Valley,0.2,Valley,exact
+Nebraska,Washington,18.5,Washington,exact
+Nebraska,Wayne,18.7,Wayne,exact
+Nebraska,Webster,0.8,,no match
+Nebraska,Wheeler,0.5,,no match
+Nebraska,York,11.6,York,exact
+Nevada,Carson City,92.2,Carson City,exact
+Nevada,Churchill,68.3,Churchill,exact
+Nevada,Clark,80.0,Clark,exact
+Nevada,Douglas,69.5,Douglas,exact
+Nevada,Elko,72.8,Elko,exact
+Nevada,Esmeralda,99.7,,no match
+Nevada,Eureka,94.3,,no match
+Nevada,Humboldt,82.5,Humboldt,exact
+Nevada,Lander,89.4,,no match
+Nevada,Lincoln,97.2,,no match
+Nevada,Lyon,73.0,Lyon,exact
+Nevada,Mineral,45.8,,no match
+Nevada,Nye,57.7,Nye,exact
+Nevada,Pershing,96.4,Pershing,exact
+Nevada,Storey,26.0,Storey,exact
+Nevada,Washoe,94.8,Washoe,exact
+Nevada,White Pine,98.4,White Pine,exact
+New Hampshire,Belknap,27.1,Belknap,exact
+New Hampshire,Carroll,34.4,Carroll,exact
+New Hampshire,Cheshire,34.0,Cheshire,exact
+New Hampshire,Coos,43.5,Coos,exact
+New Hampshire,Grafton,43.8,Grafton,exact
+New Hampshire,Hillsborough,67.5,Hillsborough,exact
+New Hampshire,Merrimack,46.7,Merrimack,exact
+New Hampshire,Rockingham,66.9,Rockingham,exact
+New Hampshire,Strafford,48.0,Strafford,exact
+New Hampshire,Sullivan,23.0,Sullivan,exact
+New Jersey,Atlantic,84.3,Atlantic,exact
+New Jersey,Bergen,95.8,Bergen,exact
+New Jersey,Burlington,81.1,Burlington,exact
+New Jersey,Camden,91.0,Camden,exact
+New Jersey,Cape May,95.9,Cape May,exact
+New Jersey,Cumberland,65.5,Cumberland,exact
+New Jersey,Essex,96.1,Essex,exact
+New Jersey,Gloucester,72.8,Gloucester,exact
+New Jersey,Hudson,99.2,Hudson,exact
+New Jersey,Hunterdon,69.2,Hunterdon,exact
+New Jersey,Mercer,94.4,Mercer,exact
+New Jersey,Middlesex,88.2,Middlesex,exact
+New Jersey,Monmouth,86.6,Monmouth,exact
+New Jersey,Morris,95.4,Morris,exact
+New Jersey,Ocean,81.9,Ocean,exact
+New Jersey,Passaic,96.2,Passaic,exact
+New Jersey,Salem,61.3,Salem,exact
+New Jersey,Somerset,88.5,Somerset,exact
+New Jersey,Sussex,83.4,Sussex,exact
+New Jersey,Union,93.7,Union,exact
+New Jersey,Warren,83.7,Warren,exact
+New Mexico,Bernalillo,92.7,Bernalillo,exact
+New Mexico,Catron,85.0,Catron,exact
+New Mexico,Chaves,51.3,Chaves,exact
+New Mexico,Cibola,47.2,Cibola,exact
+New Mexico,Colfax,5.1,Colfax,exact
+New Mexico,Curry,42.7,Curry,exact
+New Mexico,De Baca,11.8,,no match
+New Mexico,Doa Ana,72.5,Doña Ana,fuzzy
+New Mexico,Eddy,69.2,Eddy,exact
+New Mexico,Grant,55.8,Grant,exact
+New Mexico,Guadalupe,13.3,,no match
+New Mexico,Harding,11.1,,no match
+New Mexico,Hidalgo,57.9,,no match
+New Mexico,Lea,48.0,Lea,exact
+New Mexico,Lincoln,81.5,Lincoln,exact
+New Mexico,Los Alamos,92.1,Los Alamos,exact
+New Mexico,Luna,39.3,Luna,exact
+New Mexico,Mckinley,30.4,McKinley,exact-after-normalizing
+New Mexico,Mora,32.3,,no match
+New Mexico,Otero,69.7,Otero,exact
+New Mexico,Quay,17.9,Quay,exact
+New Mexico,Rio Arriba,60.5,Rio Arriba,exact
+New Mexico,Roosevelt,32.5,Roosevelt,exact
+New Mexico,San Juan,70.3,San Juan,exact
+New Mexico,San Miguel,37.7,San Miguel,exact
+New Mexico,Sandoval,58.4,Sandoval,exact
+New Mexico,Santa Fe,63.4,Santa Fe,exact
+New Mexico,Sierra,58.1,Sierra,exact
+New Mexico,Socorro,60.2,Socorro,exact
+New Mexico,Taos,51.1,Taos,exact
+New Mexico,Torrance,10.0,Torrance,exact
+New Mexico,Union,6.0,,no match
+New Mexico,Valencia,19.3,Valencia,exact
+New York,Albany,67.4,Albany,exact
+New York,Allegany,8.0,Allegany,exact
+New York,Bronx,99.6,Bronx,exact
+New York,Broome,63.9,Broome,exact
+New York,Cattaraugus,31.6,Cattaraugus,exact
+New York,Cayuga,43.4,Cayuga,exact
+New York,Chautauqua,45.2,Chautauqua,exact
+New York,Chemung,65.2,Chemung,exact
+New York,Chenango,18.2,Chenango,exact
+New York,Clinton,52.4,Clinton,exact
+New York,Columbia,28.1,Columbia,exact
+New York,Cortland,51.6,Cortland,exact
+New York,Delaware,23.9,Delaware,exact
+New York,Dutchess,61.4,Dutchess,exact
+New York,Erie,76.9,Erie,exact
+New York,Essex,96.5,Essex,exact
+New York,Franklin,42.4,Franklin,exact
+New York,Fulton,65.9,Fulton,exact
+New York,Genesee,38.4,Genesee,exact
+New York,Greene,32.0,Greene,exact
+New York,Hamilton,100.0,Hamilton,exact
+New York,Herkimer,55.0,Herkimer,exact
+New York,Jefferson,30.6,Jefferson,exact
+New York,Kings,100.0,Kings,exact
+New York,Lewis,12.7,Lewis,exact
+New York,Livingston,39.3,Livingston,exact
+New York,Madison,37.6,Madison,exact
+New York,Monroe,75.6,Monroe,exact
+New York,Montgomery,43.5,Montgomery,exact
+New York,Nassau,87.5,Nassau,exact
+New York,New York,100.0,New York,exact
+New York,Niagara,61.8,Niagara,exact
+New York,Oneida,57.3,Oneida,exact
+New York,Onondaga,59.1,Onondaga,exact
+New York,Ontario,44.8,Ontario,exact
+New York,Orange,68.4,Orange,exact
+New York,Orleans,38.2,Orleans,exact
+New York,Oswego,40.3,Oswego,exact
+New York,Otsego,26.3,Otsego,exact
+New York,Putnam,77.2,Putnam,exact
+New York,Queens,99.9,Queens,exact
+New York,Rensselaer,53.5,Rensselaer,exact
+New York,Richmond,99.8,Richmond,exact
+New York,Rockland,83.7,Rockland,exact
+New York,Saratoga,62.2,Saratoga,exact
+New York,Schenectady,80.7,Schenectady,exact
+New York,Schoharie,13.0,Schoharie,exact
+New York,Schuyler,19.0,Schuyler,exact
+New York,Seneca,32.2,Seneca,exact
+New York,St. Lawrence,20.9,St. Lawrence,exact
+New York,Steuben,28.6,Steuben,exact
+New York,Suffolk,86.1,Suffolk,exact
+New York,Sullivan,26.1,Sullivan,exact
+New York,Tioga,25.8,Tioga,exact
+New York,Tompkins,54.3,Tompkins,exact
+New York,Ulster,52.3,Ulster,exact
+New York,Warren,88.7,Warren,exact
+New York,Washington,27.4,Washington,exact
+New York,Wayne,28.7,Wayne,exact
+New York,Westchester,93.0,Westchester,exact
+New York,Wyoming,13.7,Wyoming,exact
+New York,Yates,8.9,Yates,exact
+North Carolina,Alamance,27.4,Alamance,exact
+North Carolina,Alexander,2.8,Alexander,exact
+North Carolina,Alleghany,13.4,Alleghany,exact
+North Carolina,Anson,5.1,Anson,exact
+North Carolina,Ashe,19.1,Ashe,exact
+North Carolina,Avery,100.0,Avery,exact
+North Carolina,Beaufort,11.1,Beaufort,exact
+North Carolina,Bertie,9.0,Bertie,exact
+North Carolina,Bladen,9.7,Bladen,exact
+North Carolina,Brunswick,13.0,Brunswick,exact
+North Carolina,Buncombe,41.1,Buncombe,exact
+North Carolina,Burke,38.0,Burke,exact
+North Carolina,Cabarrus,18.1,Cabarrus,exact
+North Carolina,Caldwell,20.9,Caldwell,exact
+North Carolina,Camden,28.5,,no match
+North Carolina,Carteret,73.2,Carteret,exact
+North Carolina,Caswell,14.4,Caswell,exact
+North Carolina,Catawba,19.9,Catawba,exact
+North Carolina,Chatham,20.2,Chatham,exact
+North Carolina,Cherokee,94.5,Cherokee,exact
+North Carolina,Chowan,11.9,Chowan,exact
+North Carolina,Clay,59.4,Clay,exact
+North Carolina,Cleveland,12.8,Cleveland,exact
+North Carolina,Columbus,7.2,Columbus,exact
+North Carolina,Craven,48.2,Craven,exact
+North Carolina,Cumberland,17.8,Cumberland,exact
+North Carolina,Currituck,30.3,Currituck,exact
+North Carolina,Dare,61.0,Dare,exact
+North Carolina,Davidson,18.3,Davidson,exact
+North Carolina,Davie,11.3,Davie,exact
+North Carolina,Duplin,2.8,Duplin,exact
+North Carolina,Durham,65.0,Durham,exact
+North Carolina,Edgecombe,20.1,Edgecombe,exact
+North Carolina,Forsyth,44.8,Forsyth,exact
+North Carolina,Franklin,2.8,Franklin,exact
+North Carolina,Gaston,38.0,Gaston,exact
+North Carolina,Gates,28.5,Gates,exact
+North Carolina,Graham,100.0,Graham,exact
+North Carolina,Granville,13.3,Granville,exact
+North Carolina,Greene,0.0,Greene,exact
+North Carolina,Guilford,74.7,Guilford,exact
+North Carolina,Halifax,20.2,Halifax,exact
+North Carolina,Harnett,6.8,Harnett,exact
+North Carolina,Haywood,31.7,Haywood,exact
+North Carolina,Henderson,28.6,Henderson,exact
+North Carolina,Hertford,7.8,Hertford,exact
+North Carolina,Hoke,9.4,Hoke,exact
+North Carolina,Hyde,56.5,Hyde,exact
+North Carolina,Iredell,19.8,Iredell,exact
+North Carolina,Jackson,86.9,Jackson,exact
+North Carolina,Johnston,8.7,Johnston,exact
+North Carolina,Jones,31.0,Jones,exact
+North Carolina,Lee,20.2,Lee,exact
+North Carolina,Lenoir,16.6,Lenoir,exact
+North Carolina,Lincoln,5.7,Lincoln,exact
+North Carolina,Macon,100.0,Macon,exact
+North Carolina,Madison,27.5,Madison,exact
+North Carolina,Martin,5.4,Martin,exact
+North Carolina,Mcdowell,35.8,McDowell,exact-after-normalizing
+North Carolina,Mecklenburg,68.7,Mecklenburg,exact
+North Carolina,Mitchell,100.0,Mitchell,exact
+North Carolina,Montgomery,58.5,Montgomery,exact
+North Carolina,Moore,17.9,Moore,exact
+North Carolina,Nash,21.2,Nash,exact
+North Carolina,New Hanover,45.8,New Hanover,exact
+North Carolina,Northampton,1.0,Northampton,exact
+North Carolina,Onslow,28.9,Onslow,exact
+North Carolina,Orange,52.2,Orange,exact
+North Carolina,Pamlico,2.6,Pamlico,exact
+North Carolina,Pasquotank,17.9,Pasquotank,exact
+North Carolina,Pender,16.0,Pender,exact
+North Carolina,Perquimans,1.4,Perquimans,exact
+North Carolina,Person,7.2,Person,exact
+North Carolina,Pitt,23.3,Pitt,exact
+North Carolina,Polk,12.0,Polk,exact
+North Carolina,Randolph,13.1,Randolph,exact
+North Carolina,Richmond,23.5,Richmond,exact
+North Carolina,Robeson,14.3,Robeson,exact
+North Carolina,Rockingham,16.3,Rockingham,exact
+North Carolina,Rowan,21.4,Rowan,exact
+North Carolina,Rutherford,10.0,Rutherford,exact
+North Carolina,Sampson,3.2,Sampson,exact
+North Carolina,Scotland,14.9,Scotland,exact
+North Carolina,Stanly,16.9,Stanly,exact
+North Carolina,Stokes,9.3,Stokes,exact
+North Carolina,Surry,11.6,Surry,exact
+North Carolina,Swain,71.7,Swain,exact
+North Carolina,Transylvania,61.0,Transylvania,exact
+North Carolina,Tyrrell,65.5,Tyrrell,exact
+North Carolina,Union,15.6,Union,exact
+North Carolina,Vance,22.4,Vance,exact
+North Carolina,Wake,74.6,Wake,exact
+North Carolina,Warren,12.4,Warren,exact
+North Carolina,Washington,19.4,Washington,exact
+North Carolina,Watauga,70.4,Watauga,exact
+North Carolina,Wayne,12.6,Wayne,exact
+North Carolina,Wilkes,22.7,Wilkes,exact
+North Carolina,Wilson,31.1,Wilson,exact
+North Carolina,Yadkin,6.3,Yadkin,exact
+North Carolina,Yancey,100.0,Yancey,exact
+North Dakota,Adams,0.9,Adams,exact
+North Dakota,Barnes,30.3,Barnes,exact
+North Dakota,Benson,1.6,,no match
+North Dakota,Billings,69.6,,no match
+North Dakota,Bottineau,3.4,Bottineau,exact
+North Dakota,Bowman,6.8,Bowman,exact
+North Dakota,Burke,9.0,,no match
+North Dakota,Burleigh,67.0,Burleigh,exact
+North Dakota,Cass,73.6,Cass,exact
+North Dakota,Cavalier,0.2,Cavalier,exact
+North Dakota,Dickey,0.1,Dickey,exact
+North Dakota,Divide,0.3,,no match
+North Dakota,Dunn,14.6,Dunn,exact
+North Dakota,Eddy,0.0,,no match
+North Dakota,Emmons,6.9,,no match
+North Dakota,Foster,0.3,Foster,exact
+North Dakota,Golden Valley,30.2,,no match
+North Dakota,Grand Forks,62.4,Grand Forks,exact
+North Dakota,Grant,3.6,Grant,exact
+North Dakota,Griggs,1.6,Griggs,exact
+North Dakota,Hettinger,0.0,,no match
+North Dakota,Kidder,3.2,Kidder,exact
+North Dakota,Lamoure,0.1,LaMoure,exact-after-normalizing
+North Dakota,Logan,0.5,,no match
+North Dakota,Mchenry,5.0,McHenry,exact-after-normalizing
+North Dakota,Mcintosh,0.8,McIntosh,exact-after-normalizing
+North Dakota,Mckenzie,22.8,,no match
+North Dakota,Mclean,15.4,McLean,exact-after-normalizing
+North Dakota,Mercer,11.4,Mercer,exact
+North Dakota,Morton,36.3,Morton,exact
+North Dakota,Mountrail,20.9,Mountrail,exact
+North Dakota,Nelson,0.2,,no match
+North Dakota,Oliver,2.3,Oliver,exact
+North Dakota,Pembina,0.9,Pembina,exact
+North Dakota,Pierce,1.8,,no match
+North Dakota,Ramsey,19.1,Ramsey,exact
+North Dakota,Ransom,12.7,Ransom,exact
+North Dakota,Renville,9.1,,no match
+North Dakota,Richland,27.1,Richland,exact
+North Dakota,Rolette,1.8,Rolette,exact
+North Dakota,Sargent,3.2,Sargent,exact
+North Dakota,Sheridan,2.5,,no match
+North Dakota,Sioux,15.3,,no match
+North Dakota,Slope,44.7,,no match
+North Dakota,Stark,34.1,Stark,exact
+North Dakota,Steele,2.8,Steele,exact
+North Dakota,Stutsman,46.1,Stutsman,exact
+North Dakota,Towner,0.7,Towner,exact
+North Dakota,Traill,0.0,Traill,exact
+North Dakota,Walsh,27.1,Walsh,exact
+North Dakota,Ward,33.9,Ward,exact
+North Dakota,Wells,0.4,Wells,exact
+North Dakota,Williams,51.6,Williams,exact
+Ohio,Adams,11.9,Adams,exact
+Ohio,Allen,37.2,Allen,exact
+Ohio,Ashland,23.6,Ashland,exact
+Ohio,Ashtabula,33.5,Ashtabula,exact
+Ohio,Athens,62.2,Athens,exact
+Ohio,Auglaize,30.6,Auglaize,exact
+Ohio,Belmont,21.3,Belmont,exact
+Ohio,Brown,2.1,Brown,exact
+Ohio,Butler,52.1,Butler,exact
+Ohio,Carroll,13.6,Carroll,exact
+Ohio,Champaign,17.0,Champaign,exact
+Ohio,Clark,49.3,Clark,exact
+Ohio,Clermont,37.9,Clermont,exact
+Ohio,Clinton,17.1,Clinton,exact
+Ohio,Columbiana,18.1,Columbiana,exact
+Ohio,Coshocton,22.5,Coshocton,exact
+Ohio,Crawford,32.4,Crawford,exact
+Ohio,Cuyahoga,85.3,Cuyahoga,exact
+Ohio,Darke,20.3,Darke,exact
+Ohio,Defiance,29.8,Defiance,exact
+Ohio,Delaware,55.3,Delaware,exact
+Ohio,Erie,58.2,Erie,exact
+Ohio,Fairfield,44.5,Fairfield,exact
+Ohio,Fayette,13.6,Fayette,exact
+Ohio,Franklin,87.3,Franklin,exact
+Ohio,Fulton,23.1,Fulton,exact
+Ohio,Gallia,38.3,Gallia,exact
+Ohio,Geauga,51.9,Geauga,exact
+Ohio,Greene,64.2,Greene,exact
+Ohio,Guernsey,24.2,Guernsey,exact
+Ohio,Hamilton,87.8,Hamilton,exact
+Ohio,Hancock,32.8,Hancock,exact
+Ohio,Hardin,15.8,Hardin,exact
+Ohio,Harrison,14.8,Harrison,exact
+Ohio,Henry,16.3,Henry,exact
+Ohio,Highland,24.6,Highland,exact
+Ohio,Hocking,43.4,Hocking,exact
+Ohio,Holmes,4.3,Holmes,exact
+Ohio,Huron,26.2,Huron,exact
+Ohio,Jackson,19.9,Jackson,exact
+Ohio,Jefferson,33.2,Jefferson,exact
+Ohio,Knox,18.8,Knox,exact
+Ohio,Lake,70.6,Lake,exact
+Ohio,Lawrence,32.9,Lawrence,exact
+Ohio,Licking,33.5,Licking,exact
+Ohio,Logan,34.7,Logan,exact
+Ohio,Lorain,61.7,Lorain,exact
+Ohio,Lucas,80.3,Lucas,exact
+Ohio,Madison,20.4,Madison,exact
+Ohio,Mahoning,57.7,Mahoning,exact
+Ohio,Marion,37.0,Marion,exact
+Ohio,Medina,53.5,Medina,exact
+Ohio,Meigs,16.4,,no match
+Ohio,Mercer,16.0,Mercer,exact
+Ohio,Miami,35.7,Miami,exact
+Ohio,Monroe,57.3,Monroe,exact
+Ohio,Montgomery,81.7,Montgomery,exact
+Ohio,Morgan,30.3,Morgan,exact
+Ohio,Morrow,4.3,Morrow,exact
+Ohio,Muskingum,42.9,Muskingum,exact
+Ohio,Noble,27.9,Noble,exact
+Ohio,Ottawa,38.6,Ottawa,exact
+Ohio,Paulding,9.6,Paulding,exact
+Ohio,Perry,40.6,Perry,exact
+Ohio,Pickaway,30.4,Pickaway,exact
+Ohio,Pike,15.7,Pike,exact
+Ohio,Portage,56.3,Portage,exact
+Ohio,Preble,12.6,Preble,exact
+Ohio,Putnam,3.6,Putnam,exact
+Ohio,Richland,27.7,Richland,exact
+Ohio,Ross,30.3,Ross,exact
+Ohio,Sandusky,43.5,Sandusky,exact
+Ohio,Scioto,37.9,Scioto,exact
+Ohio,Seneca,28.5,Seneca,exact
+Ohio,Shelby,35.1,Shelby,exact
+Ohio,Stark,63.4,Stark,exact
+Ohio,Summit,79.7,Summit,exact
+Ohio,Trumbull,41.9,Trumbull,exact
+Ohio,Tuscarawas,21.3,Tuscarawas,exact
+Ohio,Union,31.9,Union,exact
+Ohio,Van Wert,28.6,Van Wert,exact
+Ohio,Vinton,39.6,Vinton,exact
+Ohio,Warren,51.0,Warren,exact
+Ohio,Washington,38.1,Washington,exact
+Ohio,Wayne,25.6,Wayne,exact
+Ohio,Williams,30.3,Williams,exact
+Ohio,Wood,41.9,Wood,exact
+Ohio,Wyandot,14.5,Wyandot,exact
+Oklahoma,Adair,8.3,Adair,exact
+Oklahoma,Alfalfa,4.6,,no match
+Oklahoma,Atoka,3.8,Atoka,exact
+Oklahoma,Beaver,0.4,,no match
+Oklahoma,Beckham,4.6,Beckham,exact
+Oklahoma,Blaine,6.2,Blaine,exact
+Oklahoma,Bryan,14.3,Bryan,exact
+Oklahoma,Caddo,4.6,Caddo,exact
+Oklahoma,Canadian,37.5,Canadian,exact
+Oklahoma,Carter,27.8,Carter,exact
+Oklahoma,Cherokee,15.9,Cherokee,exact
+Oklahoma,Choctaw,8.8,Choctaw,exact
+Oklahoma,Cimarron,2.9,,no match
+Oklahoma,Cleveland,52.9,Cleveland,exact
+Oklahoma,Coal,0.0,Coal,exact
+Oklahoma,Comanche,52.3,Comanche,exact
+Oklahoma,Cotton,1.6,Cotton,exact
+Oklahoma,Craig,3.4,Craig,exact
+Oklahoma,Creek,17.9,Creek,exact
+Oklahoma,Custer,29.0,Custer,exact
+Oklahoma,Delaware,4.1,Delaware,exact
+Oklahoma,Dewey,1.0,Dewey,exact
+Oklahoma,Ellis,0.1,Ellis,exact
+Oklahoma,Garfield,46.7,Garfield,exact
+Oklahoma,Garvin,5.6,Garvin,exact
+Oklahoma,Grady,11.7,Grady,exact
+Oklahoma,Grant,0.0,,no match
+Oklahoma,Greer,2.4,Greer,exact
+Oklahoma,Harmon,0.9,,no match
+Oklahoma,Harper,0.1,,no match
+Oklahoma,Haskell,16.6,Haskell,exact
+Oklahoma,Hughes,2.6,Hughes,exact
+Oklahoma,Jackson,29.3,Jackson,exact
+Oklahoma,Jefferson,4.0,Jefferson,exact
+Oklahoma,Johnston,19.7,Johnston,exact
+Oklahoma,Kay,31.8,Kay,exact
+Oklahoma,Kingfisher,4.9,Kingfisher,exact
+Oklahoma,Kiowa,6.1,,no match
+Oklahoma,Latimer,8.1,,no match
+Oklahoma,Le Flore,22.3,Le Flore,exact
+Oklahoma,Lincoln,1.8,Lincoln,exact
+Oklahoma,Logan,9.1,Logan,exact
+Oklahoma,Love,2.8,Love,exact
+Oklahoma,Major,0.2,Major,exact
+Oklahoma,Marshall,15.6,Marshall,exact
+Oklahoma,Mayes,11.8,Mayes,exact
+Oklahoma,Mcclain,6.3,McClain,exact-after-normalizing
+Oklahoma,Mccurtain,19.1,McCurtain,exact-after-normalizing
+Oklahoma,Mcintosh,43.3,McIntosh,exact-after-normalizing
+Oklahoma,Murray,23.4,Murray,exact
+Oklahoma,Muskogee,34.7,Muskogee,exact
+Oklahoma,Noble,17.8,Noble,exact
+Oklahoma,Nowata,9.1,Nowata,exact
+Oklahoma,Okfuskee,1.1,Okfuskee,exact
+Oklahoma,Oklahoma,58.2,Oklahoma,exact
+Oklahoma,Okmulgee,22.0,Okmulgee,exact
+Oklahoma,Osage,24.2,Osage,exact
+Oklahoma,Ottawa,22.4,Ottawa,exact
+Oklahoma,Pawnee,26.3,Pawnee,exact
+Oklahoma,Payne,30.2,Payne,exact
+Oklahoma,Pittsburg,22.5,Pittsburg,exact
+Oklahoma,Pontotoc,9.3,Pontotoc,exact
+Oklahoma,Pottawatomie,28.3,Pottawatomie,exact
+Oklahoma,Pushmataha,3.1,Pushmataha,exact
+Oklahoma,Roger Mills,15.9,Roger Mills,exact
+Oklahoma,Rogers,13.2,Rogers,exact
+Oklahoma,Seminole,10.7,Seminole,exact
+Oklahoma,Sequoyah,21.0,Sequoyah,exact
+Oklahoma,Stephens,11.0,Stephens,exact
+Oklahoma,Texas,27.3,Texas,exact
+Oklahoma,Tillman,3.9,,no match
+Oklahoma,Tulsa,61.9,Tulsa,exact
+Oklahoma,Wagoner,19.3,Wagoner,exact
+Oklahoma,Washington,19.6,Washington,exact
+Oklahoma,Washita,0.7,Washita,exact
+Oklahoma,Woods,3.6,Woods,exact
+Oklahoma,Woodward,10.0,Woodward,exact
+Oregon,Baker,60.8,Baker,exact
+Oregon,Benton,77.3,Benton,exact
+Oregon,Clackamas,83.2,Clackamas,exact
+Oregon,Clatsop,51.1,Clatsop,exact
+Oregon,Columbia,43.6,Columbia,exact
+Oregon,Coos,53.1,Coos,exact
+Oregon,Crook,71.0,Crook,exact
+Oregon,Curry,75.3,Curry,exact
+Oregon,Deschutes,83.8,Deschutes,exact
+Oregon,Douglas,66.2,Douglas,exact
+Oregon,Gilliam,27.8,,no match
+Oregon,Grant,64.9,Grant,exact
+Oregon,Harney,69.3,,no match
+Oregon,Hood River,82.1,Hood River,exact
+Oregon,Jackson,83.3,Jackson,exact
+Oregon,Jefferson,47.3,Jefferson,exact
+Oregon,Josephine,86.3,Josephine,exact
+Oregon,Klamath,61.3,Klamath,exact
+Oregon,Lake,82.3,Lake,exact
+Oregon,Lane,86.5,Lane,exact
+Oregon,Lincoln,66.4,Lincoln,exact
+Oregon,Linn,48.8,Linn,exact
+Oregon,Malheur,40.3,Malheur,exact
+Oregon,Marion,69.1,Marion,exact
+Oregon,Morrow,22.4,Morrow,exact
+Oregon,Multnomah,99.2,Multnomah,exact
+Oregon,Polk,60.6,Polk,exact
+Oregon,Sherman,29.0,,no match
+Oregon,Tillamook,61.8,Tillamook,exact
+Oregon,Umatilla,34.8,Umatilla,exact
+Oregon,Union,58.2,Union,exact
+Oregon,Wallowa,57.8,Wallowa,exact
+Oregon,Wasco,68.8,Wasco,exact
+Oregon,Washington,93.2,Washington,exact
+Oregon,Wheeler,50.7,,no match
+Oregon,Yamhill,63.6,Yamhill,exact
+Pennsylvania,Adams,26.0,Adams,exact
+Pennsylvania,Allegheny,80.5,Allegheny,exact
+Pennsylvania,Armstrong,31.6,Armstrong,exact
+Pennsylvania,Beaver,53.0,Beaver,exact
+Pennsylvania,Bedford,27.4,Bedford,exact
+Pennsylvania,Berks,70.5,Berks,exact
+Pennsylvania,Blair,59.8,Blair,exact
+Pennsylvania,Bradford,26.7,Bradford,exact
+Pennsylvania,Bucks,57.6,Bucks,exact
+Pennsylvania,Butler,31.8,Butler,exact
+Pennsylvania,Cambria,51.0,Cambria,exact
+Pennsylvania,Cameron,53.9,Cameron,exact
+Pennsylvania,Carbon,45.6,Carbon,exact
+Pennsylvania,Centre,63.0,Centre,exact
+Pennsylvania,Chester,55.7,Chester,exact
+Pennsylvania,Clarion,32.4,Clarion,exact
+Pennsylvania,Clearfield,26.7,Clearfield,exact
+Pennsylvania,Clinton,41.0,Clinton,exact
+Pennsylvania,Columbia,26.4,Columbia,exact
+Pennsylvania,Crawford,34.7,Crawford,exact
+Pennsylvania,Cumberland,49.8,Cumberland,exact
+Pennsylvania,Dauphin,63.6,Dauphin,exact
+Pennsylvania,Delaware,90.1,Delaware,exact
+Pennsylvania,Elk,44.3,Elk,exact
+Pennsylvania,Erie,53.9,Erie,exact
+Pennsylvania,Fayette,40.2,Fayette,exact
+Pennsylvania,Forest,84.6,Forest,exact
+Pennsylvania,Franklin,26.4,Franklin,exact
+Pennsylvania,Fulton,21.7,Fulton,exact
+Pennsylvania,Greene,28.5,Greene,exact
+Pennsylvania,Huntingdon,37.3,Huntingdon,exact
+Pennsylvania,Indiana,40.9,Indiana,exact
+Pennsylvania,Jefferson,44.0,Jefferson,exact
+Pennsylvania,Juniata,14.9,Juniata,exact
+Pennsylvania,Lackawanna,62.8,Lackawanna,exact
+Pennsylvania,Lancaster,50.5,Lancaster,exact
+Pennsylvania,Lawrence,44.6,Lawrence,exact
+Pennsylvania,Lebanon,55.0,Lebanon,exact
+Pennsylvania,Lehigh,72.2,Lehigh,exact
+Pennsylvania,Luzerne,58.9,Luzerne,exact
+Pennsylvania,Lycoming,35.9,Lycoming,exact
+Pennsylvania,Mckean,48.6,McKean,exact-after-normalizing
+Pennsylvania,Mercer,27.7,Mercer,exact
+Pennsylvania,Mifflin,27.0,Mifflin,exact
+Pennsylvania,Monroe,45.4,Monroe,exact
+Pennsylvania,Montgomery,67.4,Montgomery,exact
+Pennsylvania,Montour,38.6,Montour,exact
+Pennsylvania,Northampton,70.8,Northampton,exact
+Pennsylvania,Northumberland,44.7,Northumberland,exact
+Pennsylvania,Perry,25.7,Perry,exact
+Pennsylvania,Philadelphia,98.5,Philadelphia,exact
+Pennsylvania,Pike,40.8,Pike,exact
+Pennsylvania,Potter,10.5,Potter,exact
+Pennsylvania,Schuylkill,51.7,Schuylkill,exact
+Pennsylvania,Snyder,22.1,Snyder,exact
+Pennsylvania,Somerset,26.8,Somerset,exact
+Pennsylvania,Sullivan,44.6,,no match
+Pennsylvania,Susquehanna,13.9,Susquehanna,exact
+Pennsylvania,Tioga,11.3,Tioga,exact
+Pennsylvania,Union,32.3,Union,exact
+Pennsylvania,Venango,46.7,Venango,exact
+Pennsylvania,Warren,53.3,Warren,exact
+Pennsylvania,Washington,42.2,Washington,exact
+Pennsylvania,Wayne,19.2,Wayne,exact
+Pennsylvania,Westmoreland,47.1,Westmoreland,exact
+Pennsylvania,Wyoming,12.3,Wyoming,exact
+Pennsylvania,York,42.6,York,exact
+Rhode Island,Bristol,86.2,Bristol,exact
+Rhode Island,Kent,69.6,Kent,exact
+Rhode Island,Newport,67.5,Newport,exact
+Rhode Island,Providence,85.1,Providence,exact
+Rhode Island,Washington,64.4,Washington,exact
+South Carolina,Abbeville,26.1,Abbeville,exact
+South Carolina,Aiken,24.7,Aiken,exact
+South Carolina,Allendale,5.9,Allendale,exact
+South Carolina,Anderson,25.6,Anderson,exact
+South Carolina,Bamberg,6.0,Bamberg,exact
+South Carolina,Barnwell,6.6,Barnwell,exact
+South Carolina,Beaufort,31.1,Beaufort,exact
+South Carolina,Berkeley,38.1,Berkeley,exact
+South Carolina,Calhoun,7.9,Calhoun,exact
+South Carolina,Charleston,56.2,Charleston,exact
+South Carolina,Cherokee,13.4,Cherokee,exact
+South Carolina,Chester,27.6,Chester,exact
+South Carolina,Chesterfield,24.2,Chesterfield,exact
+South Carolina,Clarendon,9.6,Clarendon,exact
+South Carolina,Colleton,3.4,Colleton,exact
+South Carolina,Darlington,17.2,Darlington,exact
+South Carolina,Dillon,8.0,Dillon,exact
+South Carolina,Dorchester,32.0,Dorchester,exact
+South Carolina,Edgefield,24.5,Edgefield,exact
+South Carolina,Fairfield,21.8,Fairfield,exact
+South Carolina,Florence,22.2,Florence,exact
+South Carolina,Georgetown,27.2,Georgetown,exact
+South Carolina,Greenville,33.3,Greenville,exact
+South Carolina,Greenwood,20.4,Greenwood,exact
+South Carolina,Hampton,8.2,Hampton,exact
+South Carolina,Horry,27.3,Horry,exact
+South Carolina,Jasper,9.6,Jasper,exact
+South Carolina,Kershaw,9.5,Kershaw,exact
+South Carolina,Lancaster,13.5,Lancaster,exact
+South Carolina,Laurens,13.1,Laurens,exact
+South Carolina,Lee,8.1,Lee,exact
+South Carolina,Lexington,22.2,Lexington,exact
+South Carolina,Marion,14.4,Marion,exact
+South Carolina,Marlboro,9.4,Marlboro,exact
+South Carolina,Mccormick,68.9,,no match
+South Carolina,Newberry,39.1,Newberry,exact
+South Carolina,Oconee,33.5,Oconee,exact
+South Carolina,Orangeburg,12.3,Orangeburg,exact
+South Carolina,Pickens,26.0,Pickens,exact
+South Carolina,Richland,34.8,Richland,exact
+South Carolina,Saluda,13.0,Saluda,exact
+South Carolina,Spartanburg,18.1,Spartanburg,exact
+South Carolina,Sumter,23.1,Sumter,exact
+South Carolina,Union,42.2,Union,exact
+South Carolina,Williamsburg,2.1,Williamsburg,exact
+South Carolina,York,26.8,York,exact
+South Dakota,Aurora,2.5,,no match
+South Dakota,Beadle,20.4,Beadle,exact
+South Dakota,Bennett,2.0,,no match
+South Dakota,Bon Homme,8.5,Bon Homme,exact
+South Dakota,Brookings,39.5,Brookings,exact
+South Dakota,Brown,27.0,Brown,exact
+South Dakota,Brule,13.6,Brule,exact
+South Dakota,Buffalo,8.0,,no match
+South Dakota,Butte,17.6,Butte,exact
+South Dakota,Campbell,10.5,Campbell,exact
+South Dakota,Charles Mix,10.6,Charles Mix,exact
+South Dakota,Clark,4.2,Clark,exact
+South Dakota,Clay,58.0,Clay,exact
+South Dakota,Codington,47.7,Codington,exact
+South Dakota,Corson,14.1,,no match
+South Dakota,Custer,78.3,Custer,exact
+South Dakota,Davison,27.9,Davison,exact
+South Dakota,Day,3.8,Day,exact
+South Dakota,Deuel,2.3,Deuel,exact
+South Dakota,Dewey,11.0,,no match
+South Dakota,Douglas,0.0,Douglas,exact
+South Dakota,Edmunds,0.9,Edmunds,exact
+South Dakota,Fall River,58.5,Fall River,exact
+South Dakota,Faulk,0.7,,no match
+South Dakota,Grant,2.9,Grant,exact
+South Dakota,Gregory,9.0,Gregory,exact
+South Dakota,Haakon,2.2,Haakon,exact
+South Dakota,Hamlin,2.4,Hamlin,exact
+South Dakota,Hand,0.3,Hand,exact
+South Dakota,Hanson,0.7,Hanson,exact
+South Dakota,Harding,21.0,,no match
+South Dakota,Hughes,42.6,Hughes,exact
+South Dakota,Hutchinson,0.6,Hutchinson,exact
+South Dakota,Hyde,2.1,,no match
+South Dakota,Jackson,14.5,,no match
+South Dakota,Jerauld,2.6,Jerauld,exact
+South Dakota,Jones,5.4,,no match
+South Dakota,Kingsbury,0.9,Kingsbury,exact
+South Dakota,Lake,17.7,Lake,exact
+South Dakota,Lawrence,66.9,Lawrence,exact
+South Dakota,Lincoln,31.2,Lincoln,exact
+South Dakota,Lyman,20.7,,no match
+South Dakota,Marshall,3.9,Marshall,exact
+South Dakota,Mccook,3.1,McCook,exact-after-normalizing
+South Dakota,Mcpherson,0.7,McPherson,exact-after-normalizing
+South Dakota,Meade,49.7,Meade,exact
+South Dakota,Mellette,0.1,,no match
+South Dakota,Miner,1.7,Miner,exact
+South Dakota,Minnehaha,68.2,Minnehaha,exact
+South Dakota,Moody,0.1,Moody,exact
+South Dakota,Oglala Lakota,9.4,,no match
+South Dakota,Pennington,51.8,Pennington,exact
+South Dakota,Perkins,18.5,Perkins,exact
+South Dakota,Potter,7.2,,no match
+South Dakota,Roberts,4.0,Roberts,exact
+South Dakota,Sanborn,0.9,Sanborn,exact
+South Dakota,Spink,0.7,Spink,exact
+South Dakota,Stanley,26.8,Stanley,exact
+South Dakota,Sully,12.4,Sully,exact
+South Dakota,Todd,0.0,,no match
+South Dakota,Tripp,4.5,Tripp,exact
+South Dakota,Turner,0.4,Turner,exact
+South Dakota,Union,14.4,Union,exact
+South Dakota,Walworth,42.5,Walworth,exact
+South Dakota,Yankton,49.0,Yankton,exact
+South Dakota,Ziebach,0.9,,no match
+Tennessee,Anderson,30.3,Anderson,exact
+Tennessee,Bedford,5.0,Bedford,exact
+Tennessee,Benton,9.6,Benton,exact
+Tennessee,Bledsoe,8.9,Bledsoe,exact
+Tennessee,Blount,19.1,Blount,exact
+Tennessee,Bradley,20.0,Bradley,exact
+Tennessee,Campbell,22.7,Campbell,exact
+Tennessee,Cannon,3.0,Cannon,exact
+Tennessee,Carroll,3.2,Carroll,exact
+Tennessee,Carter,75.7,Carter,exact
+Tennessee,Cheatham,16.7,Cheatham,exact
+Tennessee,Chester,19.0,Chester,exact
+Tennessee,Claiborne,8.3,Claiborne,exact
+Tennessee,Clay,38.7,Clay,exact
+Tennessee,Cocke,31.2,Cocke,exact
+Tennessee,Coffee,13.5,Coffee,exact
+Tennessee,Crockett,1.3,Crockett,exact
+Tennessee,Cumberland,11.1,Cumberland,exact
+Tennessee,Davidson,69.6,Davidson,exact
+Tennessee,Decatur,2.2,Decatur,exact
+Tennessee,Dekalb,34.1,DeKalb,exact-after-normalizing
+Tennessee,Dickson,6.8,Dickson,exact
+Tennessee,Dyer,12.9,Dyer,exact
+Tennessee,Fayette,0.5,Fayette,exact
+Tennessee,Fentress,12.0,Fentress,exact
+Tennessee,Franklin,15.7,Franklin,exact
+Tennessee,Gibson,7.3,Gibson,exact
+Tennessee,Giles,1.4,Giles,exact
+Tennessee,Grainger,0.5,Grainger,exact
+Tennessee,Greene,12.9,Greene,exact
+Tennessee,Grundy,16.6,Grundy,exact
+Tennessee,Hamblen,24.7,Hamblen,exact
+Tennessee,Hamilton,45.1,Hamilton,exact
+Tennessee,Hancock,0.0,,no match
+Tennessee,Hardeman,2.5,Hardeman,exact
+Tennessee,Hardin,13.8,Hardin,exact
+Tennessee,Hawkins,7.6,Hawkins,exact
+Tennessee,Haywood,10.8,Haywood,exact
+Tennessee,Henderson,9.5,Henderson,exact
+Tennessee,Henry,10.7,Henry,exact
+Tennessee,Hickman,0.0,Hickman,exact
+Tennessee,Houston,0.0,Houston,exact
+Tennessee,Humphreys,14.0,Humphreys,exact
+Tennessee,Jackson,23.9,Jackson,exact
+Tennessee,Jefferson,4.8,Jefferson,exact
+Tennessee,Johnson,100.0,Johnson,exact
+Tennessee,Knox,44.3,Knox,exact
+Tennessee,Lake,21.3,,no match
+Tennessee,Lauderdale,18.0,Lauderdale,exact
+Tennessee,Lawrence,5.0,Lawrence,exact
+Tennessee,Lewis,3.7,Lewis,exact
+Tennessee,Lincoln,1.4,Lincoln,exact
+Tennessee,Loudon,11.7,Loudon,exact
+Tennessee,Macon,2.7,Macon,exact
+Tennessee,Madison,20.4,Madison,exact
+Tennessee,Marion,17.2,Marion,exact
+Tennessee,Marshall,17.5,Marshall,exact
+Tennessee,Maury,14.3,Maury,exact
+Tennessee,Mcminn,10.9,McMinn,exact-after-normalizing
+Tennessee,Mcnairy,4.0,McNairy,exact-after-normalizing
+Tennessee,Meigs,1.0,Meigs,exact
+Tennessee,Monroe,27.8,Monroe,exact
+Tennessee,Montgomery,32.7,Montgomery,exact
+Tennessee,Moore,7.0,Moore,exact
+Tennessee,Morgan,36.1,Morgan,exact
+Tennessee,Obion,10.8,Obion,exact
+Tennessee,Overton,9.2,Overton,exact
+Tennessee,Perry,2.9,Perry,exact
+Tennessee,Pickett,53.7,Pickett,exact
+Tennessee,Polk,74.3,Polk,exact
+Tennessee,Putnam,23.1,Putnam,exact
+Tennessee,Rhea,19.8,Rhea,exact
+Tennessee,Roane,7.8,Roane,exact
+Tennessee,Robertson,6.9,Robertson,exact
+Tennessee,Rutherford,29.2,Rutherford,exact
+Tennessee,Scott,27.4,Scott,exact
+Tennessee,Sequatchie,6.1,Sequatchie,exact
+Tennessee,Sevier,10.7,Sevier,exact
+Tennessee,Shelby,61.0,Shelby,exact
+Tennessee,Smith,25.8,Smith,exact
+Tennessee,Stewart,31.5,Stewart,exact
+Tennessee,Sullivan,34.5,Sullivan,exact
+Tennessee,Sumner,36.6,Sumner,exact
+Tennessee,Tipton,16.2,Tipton,exact
+Tennessee,Trousdale,30.5,Trousdale,exact
+Tennessee,Unicoi,100.0,Unicoi,exact
+Tennessee,Union,15.0,Union,exact
+Tennessee,Van Buren,19.1,Van Buren,exact
+Tennessee,Warren,4.9,Warren,exact
+Tennessee,Washington,30.9,Washington,exact
+Tennessee,Wayne,0.0,Wayne,exact
+Tennessee,Weakley,8.5,Weakley,exact
+Tennessee,White,10.7,White,exact
+Tennessee,Williamson,27.6,Williamson,exact
+Tennessee,Wilson,25.9,Wilson,exact
+Texas,Anderson,15.1,Anderson,exact
+Texas,Andrews,56.6,Andrews,exact
+Texas,Angelina,28.0,Angelina,exact
+Texas,Aransas,28.4,Aransas,exact
+Texas,Archer,0.7,Archer,exact
+Texas,Armstrong,3.1,,no match
+Texas,Atascosa,4.8,Atascosa,exact
+Texas,Austin,4.1,Austin,exact
+Texas,Bailey,9.8,Bailey,exact
+Texas,Bandera,5.2,Bandera,exact
+Texas,Bastrop,13.4,Bastrop,exact
+Texas,Baylor,1.7,Baylor,exact
+Texas,Bee,27.9,Bee,exact
+Texas,Bell,43.8,Bell,exact
+Texas,Bexar,54.4,Bexar,exact
+Texas,Blanco,2.2,Blanco,exact
+Texas,Borden,0.0,,no match
+Texas,Bosque,21.3,Bosque,exact
+Texas,Bowie,25.5,Bowie,exact
+Texas,Brazoria,38.0,Brazoria,exact
+Texas,Brazos,72.4,Brazos,exact
+Texas,Brewster,38.7,Brewster,exact
+Texas,Briscoe,5.3,,no match
+Texas,Brooks,27.0,,no match
+Texas,Brown,36.5,Brown,exact
+Texas,Burleson,14.6,Burleson,exact
+Texas,Burnet,22.0,Burnet,exact
+Texas,Caldwell,15.3,Caldwell,exact
+Texas,Calhoun,35.6,Calhoun,exact
+Texas,Callahan,5.3,Callahan,exact
+Texas,Cameron,47.0,Cameron,exact
+Texas,Camp,11.6,Camp,exact
+Texas,Carson,0.3,,no match
+Texas,Cass,8.6,Cass,exact
+Texas,Castro,3.1,Castro,exact
+Texas,Chambers,25.0,Chambers,exact
+Texas,Cherokee,14.0,Cherokee,exact
+Texas,Childress,20.5,,no match
+Texas,Clay,3.7,Clay,exact
+Texas,Cochran,0.1,,no match
+Texas,Coke,1.1,,no match
+Texas,Coleman,8.2,Coleman,exact
+Texas,Collin,76.4,Collin,exact
+Texas,Collingsworth,0.3,Collingsworth,exact
+Texas,Colorado,3.6,Colorado,exact
+Texas,Comal,35.2,Comal,exact
+Texas,Comanche,4.3,Comanche,exact
+Texas,Concho,0.5,,no match
+Texas,Cooke,17.7,Cooke,exact
+Texas,Coryell,18.0,Coryell,exact
+Texas,Cottle,0.0,,no match
+Texas,Crane,0.4,,no match
+Texas,Crockett,0.2,Crockett,exact
+Texas,Crosby,0.2,,no match
+Texas,Culberson,3.6,,no match
+Texas,Dallam,37.5,Dallam,exact
+Texas,Dallas,82.6,Dallas,exact
+Texas,Dawson,31.9,Dawson,exact
+Texas,Deaf Smith,53.0,Deaf Smith,exact
+Texas,Delta,45.0,,no match
+Texas,Denton,74.4,Denton,exact
+Texas,Dewitt,1.2,DeWitt,exact-after-normalizing
+Texas,Dickens,0.2,,no match
+Texas,Dimmit,22.0,Dimmit,exact
+Texas,Donley,10.0,Donley,exact
+Texas,Duval,0.2,,no match
+Texas,Eastland,6.7,Eastland,exact
+Texas,Ector,45.0,Ector,exact
+Texas,Edwards,0.7,,no match
+Texas,El Paso,65.1,El Paso,exact
+Texas,Ellis,19.3,Ellis,exact
+Texas,Erath,18.9,Erath,exact
+Texas,Falls,16.4,Falls,exact
+Texas,Fannin,7.3,Fannin,exact
+Texas,Fayette,10.5,Fayette,exact
+Texas,Fisher,0.0,Fisher,exact
+Texas,Floyd,1.8,Floyd,exact
+Texas,Foard,0.1,,no match
+Texas,Fort Bend,37.5,Fort Bend,exact
+Texas,Franklin,4.7,Franklin,exact
+Texas,Freestone,6.6,Freestone,exact
+Texas,Frio,0.7,Frio,exact
+Texas,Gaines,27.9,Gaines,exact
+Texas,Galveston,51.2,Galveston,exact
+Texas,Garza,1.0,,no match
+Texas,Gillespie,3.0,Gillespie,exact
+Texas,Glasscock,0.0,,no match
+Texas,Goliad,1.1,Goliad,exact
+Texas,Gonzales,20.6,Gonzales,exact
+Texas,Gray,60.5,Gray,exact
+Texas,Grayson,30.5,Grayson,exact
+Texas,Gregg,39.6,Gregg,exact
+Texas,Grimes,13.1,Grimes,exact
+Texas,Guadalupe,39.3,Guadalupe,exact
+Texas,Hale,45.2,Hale,exact
+Texas,Hall,4.1,,no match
+Texas,Hamilton,16.0,Hamilton,exact
+Texas,Hansford,0.9,Hansford,exact
+Texas,Hardeman,1.0,,no match
+Texas,Hardin,27.7,Hardin,exact
+Texas,Harris,57.0,Harris,exact
+Texas,Harrison,7.3,Harrison,exact
+Texas,Hartley,0.6,Hartley,exact
+Texas,Haskell,1.0,Haskell,exact
+Texas,Hays,32.7,Hays,exact
+Texas,Hemphill,0.8,Hemphill,exact
+Texas,Henderson,8.5,Henderson,exact
+Texas,Hidalgo,35.9,Hidalgo,exact
+Texas,Hill,21.9,Hill,exact
+Texas,Hockley,29.8,Hockley,exact
+Texas,Hood,11.1,Hood,exact
+Texas,Hopkins,14.8,Hopkins,exact
+Texas,Houston,23.9,Houston,exact
+Texas,Howard,33.3,Howard,exact
+Texas,Hudspeth,1.8,,no match
+Texas,Hunt,13.0,Hunt,exact
+Texas,Hutchinson,41.0,Hutchinson,exact
+Texas,Irion,0.1,,no match
+Texas,Jack,14.8,Jack,exact
+Texas,Jackson,7.3,Jackson,exact
+Texas,Jasper,15.7,Jasper,exact
+Texas,Jeff Davis,0.5,,no match
+Texas,Jefferson,48.0,Jefferson,exact
+Texas,Jim Hogg,2.4,Jim Hogg,exact
+Texas,Jim Wells,27.6,Jim Wells,exact
+Texas,Johnson,25.8,Johnson,exact
+Texas,Jones,0.8,Jones,exact
+Texas,Karnes,1.4,Karnes,exact
+Texas,Kaufman,10.5,Kaufman,exact
+Texas,Kendall,19.4,Kendall,exact
+Texas,Kenedy,3.9,,no match
+Texas,Kent,0.0,,no match
+Texas,Kerr,25.0,Kerr,exact
+Texas,Kimble,26.3,Kimble,exact
+Texas,King,0.0,,no match
+Texas,Kinney,1.0,,no match
+Texas,Kleberg,41.8,Kleberg,exact
+Texas,Knox,0.0,,no match
+Texas,La Salle,15.5,La Salle,exact
+Texas,Lamar,19.4,Lamar,exact
+Texas,Lamb,0.7,Lamb,exact
+Texas,Lampasas,16.1,Lampasas,exact
+Texas,Lavaca,5.0,Lavaca,exact
+Texas,Lee,5.0,Lee,exact
+Texas,Leon,1.1,Leon,exact
+Texas,Liberty,14.7,Liberty,exact
+Texas,Limestone,8.4,Limestone,exact
+Texas,Lipscomb,0.0,,no match
+Texas,Live Oak,1.3,Live Oak,exact
+Texas,Llano,9.3,Llano,exact
+Texas,Loving,2.6,,no match
+Texas,Lubbock,58.4,Lubbock,exact
+Texas,Lynn,5.1,Lynn,exact
+Texas,Madison,8.8,Madison,exact
+Texas,Marion,28.8,Marion,exact
+Texas,Martin,0.0,,no match
+Texas,Mason,16.9,Mason,exact
+Texas,Matagorda,20.1,Matagorda,exact
+Texas,Maverick,46.7,Maverick,exact
+Texas,Mcculloch,20.9,McCulloch,exact-after-normalizing
+Texas,Mclennan,43.3,McLennan,exact-after-normalizing
+Texas,Mcmullen,0.5,,no match
+Texas,Medina,4.4,Medina,exact
+Texas,Menard,0.3,,no match
+Texas,Midland,59.3,Midland,exact
+Texas,Milam,10.3,Milam,exact
+Texas,Mills,0.0,Mills,exact
+Texas,Mitchell,2.1,Mitchell,exact
+Texas,Montague,22.5,Montague,exact
+Texas,Montgomery,34.7,Montgomery,exact
+Texas,Moore,53.1,Moore,exact
+Texas,Morris,12.9,Morris,exact
+Texas,Motley,0.0,,no match
+Texas,Nacogdoches,27.8,Nacogdoches,exact
+Texas,Navarro,20.7,Navarro,exact
+Texas,Newton,1.3,Newton,exact
+Texas,Nolan,26.9,Nolan,exact
+Texas,Nueces,79.0,Nueces,exact
+Texas,Ochiltree,52.3,Ochiltree,exact
+Texas,Oldham,0.0,,no match
+Texas,Orange,17.9,Orange,exact
+Texas,Palo Pinto,27.2,Palo Pinto,exact
+Texas,Panola,3.7,Panola,exact
+Texas,Parker,14.0,Parker,exact
+Texas,Parmer,0.3,Parmer,exact
+Texas,Pecos,32.1,Pecos,exact
+Texas,Polk,5.8,Polk,exact
+Texas,Potter,54.7,Potter,exact
+Texas,Presidio,28.1,Presidio,exact
+Texas,Rains,0.4,Rains,exact
+Texas,Randall,44.2,Randall,exact
+Texas,Reagan,0.2,,no match
+Texas,Real,0.4,Real,exact
+Texas,Red River,2.1,Red River,exact
+Texas,Reeves,37.8,Reeves,exact
+Texas,Refugio,1.4,,no match
+Texas,Roberts,0.0,,no match
+Texas,Robertson,2.2,Robertson,exact
+Texas,Rockwall,42.9,Rockwall,exact
+Texas,Runnels,3.3,Runnels,exact
+Texas,Rusk,9.0,Rusk,exact
+Texas,Sabine,69.5,Sabine,exact
+Texas,San Augustine,34.4,San Augustine,exact
+Texas,San Jacinto,64.9,San Jacinto,exact
+Texas,San Patricio,31.1,San Patricio,exact
+Texas,San Saba,9.5,San Saba,exact
+Texas,Schleicher,0.2,,no match
+Texas,Scurry,9.1,Scurry,exact
+Texas,Shackelford,0.6,Shackelford,exact
+Texas,Shelby,23.5,Shelby,exact
+Texas,Sherman,0.2,,no match
+Texas,Smith,24.8,Smith,exact
+Texas,Somervell,12.8,Somervell,exact
+Texas,Starr,30.3,Starr,exact
+Texas,Stephens,5.3,Stephens,exact
+Texas,Sterling,0.1,,no match
+Texas,Stonewall,0.0,,no match
+Texas,Sutton,0.2,Sutton,exact
+Texas,Swisher,14.8,Swisher,exact
+Texas,Tarrant,74.7,Tarrant,exact
+Texas,Taylor,36.5,Taylor,exact
+Texas,Terrell,0.0,,no match
+Texas,Terry,19.4,Terry,exact
+Texas,Throckmorton,0.0,,no match
+Texas,Titus,29.8,Titus,exact
+Texas,Tom Green,51.5,Tom Green,exact
+Texas,Travis,71.4,Travis,exact
+Texas,Trinity,25.0,Trinity,exact
+Texas,Tyler,10.2,Tyler,exact
+Texas,Upshur,7.0,Upshur,exact
+Texas,Upton,0.6,,no match
+Texas,Uvalde,26.4,Uvalde,exact
+Texas,Val Verde,46.7,Val Verde,exact
+Texas,Van Zandt,5.0,Van Zandt,exact
+Texas,Victoria,28.1,Victoria,exact
+Texas,Walker,57.3,Walker,exact
+Texas,Waller,1.9,Waller,exact
+Texas,Ward,35.0,Ward,exact
+Texas,Washington,12.8,Washington,exact
+Texas,Webb,63.0,Webb,exact
+Texas,Wharton,8.8,Wharton,exact
+Texas,Wheeler,0.2,Wheeler,exact
+Texas,Wichita,47.2,Wichita,exact
+Texas,Wilbarger,13.7,Wilbarger,exact
+Texas,Willacy,4.7,,no match
+Texas,Williamson,70.5,Williamson,exact
+Texas,Wilson,3.9,Wilson,exact
+Texas,Winkler,56.7,,no match
+Texas,Wise,10.1,Wise,exact
+Texas,Wood,9.8,Wood,exact
+Texas,Yoakum,0.5,Yoakum,exact
+Texas,Young,22.9,Young,exact
+Texas,Zapata,21.6,Zapata,exact
+Texas,Zavala,17.9,,no match
+Utah,Beaver,95.5,Beaver,exact
+Utah,Box Elder,68.0,Box Elder,exact
+Utah,Cache,62.1,Cache,exact
+Utah,Carbon,62.4,Carbon,exact
+Utah,Daggett,99.5,,no match
+Utah,Davis,73.2,Davis,exact
+Utah,Duchesne,30.8,Duchesne,exact
+Utah,Emery,91.7,Emery,exact
+Utah,Garfield,96.1,Garfield,exact
+Utah,Grand,94.0,Grand,exact
+Utah,Iron,54.8,Iron,exact
+Utah,Juab,53.0,Juab,exact
+Utah,Kane,94.5,Kane,exact
+Utah,Millard,81.0,Millard,exact
+Utah,Morgan,49.2,Morgan,exact
+Utah,Piute,91.5,,no match
+Utah,Rich,69.6,Rich,exact
+Utah,Salt Lake,85.0,Salt Lake,exact
+Utah,San Juan,58.8,San Juan,exact
+Utah,Sanpete,67.2,Sanpete,exact
+Utah,Sevier,81.8,Sevier,exact
+Utah,Summit,48.0,Summit,exact
+Utah,Tooele,63.0,Tooele,exact
+Utah,Uintah,74.9,Uintah,exact
+Utah,Utah,81.6,Utah,exact
+Utah,Wasatch,57.3,Wasatch,exact
+Utah,Washington,80.5,Washington,exact
+Utah,Wayne,96.0,Wayne,exact
+Utah,Weber,76.2,Weber,exact
+Vermont,Addison,30.3,Addison,exact
+Vermont,Bennington,55.8,Bennington,exact
+Vermont,Caledonia,7.0,Caledonia,exact
+Vermont,Chittenden,52.8,Chittenden,exact
+Vermont,Essex,13.0,Essex,exact
+Vermont,Franklin,23.8,Franklin,exact
+Vermont,Grand Isle,9.0,Grand Isle,exact
+Vermont,Lamoille,10.4,Lamoille,exact
+Vermont,Orange,16.2,Orange,exact
+Vermont,Orleans,12.5,Orleans,exact
+Vermont,Rutland,37.6,Rutland,exact
+Vermont,Washington,32.5,Washington,exact
+Vermont,Windham,36.5,Windham,exact
+Vermont,Windsor,29.1,Windsor,exact
+Virginia,Accomack,13.8,Accomack,exact
+Virginia,Albemarle,25.2,Albemarle,exact
+Virginia,Alexandria,100.0,Alexandria city,exact-after-normalizing
+Virginia,Alleghany,100.0,Alleghany,exact
+Virginia,Amelia,2.9,Amelia,exact
+Virginia,Amherst,12.8,Amherst,exact
+Virginia,Appomattox,10.4,Appomattox,exact
+Virginia,Arlington,100.0,Arlington,exact
+Virginia,Augusta,31.7,Augusta,exact
+Virginia,Bath,100.0,Bath,exact
+Virginia,Bedford,13.5,Bedford,exact
+Virginia,Bland,97.1,Bland,exact
+Virginia,Botetourt,45.6,Botetourt,exact
+Virginia,Bristol,52.6,Bristol city,exact-after-normalizing
+Virginia,Brunswick,1.9,Brunswick,exact
+Virginia,Buchanan,0.9,Buchanan,exact
+Virginia,Buckingham,6.5,Buckingham,exact
+Virginia,Buena Vista,79.9,Buena Vista city,exact-after-normalizing
+Virginia,Campbell,12.3,Campbell,exact
+Virginia,Caroline,3.3,Caroline,exact
+Virginia,Carroll,12.3,Carroll,exact
+Virginia,Charles City,10.5,Charles City,exact
+Virginia,Charlotte,0.8,Charlotte,exact
+Virginia,Charlottesville,95.6,Charlottesville city,exact-after-normalizing
+Virginia,Chesapeake,69.5,Chesapeake city,exact-after-normalizing
+Virginia,Chesterfield,34.3,Chesterfield,exact
+Virginia,Clarke,21.4,Clarke,exact
+Virginia,Colonial Heights,79.8,Colonial Heights city,exact-after-normalizing
+Virginia,Covington,100.0,Covington city,exact-after-normalizing
+Virginia,Craig,91.9,,no match
+Virginia,Culpeper,7.1,Culpeper,exact
+Virginia,Cumberland,21.3,Cumberland,exact
+Virginia,Danville,53.6,Danville city,exact-after-normalizing
+Virginia,Dickenson,30.5,Dickenson,exact
+Virginia,Dinwiddie,11.6,Dinwiddie,exact
+Virginia,Emporia,22.6,Emporia city,exact-after-normalizing
+Virginia,Essex,10.3,Essex,exact
+Virginia,Fairfax,95.3,Fairfax,exact
+Virginia,Fairfax City,99.9,Fairfax city,exact-after-normalizing
+Virginia,Falls Church,100.0,Falls Church city,exact-after-normalizing
+Virginia,Fauquier,12.3,Fauquier,exact
+Virginia,Floyd,0.9,Floyd,exact
+Virginia,Fluvanna,4.1,Fluvanna,exact
+Virginia,Franklin,8.0,Franklin,exact
+Virginia,Franklin City,25.1,Franklin city,exact-after-normalizing
+Virginia,Frederick,16.6,Frederick,exact
+Virginia,Fredericksburg,63.5,Fredericksburg city,exact-after-normalizing
+Virginia,Galax,49.1,Galax city,exact-after-normalizing
+Virginia,Giles,70.7,Giles,exact
+Virginia,Gloucester,14.7,Gloucester,exact
+Virginia,Goochland,5.0,Goochland,exact
+Virginia,Grayson,24.2,Grayson,exact
+Virginia,Greene,20.6,Greene,exact
+Virginia,Greensville,0.0,Greensville,exact
+Virginia,Halifax,11.3,Halifax,exact
+Virginia,Hampton,34.7,Hampton city,exact-after-normalizing
+Virginia,Hanover,13.2,Hanover,exact
+Virginia,Harrisonburg,61.0,Harrisonburg city,exact-after-normalizing
+Virginia,Henrico,47.8,Henrico,exact
+Virginia,Henry,12.8,Henry,exact
+Virginia,Highland,46.5,Highland,exact
+Virginia,Hopewell,81.8,Hopewell city,exact-after-normalizing
+Virginia,Isle Of Wight,18.1,Isle of Wight,exact-after-normalizing
+Virginia,James City,36.0,James City,exact
+Virginia,King And Queen,13.8,King and Queen,exact-after-normalizing
+Virginia,King George,13.5,King George,exact
+Virginia,King William,4.8,King William,exact
+Virginia,Lancaster,5.2,Lancaster,exact
+Virginia,Lee,24.4,Lee,exact
+Virginia,Lexington,94.8,,no match
+Virginia,Loudoun,57.1,Loudoun,exact
+Virginia,Louisa,0.6,Louisa,exact
+Virginia,Lunenburg,0.3,Lunenburg,exact
+Virginia,Lynchburg,50.7,Lynchburg city,exact-after-normalizing
+Virginia,Madison,9.6,Madison,exact
+Virginia,Manassas,89.5,Manassas city,exact-after-normalizing
+Virginia,Manassas Park,82.4,Manassas Park city,exact-after-normalizing
+Virginia,Martinsville,52.3,Martinsville city,exact-after-normalizing
+Virginia,Mathews,2.4,Mathews,exact
+Virginia,Mecklenburg,4.4,Mecklenburg,exact
+Virginia,Middlesex,1.9,Middlesex,exact
+Virginia,Montgomery,51.0,Montgomery,exact
+Virginia,Nelson,35.7,Nelson,exact
+Virginia,New Kent,12.1,New Kent,exact
+Virginia,Newport News,55.1,Newport News city,exact-after-normalizing
+Virginia,Norfolk,92.8,Norfolk city,exact-after-normalizing
+Virginia,Northampton,7.7,Northampton,exact
+Virginia,Northumberland,2.3,Northumberland,exact
+Virginia,Norton,74.6,Norton city,exact-after-normalizing
+Virginia,Nottoway,6.5,Nottoway,exact
+Virginia,Orange,12.8,Orange,exact
+Virginia,Page,45.4,Page,exact
+Virginia,Patrick,5.1,Patrick,exact
+Virginia,Petersburg,81.0,Petersburg city,exact-after-normalizing
+Virginia,Pittsylvania,2.5,Pittsylvania,exact
+Virginia,Poquoson,49.0,Poquoson city,exact-after-normalizing
+Virginia,Portsmouth,71.2,Portsmouth city,exact-after-normalizing
+Virginia,Powhatan,8.7,Powhatan,exact
+Virginia,Prince Edward,24.9,Prince Edward,exact
+Virginia,Prince George,12.2,Prince George,exact
+Virginia,Prince William,56.7,Prince William,exact
+Virginia,Pulaski,37.6,Pulaski,exact
+Virginia,Radford,53.2,Radford city,exact-after-normalizing
+Virginia,Rappahannock,26.9,Rappahannock,exact
+Virginia,Richmond,15.4,Richmond,exact
+Virginia,Richmond City,91.8,Richmond city,exact-after-normalizing
+Virginia,Roanoke,38.8,Roanoke,exact
+Virginia,Roanoke City,73.5,Roanoke city,exact-after-normalizing
+Virginia,Rockbridge,48.3,Rockbridge,exact
+Virginia,Rockingham,34.3,Rockingham,exact
+Virginia,Russell,7.8,Russell,exact
+Virginia,Salem,74.6,Salem city,exact-after-normalizing
+Virginia,Scott,11.6,Scott,exact
+Virginia,Shenandoah,28.5,Shenandoah,exact
+Virginia,Smyth,51.7,Smyth,exact
+Virginia,Southampton,2.5,Southampton,exact
+Virginia,Spotsylvania,34.3,Spotsylvania,exact
+Virginia,Stafford,16.0,Stafford,exact
+Virginia,Staunton,45.5,Staunton city,exact-after-normalizing
+Virginia,Suffolk,27.7,Suffolk city,exact-after-normalizing
+Virginia,Surry,7.6,Surry,exact
+Virginia,Sussex,3.4,Sussex,exact
+Virginia,Tazewell,25.1,Tazewell,exact
+Virginia,Virginia Beach,90.3,Virginia Beach city,exact-after-normalizing
+Virginia,Warren,46.9,Warren,exact
+Virginia,Washington,19.3,Washington,exact
+Virginia,Waynesboro,36.5,Waynesboro city,exact-after-normalizing
+Virginia,Westmoreland,14.0,Westmoreland,exact
+Virginia,Williamsburg,67.1,Williamsburg city,exact-after-normalizing
+Virginia,Winchester,83.7,Winchester city,exact-after-normalizing
+Virginia,Wise,58.4,Wise,exact
+Virginia,Wythe,38.5,Wythe,exact
+Virginia,York,42.8,York,exact
+Washington,Adams,27.1,Adams,exact
+Washington,Asotin,55.8,Asotin,exact
+Washington,Benton,65.4,Benton,exact
+Washington,Chelan,85.8,Chelan,exact
+Washington,Clallam,45.2,Clallam,exact
+Washington,Clark,75.0,Clark,exact
+Washington,Columbia,34.3,Columbia,exact
+Washington,Cowlitz,50.1,Cowlitz,exact
+Washington,Douglas,54.3,Douglas,exact
+Washington,Ferry,68.4,Ferry,exact
+Washington,Franklin,60.0,Franklin,exact
+Washington,Garfield,27.4,,no match
+Washington,Grant,33.0,Grant,exact
+Washington,Grays Harbor,42.0,Grays Harbor,exact
+Washington,Island,45.0,Island,exact
+Washington,Jefferson,49.4,Jefferson,exact
+Washington,King,93.1,King,exact
+Washington,Kitsap,54.6,Kitsap,exact
+Washington,Kittitas,63.9,Kittitas,exact
+Washington,Klickitat,36.0,Klickitat,exact
+Washington,Lewis,35.7,Lewis,exact
+Washington,Lincoln,13.3,Lincoln,exact
+Washington,Mason,14.9,Mason,exact
+Washington,Okanogan,41.1,Okanogan,exact
+Washington,Pacific,28.8,Pacific,exact
+Washington,Pend Oreille,44.6,Pend Oreille,exact
+Washington,Pierce,68.2,Pierce,exact
+Washington,San Juan,100.0,San Juan,exact
+Washington,Skagit,55.5,Skagit,exact
+Washington,Skamania,67.4,Skamania,exact
+Washington,Snohomish,76.7,Snohomish,exact
+Washington,Spokane,60.6,Spokane,exact
+Washington,Stevens,30.8,Stevens,exact
+Washington,Thurston,55.2,Thurston,exact
+Washington,Wahkiakum,2.5,Wahkiakum,exact
+Washington,Walla Walla,56.4,Walla Walla,exact
+Washington,Whatcom,55.4,Whatcom,exact
+Washington,Whitman,30.5,Whitman,exact
+Washington,Yakima,51.5,Yakima,exact
+West Virginia,Barbour,12.5,Barbour,exact
+West Virginia,Berkeley,18.7,Berkeley,exact
+West Virginia,Boone,2.6,Boone,exact
+West Virginia,Braxton,14.5,Braxton,exact
+West Virginia,Brooke,28.7,Brooke,exact
+West Virginia,Cabell,42.6,Cabell,exact
+West Virginia,Calhoun,0.8,Calhoun,exact
+West Virginia,Clay,0.4,Clay,exact
+West Virginia,Doddridge,1.6,,no match
+West Virginia,Fayette,33.0,Fayette,exact
+West Virginia,Gilmer,4.5,Gilmer,exact
+West Virginia,Grant,27.2,Grant,exact
+West Virginia,Greenbrier,24.6,Greenbrier,exact
+West Virginia,Hampshire,3.4,Hampshire,exact
+West Virginia,Hancock,36.5,Hancock,exact
+West Virginia,Hardy,25.5,Hardy,exact
+West Virginia,Harrison,31.1,Harrison,exact
+West Virginia,Jackson,5.5,Jackson,exact
+West Virginia,Jefferson,25.9,Jefferson,exact
+West Virginia,Kanawha,31.5,Kanawha,exact
+West Virginia,Lewis,10.5,Lewis,exact
+West Virginia,Lincoln,1.2,,no match
+West Virginia,Logan,5.4,Logan,exact
+West Virginia,Marion,30.8,Marion,exact
+West Virginia,Marshall,35.5,Marshall,exact
+West Virginia,Mason,7.3,Mason,exact
+West Virginia,Mcdowell,12.0,,no match
+West Virginia,Mercer,22.6,Mercer,exact
+West Virginia,Mineral,11.9,Mineral,exact
+West Virginia,Mingo,6.6,Mingo,exact
+West Virginia,Monongalia,38.9,Monongalia,exact
+West Virginia,Monroe,15.8,Monroe,exact
+West Virginia,Morgan,22.9,Morgan,exact
+West Virginia,Nicholas,29.5,Nicholas,exact
+West Virginia,Ohio,57.0,Ohio,exact
+West Virginia,Pendleton,56.3,Pendleton,exact
+West Virginia,Pleasants,9.5,Pleasants,exact
+West Virginia,Pocahontas,93.8,Pocahontas,exact
+West Virginia,Preston,5.8,Preston,exact
+West Virginia,Putnam,7.8,Putnam,exact
+West Virginia,Raleigh,27.3,Raleigh,exact
+West Virginia,Randolph,46.8,Randolph,exact
+West Virginia,Ritchie,5.1,Ritchie,exact
+West Virginia,Roane,4.0,Roane,exact
+West Virginia,Summers,31.8,Summers,exact
+West Virginia,Taylor,16.4,Taylor,exact
+West Virginia,Tucker,90.8,Tucker,exact
+West Virginia,Tyler,8.8,Tyler,exact
+West Virginia,Upshur,19.5,Upshur,exact
+West Virginia,Wayne,22.9,Wayne,exact
+West Virginia,Webster,37.0,Webster,exact
+West Virginia,Wetzel,15.3,Wetzel,exact
+West Virginia,Wirt,0.5,,no match
+West Virginia,Wood,38.1,Wood,exact
+West Virginia,Wyoming,12.2,Wyoming,exact
+Wisconsin,Adams,11.5,Adams,exact
+Wisconsin,Ashland,55.4,Ashland,exact
+Wisconsin,Barron,31.8,Barron,exact
+Wisconsin,Bayfield,67.5,Bayfield,exact
+Wisconsin,Brown,69.1,Brown,exact
+Wisconsin,Buffalo,18.7,Buffalo,exact
+Wisconsin,Burnett,58.7,Burnett,exact
+Wisconsin,Calumet,43.9,Calumet,exact
+Wisconsin,Chippewa,38.8,Chippewa,exact
+Wisconsin,Clark,14.3,Clark,exact
+Wisconsin,Columbia,23.2,Columbia,exact
+Wisconsin,Crawford,32.1,Crawford,exact
+Wisconsin,Dane,79.9,Dane,exact
+Wisconsin,Dodge,42.8,Dodge,exact
+Wisconsin,Door,24.0,Door,exact
+Wisconsin,Douglas,72.7,Douglas,exact
+Wisconsin,Dunn,28.8,Dunn,exact
+Wisconsin,Eau Claire,60.9,Eau Claire,exact
+Wisconsin,Florence,75.7,Florence,exact
+Wisconsin,Fond Du Lac,45.5,Fond du Lac,exact-after-normalizing
+Wisconsin,Forest,72.0,Forest,exact
+Wisconsin,Grant,20.1,Grant,exact
+Wisconsin,Green,18.8,Green,exact
+Wisconsin,Green Lake,23.7,Green Lake,exact
+Wisconsin,Iowa,10.3,Iowa,exact
+Wisconsin,Iron,62.7,Iron,exact
+Wisconsin,Jackson,41.6,Jackson,exact
+Wisconsin,Jefferson,43.7,Jefferson,exact
+Wisconsin,Juneau,28.1,Juneau,exact
+Wisconsin,Kenosha,75.7,Kenosha,exact
+Wisconsin,Kewaunee,23.2,Kewaunee,exact
+Wisconsin,La Crosse,75.3,La Crosse,exact
+Wisconsin,Lafayette,3.4,Lafayette,exact
+Wisconsin,Langlade,50.7,Langlade,exact
+Wisconsin,Lincoln,53.4,Lincoln,exact
+Wisconsin,Manitowoc,39.8,Manitowoc,exact
+Wisconsin,Marathon,46.2,Marathon,exact
+Wisconsin,Marinette,40.0,Marinette,exact
+Wisconsin,Marquette,10.9,Marquette,exact
+Wisconsin,Menominee,0.9,,no match
+Wisconsin,Milwaukee,93.8,Milwaukee,exact
+Wisconsin,Monroe,29.9,Monroe,exact
+Wisconsin,Oconto,30.6,Oconto,exact
+Wisconsin,Oneida,46.7,Oneida,exact
+Wisconsin,Outagamie,61.4,Outagamie,exact
+Wisconsin,Ozaukee,61.3,Ozaukee,exact
+Wisconsin,Pepin,10.5,Pepin,exact
+Wisconsin,Pierce,35.2,Pierce,exact
+Wisconsin,Polk,23.1,Polk,exact
+Wisconsin,Portage,53.4,Portage,exact
+Wisconsin,Price,43.4,Price,exact
+Wisconsin,Racine,67.9,Racine,exact
+Wisconsin,Richland,9.6,Richland,exact
+Wisconsin,Rock,56.5,Rock,exact
+Wisconsin,Rusk,35.0,Rusk,exact
+Wisconsin,Sauk,42.6,Sauk,exact
+Wisconsin,Sawyer,58.9,Sawyer,exact
+Wisconsin,Shawano,31.6,Shawano,exact
+Wisconsin,Sheboygan,54.0,Sheboygan,exact
+Wisconsin,St. Croix,36.5,St. Croix,exact
+Wisconsin,Taylor,30.1,Taylor,exact
+Wisconsin,Trempealeau,13.2,Trempealeau,exact
+Wisconsin,Vernon,16.6,Vernon,exact
+Wisconsin,Vilas,65.7,Vilas,exact
+Wisconsin,Walworth,35.9,Walworth,exact
+Wisconsin,Washburn,48.9,Washburn,exact
+Wisconsin,Washington,50.3,Washington,exact
+Wisconsin,Waukesha,64.2,Waukesha,exact
+Wisconsin,Waupaca,29.7,Waupaca,exact
+Wisconsin,Waushara,21.9,Waushara,exact
+Wisconsin,Winnebago,57.2,Winnebago,exact
+Wisconsin,Wood,43.4,Wood,exact
+Wyoming,Albany,67.8,Albany,exact
+Wyoming,Big Horn,91.2,Big Horn,exact
+Wyoming,Campbell,50.7,Campbell,exact
+Wyoming,Carbon,91.8,Carbon,exact
+Wyoming,Converse,19.1,Converse,exact
+Wyoming,Crook,44.4,Crook,exact
+Wyoming,Fremont,43.4,Fremont,exact
+Wyoming,Goshen,24.5,Goshen,exact
+Wyoming,Hot Springs,86.0,Hot Springs,exact
+Wyoming,Johnson,25.3,Johnson,exact
+Wyoming,Laramie,49.6,Laramie,exact
+Wyoming,Lincoln,67.5,Lincoln,exact
+Wyoming,Natrona,79.9,Natrona,exact
+Wyoming,Niobrara,31.1,,no match
+Wyoming,Park,80.5,Park,exact
+Wyoming,Platte,38.3,Platte,exact
+Wyoming,Sheridan,61.7,Sheridan,exact
+Wyoming,Sublette,91.0,Sublette,exact
+Wyoming,Sweetwater,94.4,Sweetwater,exact
+Wyoming,Teton,86.6,Teton,exact
+Wyoming,Uinta,71.0,Uinta,exact
+Wyoming,Washakie,77.6,Washakie,exact
+Wyoming,Weston,44.6,Weston,exact
