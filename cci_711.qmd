@@ -1,0 +1,905 @@
+---
+title: "cci_711"
+format: html
+editor: visual
+---
+
+```{r, message=FALSE, echo=FALSE}
+library(tidyverse)
+library(tidycensus)
+library(sf)
+library(tidygeocoder)
+library(readr)
+library(janitor)
+library(jsonlite)
+census_api_key("c4a6b5d32aba953b9d81168239d8905b7af2fbab", install = TRUE, overwrite = TRUE)
+Sys.setenv(CENSUS_API_KEY = "c4a6b5d32aba953b9d81168239d8905b7af2fbab")
+```
+
+
+# Data for all counties
+```{r, message=F, echo=F}
+# read in all files
+f_housing <- read_csv("county_housing_units.csv")
+f_income <- read_csv("county_income.csv")
+f_pop <- read_csv("county_population.csv")
+f_poverty <- read_csv("county_poverty_est.csv")
+f_vehicle_avail <- read_csv("county_vehicles.csv")
+b_parks <- read_csv("county_access_parks.csv")
+b_fb <- read_csv("county_fb_est.csv")
+b_non_fb <- read_csv("county_non_fb_est.csv")
+b_total_manufacturing <- read_csv("county_manufacturing.csv")
+b_broadband <- read_csv("county_broadband_access.csv")
+b_hospitals <- read_csv("Hospital_General_Information.csv")
+p_voting <- read_csv("countypres_2000-2024.csv")
+p_cvap <- read_csv("county_cvap_acs.csv")
+```
+
+```{r}
+# clean financial capital variables
+
+# SNAP participation
+url <- "https://www.census.gov/data-tools/demo/saipe_treemap/snap.2023.json"
+x <- fromJSON(url, simplifyVector = FALSE)
+
+g <- function(v) if (is.null(v)) NA_character_ else as.character(v)
+rows <- list()
+for (region in x$children) {
+for (state in region$children) {
+for (county in state$children) {
+rows[[length(rows) + 1]] <- data.frame(
+region = g(region$name),
+state = g(state$name),
+state_abbrev = g(state$abbrev),
+state_fips = g(state$fips),
+county = g(county$name),
+totalpop = g(county$totalpop),
+snappop = g(county$snappop),
+snap_pct = g(county$ratio)
+)
+}
+}
+}
+snap <- do.call(rbind, rows)
+
+nrow(snap) # should be roughly 3,100+ counties
+head(snap)
+sum(is.na(snap$snap_pct))
+
+write.csv(snap, "snap_2023_county.csv", row.names = FALSE)
+
+f_snap <- snap |>
+  select(state, county, snap_pct) |>
+  rename(County = county,
+         State = state) |>
+   mutate(County = str_remove(County, ",.*$"),
+          County = str_remove(County, " County"),
+          snap_pct = as.numeric(snap_pct))
+
+# owner occupied units
+f_housing <- f_housing |>
+  separate(County, into = c("County", "State"), sep = ",") |>
+  mutate(
+    County = str_remove(County, " County"),
+    Measure = if_else(
+      County %in% c("Estimate", "Margin of Error"),
+      County,
+      NA_character_
+    ),
+    County = if_else(
+      is.na(Measure),
+      County,
+      NA_character_
+    )
+  ) |>
+  fill(County, State) |>
+  filter(Measure == "Estimate") |>
+  select(-Measure)
+
+f_housing$County <- iconv(
+  f_housing$County,
+  from = "",
+  to = "UTF-8",
+  sub = ""
+) 
+
+f_housing <- f_housing |>
+  select(-renter_occupied, -total)
+
+# median_hh_income
+f_income <- f_income |>
+  separate(County, into = c("County", "State"), sep = ",") |>
+  mutate(
+    County = str_remove(County, " County")
+    ) |>
+  filter(County != "Households" & County != "Margin of Error" & County != "Families" & County != "Married-couple families" & County != "Nonfamily households") |>
+  mutate(County = if_else(County == "Estimate", NA_character_, County)) |>
+  fill(County, State) |>
+  filter(!is.na(median_hh_income)) |>
+  group_by(County, State) |>
+  slice_head(n = 1) |>
+  ungroup() 
+
+f_income$County <- iconv(
+  f_income$County,
+  from = "",
+  to = "UTF-8",
+  sub = ""
+) 
+
+# population
+f_pop <- f_pop |>
+  separate(County, into = c("County", "State"), sep = ",") |>
+  mutate(
+    County = str_remove(County, " County"),
+    County = str_remove(County, "^\\.")
+    )
+f_pop$County <- iconv(
+  f_pop$County,
+  from = "",
+  to = "UTF-8",
+  sub = ""
+) 
+
+# poverty
+f_poverty |>
+  filter(Year == 2024) |>
+  head(20)
+
+# vehicle availability
+f_vehicle_avail <- f_vehicle_avail |>
+  filter(str_detect(`Label (Grouping)`, "No vehicle")) |>
+  slice(1) |>
+  pivot_longer(
+    cols = -`Label (Grouping)`,
+    names_to = "County",
+    values_to = "Estimate"
+  ) |>
+  mutate(County = str_remove(County, "!!Estimate")) |>
+  separate(
+    County,
+    into = c("County", "State"),
+    sep = ", "
+  ) |>
+  mutate(County = str_remove(County, " County")) |>
+  rename(num_no_vehicle = Estimate) |>
+  select(State, County, num_no_vehicle)
+```
+
+
+```{r}
+# clean built capital variables
+
+# access to parks (pct within 1/2 mile to a park)
+b_parks <- b_parks |>
+  select(State, County, Value) |>
+  rename(pct_access_to_parks = Value)
+b_parks$County <- iconv(
+  b_parks$County,
+  from = "",
+  to = "UTF-8",
+  sub = ""
+) 
+
+b_parks <- b_parks |>
+  mutate(pct_access_to_parks = as.numeric(str_remove(pct_access_to_parks, "%"))) 
+
+# # f&b manufacturing establishments
+# b_fb <- b_fb |>
+#   separate(`Geographic Area Name (NAME)`, into = c("County", "State"), sep = ",") |>
+#   mutate(
+#     County = str_trim(str_remove(County, " County")),
+#     State  = str_trim(State)
+#   ) |>
+#   group_by(State, County) |>
+#   filter(
+#     `Meaning of Employment size of establishments code (EMPSZES_LABEL)` == "All establishments" |
+#       !any(`Meaning of Employment size of establishments code (EMPSZES_LABEL)` == "All establishments")
+#   ) |>
+#   summarise(
+#     num_fb_est= sum(`Number of establishments (ESTAB)`, na.rm = TRUE),
+#     .groups = "drop"
+#   )
+# 
+# 
+# # non f&b manufacturing establishments
+# b_non_fb <- b_non_fb |>
+#   filter(`Meaning of Employment size of establishments code (EMPSZES_LABEL)` == "All establishments") |>
+#   group_by(`Geographic Area Name (NAME)`) |>
+#   mutate(num_non_fb_est = sum(`Number of establishments (ESTAB)`)) |>
+#   rename(County = `Geographic Area Name (NAME)`) |>
+#   ungroup() |>
+#   distinct(County, .keep_all = TRUE) |>
+#   select(County, num_non_fb_est) |>
+#   separate(County, into = c("County", "State"), sep = ",") |>
+#   mutate(
+#     County = str_trim(str_remove(County, " County")),
+#     State  = str_trim(State)
+#   )
+
+# total manufacturing establishments per county 
+
+total_manufacturing_1 <- b_total_manufacturing |>
+  filter(`Meaning of Employment size of establishments code (EMPSZES_LABEL)` == "All establishments") |>
+  select(`Geographic Area Name (NAME)`, `Number of establishments (ESTAB)`, `Annual payroll ($1,000) (PAYANN)`)
+
+b_manufacturing <- total_manufacturing_1 |>
+  separate(`Geographic Area Name (NAME)`, into = c("County", "State"), sep = ",") |>
+  mutate(County = str_remove(County, " County"),
+         State = str_trim(State)) |>
+  rename(
+    total_manufacturing_est = `Number of establishments (ESTAB)`,
+    annual_payroll_1000 = `Annual payroll ($1,000) (PAYANN)`
+  )
+
+
+# broadband access
+b_broadband <- b_broadband |>
+  separate(
+    `Broadband Access by County`,
+    into = c("County", "FIPS", "Percent", "Households", "Rank"),
+    sep = ",(?=[0-9])"
+  ) |>
+  filter(County != "All Races (includes Hispanic/Latino), Both Sexes, All Ages, 2020-2024" & County != "Sorted by Value" & County != "County,FIPS,Percent,Households,Rank within US (of 3143 counties)" & County != "Suggested Citation:" & County != "Notes:" & County != "When list box options are disabled or greyed out" & County != "Source: Demographic data provided by the Census Bureau (http://www.census.gov/) & the American Community Survey (http://www.census.gov/acs/www/)." & County != "For more information about Broadband Access" & County != "Note: This website still uses Connecticut counties instead of planning regions for consistency of geographies across data topics. If/when all data sources have new planning regions" & County != "HDPulse: An Ecosystem of Health Disparities and Specific Populations Health Resources. National Institute on Minority Health and Health Disparities. Created 11/3/2026. Available from https://hdpulse.nimhd.nih.gov") |>
+  select(County, Percent) |>
+  separate(County, into = c("County", "State"), sep = ",") |>
+  mutate(
+    County = str_remove(County, " County"),
+      State = str_trim(State),
+      County = str_trim(County),
+      pct_broadband_access = as.numeric(Percent)
+    )
+
+# hospital access (number of hospitals per county)
+b_hospitals <- b_hospitals |>
+  select(`Facility ID`, State, `County/Parish`, `Hospital Type`, `Hospital Ownership`, `Hospital overall rating`) |>
+  filter(`Hospital Type` != "Psychiatric") |>
+  group_by(State, `County/Parish`) |>
+  summarize(num_hospitals = n()) |>
+  rename(County = `County/Parish`) |>
+  mutate(County = str_to_title(County))
+state_lookup <- setNames(state.name, state.abb)
+b_hospitals$State <- state_lookup[b_hospitals$State]
+
+```
+
+
+```{r}
+# voter turnout (2024) - presidential election
+
+# get CVAP (Citizen Voting Age Population) estimates by county
+p_cvap <- p_cvap |>
+  filter(lntitle == "Total") |>
+  select(geoname, cvap_est) |>
+  rename(County = geoname) |>
+  separate(County, into = c("County", "State"), sep = ",") |>
+  mutate(County = str_remove(County, " County"),
+         State = str_trim(State))
+  
+p_voting <- p_voting |>
+  filter(year == 2024) |>
+  mutate(
+    State = str_to_title(state),
+    County = str_to_title(county_name)
+  ) |>
+  select(State, County, totalvotes) |>
+  distinct(.keep_all = TRUE)
+
+p_pres_turnout <- left_join(p_cvap, p_voting, by = c("County", "State"))
+
+p_pres <- p_pres_turnout |>
+  mutate(pres_voter_turnout = totalvotes/cvap_est)
+
+# census response rates (2020)
+p_census_response <- read_csv("decennialrr2020.csv")
+county_census_response <- p_census_response |>
+  mutate(geo_id = GEO_ID) |>
+  separate(GEO_ID, into = c("code", "county_fips"), sep = "US") |>
+  filter(str_length(county_fips) == 5)
+
+data(fips_codes)
+
+county_lookup <- fips_codes |>
+  mutate(
+    county_fips = paste0(state_code, county_code)
+  ) |>
+  select(
+    county_fips,
+    County = county,
+    State = state_name
+  )
+
+census_resp <- left_join(county_census_response, county_lookup, by = "county_fips")
+
+p_census_resp <- census_resp |>
+  select(State, County, CRRALL, CMIN, CMAX, CAVG, CMED) |>
+  mutate(
+    County = str_remove(County, " County"),
+         State = str_trim(State)
+  )
+
+# political contributions
+library(duckdb)
+library(DBI)
+
+list.files("~/Desktop/STAT 711/us_states/indiv24", full.names = TRUE)
+readLines("~/Desktop/STAT 711/us_states/indiv24/itcont.txt", n = 5)
+
+# 1. See what's inside before extracting
+# unzip("indiv24.zip", list = TRUE)
+
+# 2. Extract to a folder (needs several GB of free disk space)
+unzip("indiv24.zip", exdir = "fec24")
+list.files("fec24")          # confirm the file name; adjust below if it differs
+
+# 3. Column names, hardcoded so you don't need the separate header file
+cols <- c("CMTE_ID","AMNDT_IND","RPT_TP","TRANSACTION_PGI","IMAGE_NUM",
+          "TRANSACTION_TP","ENTITY_TP","NAME","CITY","STATE","ZIP_CODE",
+          "EMPLOYER","OCCUPATION","TRANSACTION_DT","TRANSACTION_AMT",
+          "OTHER_ID","TRAN_ID","FILE_NUM","MEMO_CD","MEMO_TEXT","SUB_ID")
+nm <- paste0("'", cols, "'", collapse = ", ")
+
+# 4. Aggregate to ZIP level inside DuckDB
+con <- dbConnect(duckdb())
+q <- sprintf("
+  SELECT substr(ZIP_CODE, 1, 5)                       AS zip5,
+         COUNT(*)                                     AS n_contrib,
+         COUNT(DISTINCT NAME || substr(ZIP_CODE,1,5)) AS n_donors_approx,
+         SUM(TRY_CAST(TRANSACTION_AMT AS DOUBLE))     AS total_amt
+  FROM read_csv('~/Desktop/STAT 711/us_states/indiv24/itcont.txt', delim = '|', header = false,
+                names = [%s], quote = '', all_varchar = true,
+                ignore_errors = true)
+  WHERE ENTITY_TP = 'IND'
+    AND (MEMO_CD IS NULL OR MEMO_CD <> 'X')
+    AND length(ZIP_CODE) >= 5
+  GROUP BY 1", nm)
+
+zip24 <- dbGetQuery(con, q)
+dbDisconnect(con, shutdown = TRUE)
+
+saveRDS(zip24, "zip24.rds")   # small file; reuse this from now on
+
+political_contrib <- zip24 |>
+  rename(zip = zip5)
+
+zip_to_county <- read_csv("zip2county_master_xwalk_2010_2023_tot_ratio_one2one.csv")
+zip_to_county <- zip_to_county |>
+  rename(county_fips = county)
+
+contrib_1 <- left_join(political_contrib, zip_to_county |> filter(year == 2023), by = "zip")
+
+p_contributions <- left_join(contrib_1, county_lookup, by = "county_fips") |>
+  select(State, County, total_amt, n_donors_approx, n_contrib, zip)
+
+p_cont <- p_contributions |>
+  mutate(
+    County = str_remove(County, " County"),
+    State  = str_trim(State)
+  ) |>
+  group_by(County, State) |>
+  summarise(
+    total_contribution_value  = sum(total_amt),
+    avg_contribution_value    = mean(total_amt),
+    median_contribution_value = median(total_amt),
+    total_num_contributions   = sum(n_contrib),
+    avg_num_contributions     = mean(n_contrib),
+    median_num_contributions  = median(n_contrib),
+    .groups = "drop"
+  )
+  
+
+```
+
+
+## Big data set
+```{r}
+# join financial variables
+left_join(f_housing, f_income, by = c("State", "County")) |>
+  filter(is.na(median_hh_income) == TRUE) # no NAs here
+
+f1 <- left_join(f_housing, f_income, by = c("State", "County"))
+
+left_join(f1, f_pop, by = c("State", "County")) |>
+  filter(is.na(population_est_2025) == TRUE) # 79 NA's (including PR)
+
+left_join(f1, f_pop, by = c("State", "County")) |>
+  mutate(State = str_trim(State)) |>
+  filter(is.na(population_est_2025) == TRUE & State != "Puerto Rico")
+
+f2 <- left_join(f1, f_pop, by = c("State", "County")) |>
+  mutate(State = str_trim(State)) |>
+  filter(State != "Puerto Rico")
+
+left_join(f2, f_vehicle_avail, by = c("State", "County")) |>
+  filter(is.na(num_no_vehicle) == TRUE) # Dona Ana, NM has NA
+
+# missing population value for Dona Ana, NM 
+f2[1805, "population_est_2025"] <- 229091
+
+# join vehicle availability to population
+f3 <- left_join(f2, f_vehicle_avail, by = c("State", "County")) |>
+  mutate(
+   # num_no_vehicle = parse_number(num_no_vehicle),
+    num_no_vehicle = as.numeric(num_no_vehicle),
+     State = str_trim(State),
+    County = str_trim(County))
+
+f3[1805, "num_no_vehicle"] <- 17048
+
+# join population and vehicle availability to snap participation pct (household)
+f4 <- left_join(f3, f_snap, by = c("State", "County")) # 13 counties are NA for snap_pct
+
+f4 <- f4 |>
+  mutate(median_hh_income = as.numeric(str_remove(median_hh_income, ",")))
+
+# manual entry of households on snap pct
+f4[6, "snap_pct"] <- 14.2 # LaSalle County, IL
+f4[7, "snap_pct"] <- 6.3 # DeKalb, IN
+f4[9, "snap_pct"] <- 10.6 # LaPorte, IN
+f4[10, "snap_pct"] <- 16.7 # LaSalle Parish, LA
+f4[11, "snap_pct"] <- 18.7 # De Baca, NM
+f4[12, "snap_pct"] <- 20.6 # Dona Ana, NM
+f4[13, "snap_pct"] <- 18.6 # McKean, PA
+
+f4 |>
+  filter(is.na(snap_pct) == TRUE)
+
+# join built variables
+b_parks <- b_parks |>
+  mutate(County = str_to_title(County))
+b1 <- left_join(b_parks, b_manufacturing, by = c("State", "County"))
+
+write_csv(b_parks, "/Users/eunjungc@middlebury.edu/Desktop/STAT 711/b_parks.csv")
+write_csv(b_manufacturing, "/Users/eunjungc@middlebury.edu/Desktop/STAT 711/b_manufacturing.csv")
+
+# 387 NA values for total manufacturing establishments
+b1 |>
+  filter(is.na(total_manufacturing_est) == TRUE)
+
+b_manufacturing
+
+b_manu_key <- read_csv("b_parks_with_manufacturing_key.csv")
+
+b
+
+
+parks <- read_csv("b_parks_with_manufacturing_key.csv")
+mfg   <- read_csv("b_manufacturing.csv")
+
+joined <- parks %>%
+  left_join(mfg,
+            by = c("State", "County_mfg_key" = "County"))
+
+anti_join(b_parks, b_manufacturing, by = c("State", "County"))
+
+b2 <- left_join(b1, b_non_fb, by = c("State", "County"))
+b2 <- b2 |>
+  mutate(County = str_to_title(County))
+
+b3 <- left_join(b2, b_broadband |> mutate(pct_broadband_access = as.numeric(Percent)), by = c("State", "County"))
+b4 <- left_join(b3, b_hospitals, by = c("State", "County"))
+b4 <- b4 |>
+  mutate(pct_access_to_parks = as.numeric(str_remove(pct_access_to_parks, "%"))) |>
+  select(-Percent)
+
+
+# join political variables
+p1 <- left_join(p_pres, p_census_resp, by = c("State", "County"))
+p2 <- left_join(p1, p_cont, by = c("State", "County"))
+
+
+# make the big data set
+big_1 <- left_join(f4, p2, by = c("State", "County"))
+big_2 <- left_join(big_1, b4, by = c("State", "County"))
+
+write_csv(big_2, "/Users/eunjungc@middlebury.edu/Desktop/STAT 711/v1_big_data.csv")
+
+v1_big_data <- read_csv("v1_big_data.csv")
+
+v1_big_data |>
+  filter(is.na(num_fb_est) == TRUE)
+
+  
+  
+```
+
+# Financial Capital
+
+```{r}
+# read in data
+# from 2021 6/30/2021 reporting
+vt_fdic <- read_csv("Summary_Tables_By_State_County_formatted_9_24_2026.csv")
+vt_fdic <- vt_fdic |>
+  mutate(county = sub(" County, Vermont$", "", County))
+vt_fdic <- vt_fdic[-15, ] |>
+  select(-`Report Period`, -State, -county)
+
+# 5 year ACS data 2017-2021
+vt <- "50"
+
+# population data
+vt_pop <- get_acs(
+  geography = "county",
+  variables = "B01003_001",
+  state     = vt,
+  year      = 2021,
+  survey    = "acs5"
+) |>
+  mutate(County = sub(" County, Vermont$", "", NAME)) |>
+  rename(pop = estimate) |>
+  select(County, pop)
+
+# owner occupied units
+vt_oo_units <- get_acs(
+  geography = "county",
+  variables = "B25081_008",
+  state     = vt,
+  year      = 2021,
+  survey    = "acs5"
+) |>
+  mutate(County = sub(" County, Vermont$", "", NAME)) |>
+  rename(owner_occupied_units = estimate) |>
+  select(County, owner_occupied_units)
+
+# household income
+vt_hh_income <- get_acs(
+  geography = "county",
+  variables = "B19013_001",
+  state     = vt,
+  year      = 2021,
+  survey    = "acs5"
+) |>
+  mutate(County = sub(" County, Vermont$", "", NAME)) |>
+  rename(median_hh_income = estimate) |>
+  select(County, median_hh_income)
+
+# 2023 IRS investment interest
+vt_investment_interest <- read_csv("23incyvt(Sheet2).csv")
+
+# % in poverty
+vt_poverty_2023 <- read_csv("SAIPE_10-07-2026.csv")
+
+vt_poverty_2023 <- vt_poverty_2023 |>
+  mutate(County = sub(" County$", "", Name)) |>
+  select(County, `Number in Poverty`, `Percent in Poverty`)
+  
+
+# % with no vehicle
+no_vehicle <- read_csv("ACS_Vehicle_Availability_Boundaries_2580450326519965340.csv")
+
+vt_vehicle_availability <- no_vehicle |>
+  filter(State == "Vermont") |>
+  mutate(County = sub(" County$", "", Name)) |>
+  select(County, `Percent of households with no vehicle available`)
+
+# % receiving SNAP
+vt_hh_snap <- read_csv("snap_hh_2016_5yr.csv")
+
+vt_hh_snap <- vt_hh_snap |>
+  mutate(County = sub(" County$", "", County)) |>
+  select(County, `Percent with SNAP`)
+
+# join together
+vt_county_finance_1 <- left_join(vt_pop, vt_oo_units, by = "County")
+vt_county_finance_2 <- left_join(vt_county_finance_1, vt_hh_income, by = "County")
+vt_county_finance_3 <- left_join(vt_county_finance_2, vt_investment_interest, by = "County")
+vt_county_finance_4 <- left_join(vt_county_finance_3, vt_fdic, by = "County") |>
+  rename(deposits_per_county = `All Deposits (Millions USD)`)
+vt_county_finance_5 <- left_join(vt_county_finance_4, vt_poverty_2023, by = "County")
+vt_county_finance_6 <- left_join(vt_county_finance_5, vt_vehicle_availability, by = "County")
+vt_county_finance <- left_join(vt_county_finance_6, vt_hh_snap, by = "County")
+
+write_csv(vt_county_finance, "~/Desktop/STAT 711/vt_county_finance.csv")
+
+# z scores
+# vt_county_finance <- vt_county_finance |> 
+#   mutate(pop_z_score = as.numeric(scale(pop)),
+#          oou_z_score = as.numeric(scale(owner_occupied_units)),
+#          hh_income_z_score = as.numeric(scale(median_hh_income)),
+#          deposits_z_score = as.numeric(scale(deposits_per_county)),
+#          investment_interest_z_score = as.numeric(scale(`Investment Interest Paid`)),
+#          poverty_z_score = as.numeric(scale(`Percent in Poverty`)),
+#          vehicle_avail_z_score = as.numeric(scale(`Percent of households with no vehicle available`)),
+#          hh_snap_z_score = as.numeric(scale(`Percent with SNAP`)))
+```
+
+## Do PCA on Financial Capital
+
+```{r}
+vt_county_finance <- vt_county_finance |>
+  distinct(County, .keep_all = TRUE)
+
+vt_financial_1 <- vt_county_finance %>%
+  select(
+    pop_z_score,
+    oou_z_score,
+    hh_income_z_score,
+    deposits_z_score,
+    investment_interest_z_score,
+    poverty_z_score,
+    vehicle_avail_z_score,
+    hh_snap_z_score
+  )
+
+pca_finance <- prcomp(
+  vt_financial_1,
+  center = FALSE,
+  scale. = FALSE
+)
+
+# results
+pca_finance$rotation[, 1]
+pca_finance$x
+summary(pca_finance)
+
+# see percentiles
+vt_county_finance_pca <- vt_county_finance |>
+  mutate(
+    financial_capital_pca = pca_finance$x[, 1],
+    financial_capital_percentile = percent_rank(financial_capital_pca) * 100
+  )
+```
+
+## Do EFA/CFA on Financial Capital
+
+```{r}
+# efa
+library(psych)
+fa.parallel(vt_financial_1)
+
+efa <- fa(
+  vt_financial_1,
+  nfactors = 3,
+  rotate = "oblimin",   
+  fm = "ml"            
+)
+
+summary(efa)
+```
+
+# Built Capital
+
+```{r}
+library(data.table)
+# f&b establishments per state
+df <- read_csv("NONEMP2024.NS00NONEMP-2026-10-08T143707.csv")
+
+vt_fb_est_2022 <- df |>
+  clean_names() |>
+  mutate(County = sub(" County, Vermont$", "", geographic_area_name_name)) |>
+  select(County, number_of_nonemployer_establishments_nestab, nonemployer_sales_value_of_shipments_or_revenue_1_000_nrcptot)
+
+# other manufacturing establishments (non F&B)
+non_fb_est_2023 <- read_csv("CBP2023.CB2300CBP-2026-10-08T135110.csv")
+
+vt_county_manu_est <- non_fb_est_2023[40:nrow(non_fb_est_2023), ] |>
+   mutate(County = sub(" County, Vermont$", "", `Geographic Area Name (NAME)`))
+
+vt_manu_est <- vt_county_manu_est |>
+  select(County, `Number of establishments (ESTAB)`) |>
+  group_by(County) |>
+  mutate(total_est = sum(`Number of establishments (ESTAB)`)) |>
+  distinct(County, .keep_all = TRUE) |>
+  select(County, total_est)
+  
+# % access to parks (2025)
+vt_park_access <- data.frame(
+  County = c("Addison", "Bennington", "Caledonia", "Chittenden", "Essex", "Franklin", "Grand Isle", "Lamoille", "Orange", "Orleans", "Rutland", "Washington", "Windham", "Windsor"),
+  pct_with_access_to_parks = c(24, 52, 0, 36, 13, 14, 15, 6, 13, 5, 13, 14, 31, 37)
+)
+
+# % access to broadband coverage
+vt_bb_access <- data.frame(
+  County = c("Addison", "Bennington", "Caledonia", "Chittenden", "Essex", "Franklin", "Grand Isle", "Lamoille", "Orange", "Orleans", "Rutland", "Washington", "Windham", "Windsor"),
+  pct_with_broadband_access = c(89, 80, 83, 90, 81, 86, 90, 89, 86, 87, 83, 90, 75, 86),
+  num_households = c(12789, 11660, 10649, 62185, 2159, 16611, 2734, 9895, 10811, 9994, 21019, 22541, 14629, 21213)
+)
+
+# vt wireless coverage
+vt_wireless_coverage <- read_csv("vt_fixed_wireless_coverage_2023.csv")
+
+# Vermont County FIPS 
+vt_fips <- data.frame(
+  county = c("Addison", "Bennington", "Caledonia", "Chittenden", "Essex", 
+             "Franklin", "Grand Isle", "Lamoille", "Orange", "Orleans", 
+             "Rutland", "Washington", "Windham", "Windsor"),
+  county_fip = c("50001", "50003", "50005", "50007", "50009", 
+           "50011", "50013", "50015", "50017", "50019", 
+           "50021", "50023", "50025", "50027"),
+  stringsAsFactors = FALSE
+)
+
+vt_wireless_coverage <- vt_wireless_coverage |>
+  mutate("new_block_geoid" = format(block_geoid, scientific = FALSE),
+         "county_fip" = str_sub(new_block_geoid, start = 1, end = 5))
+
+# join counties to fips
+vt_wireless_coverage <- left_join(vt_wireless_coverage, vt_fips, by = "county_fip")
+
+vt_wireless_coverage <- vt_wireless_coverage |>
+  rename(County = county) |>
+  group_by(County) |>
+  mutate(max_advertised_download_speed = sum(max_advertised_download_speed),
+         max_advertised_upload_speed = sum(max_advertised_upload_speed)) |>
+  select(County, max_advertised_download_speed, max_advertised_upload_speed) |>
+  distinct(County, .keep_all = TRUE)
+  
+
+# hospitals
+vt_hospitals <- read_csv("vt_hospitals.csv") 
+vt_hospitals <- clean_names(vt_hospitals) |>
+  mutate(County = str_to_title(county_parish)) |>
+  filter(hospital_type %like% "Hospital") |>
+  group_by(County) |>
+  mutate(number_hospitals = n()) |>
+  distinct(County, .keep_all = TRUE) |>
+select(County, number_hospitals, hospital_type, hospital_overall_rating)
+  
+# roads/highways/interstates (FIX OR DON'T INCLUDE)
+state_roads <- read_csv("Vehicle_Miles_of_Travel_by_Federal-Aid_Highways,_2000-2024_(VM-3)_20260930.csv")
+vt_roads <- state_roads |>
+  filter(State == "Vermont" & Year == 2023)
+
+# airports
+airports <- read_csv("NTAD_Aviation_Facilities_-1138898284069410957.csv")
+
+# filter to airports only for public use
+vt_airports <- airports |>
+  filter(STATE_CODE == "VT" & OWNERSHIP_TYPE_CODE == "PU" & FACILITY_USE_CODE == "PU")  |>
+  select(STATE_CODE, CITY, COUNTY_NAME, ARPT_NAME, OWNERSHIP_TYPE_CODE, LAT_DECIMAL, LONG_DECIMAL, DIST_CITY_TO_AIRPORT) |>
+  group_by(COUNTY_NAME) |>
+  summarize(airports_per_county = n()) |>
+  mutate(County = str_to_title(COUNTY_NAME)) |>
+  select(County, airports_per_county)
+  
+
+# join together data sets
+vt_built_1 <- left_join(vt_fb_est_2022, vt_manu_est, by = "County")
+vt_built_2 <- left_join(vt_built_1, vt_park_access, by = "County")
+vt_built_3  <- left_join(vt_built_2, vt_bb_access, by = "County")
+vt_built_4 <- left_join(vt_built_3, vt_wireless_coverage, by = "County")
+vt_built_5 <- left_join(vt_built_4, vt_hospitals, by = "County")
+vt_built_6 <- left_join(vt_built_5, vt_airports, by = "County")
+vt_built_6 <- vt_built_6 |>
+  mutate(airports_per_county = ifelse(is.na(airports_per_county), 0, airports_per_county),
+         number_hospitals = ifelse(is.na(number_hospitals), 0, number_hospitals)) |>
+  select(-hospital_type, -hospital_overall_rating, -total_est)
+
+write_csv(vt_built_6, "~/Desktop/STAT 711/vt_built_6.csv")
+
+```
+
+## Do PCA on Built Capital
+
+```{r}
+pca_built <- prcomp(
+  vt_built_6 |> select(-County),
+  center = TRUE,
+  scale. = TRUE
+)
+
+# results
+pca_built$rotation[, 1] # loadings (how much each variable contributes to each component (PC1 in this case))
+pca_built$x # scores (how strong each variable is in each component)
+summary(pca_built)
+
+# see percentiles
+vt_county_built_pca <- vt_built_6 |>
+  mutate(
+    built_capital_pca = pca_built$x[, 1],
+    built_capital_percentile = percent_rank(built_capital_pca) * 100
+  )
+```
+
+## Do EFA/CFA on Built Capital
+
+```{r}
+# efa
+library(psych)
+fa.parallel(vt_built_6 |> select(-County))
+
+efa_2 <- fa(
+  vt_built_6,
+  nfactors = 3,
+  rotate = "oblimin",   
+  fm = "ml"            
+)
+```
+
+# Political Capital
+
+```{r}
+# 2025 vermont census participation
+vt_census_participation <- data.frame(
+  County = c("Addison", "Bennington", "Caledonia", "Chittenden", "Essex", "Franklin", "Grand Isle", "Lamoille", "Orange", "Orleans", "Rutland", "Washington", "Windham", "Windsor"),
+  pct_participation = c(65.5, 54.3, 53.5, 73.5, 37.8, 64.7, 45.3, 54.9, 57, 47.9, 56.1, 61.9, 49.5, 54.3)
+)
+
+# voter turnout in presidential election 2020
+vt_voter_turnout <- data.frame(
+  County = c("Addison", "Bennington", "Caledonia", "Chittenden", "Essex", "Franklin", "Grand Isle", "Lamoille", "Orange", "Orleans", "Rutland", "Washington", "Windham", "Windsor"),
+  pct_voter_turnout = c(75.9, 67.8, 63.2, 75.2, 83.6, 68.7, 99.6, 79.6, 63.6, 72.9, 72.9, 75.3, 82.8, 82.1)
+)
+
+vt_new_voter_turnout <- data.table(
+  County = c("Addison", "Bennington", "Caledonia", "Chittenden", "Essex", "Franklin", "Grand Isle", "Lamoille", "Orange", "Orleans", "Rutland", "Washington", "Windham", "Windsor"),
+  pct_voter_turnout = c(78, 75, 75, 72, 76, 70, 76, 73, 75, 72, 75, 76, 73, 75)
+  
+)
+
+# political contributions (value, count, median count) per county (2020-2021)
+contributions <- read_csv("ContributionsListDownload101820261643PM__EntityId(in).csv")
+vt_political_contributions <- contributions |>
+  mutate(political_contribution = parse_number(`Transaction Amount`)) |>
+  select(County, political_contribution) |>
+  group_by(County) |>
+  summarize(total_contribution = sum(political_contribution),
+            num_contributions = n(),
+            median_value_of_contribution = median(political_contribution))
+
+# join together
+vt_political_1 <- left_join(vt_census_participation, vt_voter_turnout, by = "County")
+vt_political_2 <- left_join(vt_political_1, vt_political_contributions, by = "County")
+vt_political_2 <- vt_political_2 |>
+  mutate(total_contribution = ifelse(is.na(total_contribution), 0, total_contribution),
+         num_contributions = ifelse(is.na(num_contributions), 0, num_contributions),
+         median_value_of_contribution = ifelse(is.na(median_value_of_contribution), 0, median_value_of_contribution))
+
+write_csv(vt_political_2, "~/Desktop/STAT 711/vt_political_2.csv")
+```
+
+## Do PCA on Political Capital
+
+```{r}
+pca_political_1 <- prcomp(
+  vt_political_2 |> select(-County, - total_contribution),
+  center = TRUE,
+  scale. = TRUE
+)
+pca_political_2 <- prcomp(
+  vt_political_2 |> select(-County),
+  center = TRUE,
+  scale. = TRUE
+)
+pca_political
+pca_political_2$rotation[, 1]
+pca_political_2$x
+
+
+# loadings and scores
+pca_political$rotation[, 1]
+pca_political$x
+as.tibble(pca_political$x) |>
+  mutate(County = vt_political_2$County, .before = 1) |>
+  arrange(PC1)
+
+summary(pca_political)
+
+vt_political_2 |>
+  pivot_longer(-County) |>
+  group_by(name) |>
+  mutate(mean = mean(value), sd = sd(value)) |>
+  ungroup() |>
+  mutate(sds = round(((value - mean)/sd),2))
+```
+
+## Do EFA/CFA on Political Capital
+
+```{r}
+# efa
+library(psych)
+fa.parallel(vt_political_2 |> select(-County))
+
+efa_2 <- fa(
+  vt_political_2,
+  nfactors = 3,
+  rotate = "oblimin",   
+  fm = "ml"            
+)
+```
+
+## Get data for ALL states (mega dataset)
+
+```{r}
+
+```
